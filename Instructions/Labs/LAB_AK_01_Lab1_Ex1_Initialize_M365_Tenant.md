@@ -12,6 +12,12 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
  
 ## Task 0- Pre-requisite
 
+1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the Client 1 VM (LON-CL1). If your VM environment opens with one of the other machines (such as LON-DC1), then switch to LON-CL1 now.
+
+1. Log into LON-CL1 as the **Administrator** account that was created by your lab hosting provider with the password **Pa55w.rd**.
+
+1. On the taskbar at the bottom of your screen, select the **Microsoft Edge** icon. If necessary, maximize your browser window when it opens.
+
 1. Open **Microsoft Edge**, in the search bar use this URL to open [Azure Portal](https://portal.azure.com/#home). On the Sign in page, enter the following credentials:-
 
    - Username:- <inject key="AzureAdUserEmail"></inject>
