@@ -52,7 +52,7 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 You have now configured an additional alert policy that monitors when a user is added as a site collection administrator for a SharePoint Online site collection.
 
-### Task 2 – Validate the  SharePoint Permissions Alert
+### Task 2 – Validate the  SharePoint Permissions Alert [READ ONLY TASK]
 
 In the prior task, you configured an alert designed to notify Lynne Robbins when a user is added as a site collection administrator for a site collection. In this task, you will test this alert by adding Alex Wilber as a site collection admin to the global SharePoint Communication site. This activity should trigger the alert policy that you created, which should send an alert notification email to Lynne Robbins’ mailbox. You will validate whether Lynne received this alert notification email in Exercise 7, task 2.
 

@@ -21,9 +21,9 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 
 6. On the **Name Simulation** page, enter **Custom payload** in the **Simulation name** field and then select **Next**.
 
-7. On the **Select payload and login page**, select **+ Create a payload** under **Tenant payloads**.
+7. On the **Select payload and login page**, the **Global payloads** tab is displayed by default. Select the **Tenant payloads** tab, and then select **+Create a payload** on the menu bar. This initiates the **Payload** wizard.
 
-8. On the **Select type** page of the Payload wizard, the **Email** option should be selected by default. Select **Next**. 
+8. On the **Select type** page of the **Payload** wizard, the **Email** option should be selected by default (it may also be grayed out so that you can't change this option).  Select **Next**.  
 
 9. On the **Select Technique** page, the **Drive-by URL** attack type should be selected by default (all other options are disabled since you already selected this option back in step 5). Select **Next**.
 
@@ -39,12 +39,12 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 	- From name: **Klemen Sic**
 	- From email: **klemens@tailspintoys.com**
 	- Email subject: **Free toy giveaway promotion from Tailspin Toys**
-	- Select a URL you want to be your phishing link: select the **Select URL** button, serach and select **https://www.prizegives.com**, from the list of fictitious URLs, and click on **Confirm** button. 
+	- Select a URL you want to be your phishing link: select the **Select URL** button, search and select **https://www.prizegives.com**, from the list of fictitious URLs, and click on **Confirm** button. 
 	- Theme: **Personalized Offer**
 	- Industry: **Retail**
 	- Current Event: **Yes**
 	- Select the language for payload : **English** 
-	- Email message: Enter the following text that will be displayed in the body of the email message: **Tailspin Toys is offering you a FREE, one-time only giveaway of a toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice:** 
+	- Email message: Under the Text tab in this **Email message** section, enter the following text in the message box; this message will be displayed in the body of the email message: **Tailspin Toys is offering you a FREE, one-time only giveaway of a toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice:**
 	- After entering the prior message, select the **Phishing link** option at the top of the text form (to the right of **Dynamic tag**). In the **Name Phishing Url** dialog box that appears, enter **Free25thAnniversaryGift@tailspintoys.com** in the **Name** field and then select **Confirm**.
 
 	The message should now appear as: 
@@ -62,7 +62,7 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 
 16. A **Select Text** button will appear. Select this button.
 
-17. In the **Select the required text** pane that appears on the right, drag your cursor from the start of the code block to the end, so that the entire code block is highlighted. This will enable the **Select** button. Select this button. 
+17. In the **Select the required text** pane that appears on the right, drag your cursor from the start of the code block to the end, so that the entire code block is highlighted. This will enable the **Select** button. Select this button. This returns you to the **Add indicator** pane. 
 
 18. In the **Indicator Description** field, replace the default description with the following text: **Free gifts or other one-time only promotional giveaways**.
 
@@ -139,9 +139,9 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 
 4. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**.
 
-5. In the **multi-factor authentication** window (may need to select **Legacy per-user MFA**), the **users** tab is displayed by default. Select the **View** drop-down, select **Global administrators**. Select the check box for **Holly Dickson**, and in Holly's properties pane on the right, select **Disable**.
+5. In the **multi-factor authentication** window (may need to select **Legacy per-user MFA**), the **users** tab is displayed by default. Select the **View** drop-down, select **Global administrators** and then **Apply**. Select the check box for **Holly Dickson**, and in Holly's properties pane on the right, select **Disable MFA**.
 
-6. On the **Disable multi-factor authentication?** dialog box, select **yes**. 
+6. On the **Disable multifactor authentication** dialog box, select **Disable**. 
 
 7. When the **Updates successful** dialog box appears, select **close**. In the **multi-factor authentication** window, verify Holly's MFA Status has changed to **Disabled**. Close the **Multi-factor authentication** tab in your browser.
 
