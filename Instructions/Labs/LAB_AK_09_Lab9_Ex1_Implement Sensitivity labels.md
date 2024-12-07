@@ -275,7 +275,7 @@ To verify whether the protection that you assigned to the document works, you wi
 
 12. In the **Pick an account** window, select **Use another account**.
 
-13. In the **Sign in** window, enter **JoniS@yourtenant.onmicrosoft.com** (where yourtenant is the tenant prefix provided by your lab hosting provider) and then select **Next**.
+13. In the **Sign in** window, enter **JoniS@otuwamoc<inject key="DeploymentID" enableCopy="false"/>.onmicrosoft.com** and then select **Next**.
 
 14. On the **Enter password** window, enter the same **Microsoft 365 Tenant Password** provided by your lab hosting provider for the tenant admin account and then select **Sign in**.
 
