@@ -57,10 +57,10 @@ In this exercise you will learn how to create a mail flow encryption rule using 
 	
 4. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
 
-5. You must then connect to the module by running the following command at the command prompt (Note: in the command, you must copy and paste in the Tenant Name provided by your lab hosting provider (xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider):
+5. You must then connect to the module by running the following command at the command prompt:
 
 	```powershell
-	Connect-ExchangeOnline -UserPrincipalName Holly@xxxxxZZZZZZ.onmicrosoft.com
+	Connect-ExchangeOnline -UserPrincipalName Holly@otuwamoc<inject key="DeploymentID" enableCopy="false"/>.onmicrosoft.com
 	```
 	
 6. In the **Enter password** dialog box that appears, enter the password provided and then select **Sign in**.

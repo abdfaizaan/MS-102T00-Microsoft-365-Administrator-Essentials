@@ -11,13 +11,13 @@ Holly Dickson is now at the point in her pilot project where she wants to test t
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. You will now send an email from Holly to Lynne Robbins, and you will include an IP address in the body of the email. In **Microsoft Edge**, select the **Microsoft Office Home** tab, and then select the **Outlook** icon in the column of app icons on the left-side of the screen. When Outlook on the web opens, you should be automatically logged in as Holly Dickson.  
+1. You will now send an email from Holly to Lynne Robbins, and you will include an IP address in the body of the email. In **Microsoft Edge**, select the **Microsoft Office Home** tab, and then select the **Outlook** icon in the column of app icons on the left-side of the screen. When Outlook on the web opens, you should be automatically logged in as Holly Dickson.  
 
 	>**Note:** If **Outlook on the web** was already open, then verify that you're logged in as **Holly** by checking the user icon in the upper right corner (the **HD** circle). If Outlook was open for any other user, then close the tab and repeat the instructions in this step to open Outlook on the Web for Holly.
 
-3. In the upper left corner of the screen, select **New mail**. 
+1. In the upper left corner of the screen, select **New mail**. 
 
-4. In the message pane that appears on the right-side of the screen, enter the following information:
+1. In the message pane that appears on the right-side of the screen, enter the following information:
 
 	- To: enter **Lynne** and then select **Lynne Robbins** from the user list that appears
 
@@ -25,27 +25,16 @@ Holly Dickson is now at the point in her pilot project where she wants to test t
 
 	- Message area: **Hey Lynne - I will configure this IP address: 192.168.0.1**
 
-5. Select **Send**.
+	>**Note:** When drafting this email with sensitive data (in this case, one IP address), it will trigger the IP address policy that you previously created, and specifically, the single IP address rule. As such, a Policy tip should be displayed indicating the email message violates an organizational policy. You'll ignore this policy tip and send the email anyway in order to test the remainder of the DLP policy, which will send a Notification email to Holly.
 
-6. Select Holly's **Sent Items** folder to verify the email was sent.
+		![](../Images/policy.png)
 
-7. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject: **Notification: DLP Policy Test 1**. Select this email and review its content. 
+	- If you will recieve a **Send blocked** pop-up which, select **OK**.
 
-<!-- 8. Switch to **LON-CL2**. 
+		![](../Images/sendblocked.png)
 
-9. If you need to sign into the VM, the local **administrator** account should appear by default, so enter **Pa55w.rd** in the **Password** field to log in. 
 
-10. On the taskbar, select the icon for the **Edge** browser.
-
-11. In the Edge browser, enter the following URL: **https://outlook.office365.com**
-
-12. In the **Pick an account** window, select Lynne Robbins' account, enter the password and then select **Sign in**. On the **Stay signed in** window, select the **Don't show this again** check box and select **Yes**.
-
-13. In Lynne's Inbox, verify that she received the email from Holly Dickson that has the subject line: **DLP Policy Test 1**. Select the message to verify the content containing the IP address was not removed. 
-
-	>**Note:** if you haven't recieved the email on Lynne's account, you have wait atleast -->
-
-14. Leave the Outlook tab open in the Edge browser for the next task. 
+1. Leave the Outlook tab open in the Edge browser for the next task. 
 
 	
 ### Task 2 – Test the second DLP Policy rule  
@@ -58,9 +47,7 @@ Holly Dickson is now at the point in her pilot project where she wants to test t
 
 	- Message area: **Hey Lynne - I will test the following IP addresses: 192.168.0.1 and 172.16.0.1**
 
-3. Select **Send**. You should immediately receive a **Message blocked** email, on the inbox with a subject **Message Blocked: DLP Policy Test 2**. 
-
-4. Select Holly's **Sent Items** folder to verify the email is sent.
+3. Select **Send**. You should immediately receive a **Send blocked** pop-up.
 
 <!-- 6. To send this email, you must override the block BEFORE you select the **Send** button. To override the block, in the policy tip that appears at the top of the message, select **Show details**.
 

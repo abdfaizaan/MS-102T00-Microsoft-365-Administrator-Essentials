@@ -10,7 +10,7 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 2. In **Microsoft Edge**, the Microsoft Purview portal should still be open; if not, then open a new tab and navigate to **https://compliance.microsoft.com**.
 
-3. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Data loss prevention**, and then select **Policies**.
+3. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions** then select **Data loss prevention**, and select **Policies**.
 
 4. In the **Policies** page, select the **+ Create policy** option on the menu bar to start the **Create policy** wizard.
 
@@ -22,17 +22,22 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 7 In the **Name your DLP policy** page, enter the following information and then select **Next**:
 
-- Name: Replace the default name with **IP Address DLP policy**
-- Description: Replace the default description with **This policy detects the presence of IP addresses in emails. End users are notified of the detection and admins receive a notification. Emails with 2 or more IP addresses are blocked from being sent.**
+  - Name: Replace the default name with **IP Address DLP policy**
+
+  - Description: Replace the default description with **This policy detects the presence of IP addresses in emails. End users are notified of the detection and admins receive a notification. Emails with 2 or more IP addresses are blocked from being sent.**
 
 8. On the **Assign admin units** page, select **Next**. 
 
 9. On the **Choose locations to apply the policy** page, verify the **Status** toggle is set to **On** for the following locations (if any of these locations is not set to **On** by default, then set it to **On** now): 
 
     - **Exchange email**
+    
     - **SharePoint sites**
+    
     - **OneDrive accounts**
+    
     - **Teams chats and channel messages**
+    
     - Set all other locations to **Off**, and then select **Next**.
 
 10. On the **Define policy settings** page, the **Create or customize advanced DLP rules** option should be set by default (if it isn't already selected by default, then select it now) and then select **Next**. 
@@ -55,7 +60,7 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
         
      - Scroll down to the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** toggle switch to **On**.
 
-    - In the **Policy tips** section, select the **Customize the policy tip text** check box. Holly wants you to customize the Policy Tip message. 
+    - Select the **Notify users in Office 365 service with a policy tip checkbox. In the Policy tips section, select the Customize the policy tip text** check box.
 
     Enter the following text in this field: **ATTENTION! You have entered sensitive information (an IP address) in this message. You will not be prevented from sending this message, but please review whether the recipients are authorized to see this sensitive data.** 
 
@@ -89,9 +94,9 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
     
      - In the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** toggle switch to **On**. 
 
-    - In the **Policy tips** section, select the **Customize the policy tip text** check box. Holly wants you to customize the Policy Tip message. 
+    - Select the **Notify users in Office 365 service with a policy tip checkbox. In the Policy tips section, select the Customize the policy tip text** check box.
 
-    Enter the following text in this field: **ATTENTION! You have entered sensitive information (multiple IP addresses) in this message. You will be blocked if you attempt to send this message. Overriding this block indicates you have authorized sending this sensitive data to the recipients.** 
+      - Enter the following text in this field: **ATTENTION! You have entered sensitive information (multiple IP addresses) in this message. You will be blocked if you attempt to send this message. Overriding this block indicates you have authorized sending this sensitive data to the recipients.** 
 
     - In the **User overrides** section, select the **Allow overrides from M365 services** check box. This enables additional settings that indicate how overrides will be handled. Select each of the check boxes for the following two options: 
 
@@ -104,7 +109,9 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 15. On the **Customize advanced DLP rules** page, both the **Single IP Address rule** and **Multiple IP Address rule** should now appear. Select **Next**.
 
-16. On the **Policy mode** page, select the **Turn it on right away** option and then select **Next**.
+  ![](../Images/conditions-message.png)
+
+16. On the **Policy mode** page, select the **Turn the policy on immediately** option and then select **Next**.
 
 17. On the **Review your policy and create it** page, review the policy that you just created. If anything needs to be corrected, select the appropriate **Edit** option and make your corrections. When everything appears OK, select **Submit**.
 

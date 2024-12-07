@@ -24,13 +24,11 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 9. On the **Assign members** page, select **+ Add members**. 
 
-10. In the **Add members** pane that appears, select the check boxes for **Joni Sherman** and **Lynne Robbins**, and then select **Add(2)**.
+10. In the **Add members** pane that appears, select the check boxes for **Joni Sherman** and **Lynne Robbins**, and then select **Add (2)**.
 
 11. On the **Add members** page, select **Next**.
 
 12. On the **Edit settings** page, enter **comptestusers** in the **Group email address** field. Select **Next**.
-
-	>**Note:** The Group email address domain (to the right of the group email address alias) displays the default domain for the company's Microsoft 365 tenant (in this case, **yourtenant.onmicrosoft.com**, where yourtenant is the tenant prefix provided by your lab hosting provider). In a real-world scenario in which a company has multiple domains, you may need to select into this field to select the correct domain. 
 
 13. On the **Review and finish adding group** window, review your selections. If anything needs to be changed, select the appropriate Edit link and make the necessary changes. Otherwise, if everything is correct, select **Create group**.
 
@@ -40,6 +38,8 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 	>**Important:** You cannot proceed until the Compliance Test Users group appears in the list; therefore, keep refreshing the list every few minutes until it appears.
 
+	![](../Images/compliancetest.png)
+
 16. Leave your browser open to the Microsoft 365 admin center and proceed to the next task.
 
 
@@ -47,13 +47,15 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then in the **Admin centers** section, select **Endpoint Manager**. This returns the **Microsoft Intune admin center**.
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then in the **Admin centers** section, select **Microsoft Intune**. This returns the **Microsoft Intune admin center**.
 
 3. In the **Microsoft Intune admin center**, select **Devices** in the left-hand navigation pane.
 
-4. This returns the **Devices | Overview** page. Under the **Device enrollment** section in the middle pane, select **Enroll devices**.
+4. This returns the **Devices | Overview** page. Under the **Device onboarding (1)** section in the middle pane, select **Enrollment (2)**.
 
-5. On the **Enroll devices | Windows Enrollment** page, in the **General** section, select **Automatic Enrollment**.
+	![](../Images/deviceonboarding.png)
+
+5. On the **Devices | Enrollment** page, under the **Windows** tab, select **Automatic Enrollment**.
 
 6. This returns the **Configure** window, from which you can configure MDM and MAM settings for Microsoft Intune. For the **MDM user scope** option, select **Some**. This will display a **Groups** option below the **MDM user scope** option. This feature enables you to automatically enroll into Intune the devices that belong to users who are members of groups selected here.
 
@@ -70,6 +72,8 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 11. In the **Microsoft Intune admin center**, select **Tenant administration** in the left-hand navigation pane.
 
 12. In the **Tenant admin | Tenant status** page, verify the **MDM authority** is set to **Microsoft Intune**.
+
+	![](../Images/mdmauthority.png)
 
 13. In your Microsoft Edge browser, you can close all tabs except for the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab. Leave these two tabs open for the next exercise.
 
