@@ -52,11 +52,11 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 You have now configured an additional alert policy that monitors when a user is added as a site collection administrator for a SharePoint Online site collection.
 
-### Task 2 – Validate the  SharePoint Permissions Alert [READ ONLY TASK]
+### Task 2 – Validate the  SharePoint Permissions Alert
 
 >**Note:** This task is currently read-only because alert emails intended for Lynne's inbox are not appearing. This issue originates from Microsoft's end, and we are actively working to resolve it.
 
-In the prior task, you configured an alert designed to notify Lynne Robbins when a user is added as a site collection administrator for a site collection. In this task, you will test this alert by adding Alex Wilber as a site collection admin to the global SharePoint Communication site. This activity should trigger the alert policy that you created, which should send an alert notification email to Lynne Robbins’ mailbox. You will validate whether Lynne received this alert notification email in Exercise 7, task 2.
+In the prior task, you configured an alert designed to notify Lynne Robbins when a user is added as a site collection administrator for a site collection. In this task, you will test this alert by adding Alex Wilber as a site collection admin to the global SharePoint Communication site. This activity should trigger the alert policy that you created, which should send an alert notification email to Lynne Robbins’ mailbox.
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
@@ -72,7 +72,7 @@ In the prior task, you configured an alert designed to notify Lynne Robbins when
 
 1. Once the email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal in a new tab.
 
-	>**Note:** Lab testing has shown that in some cases, it can take up to 15 minutes or so for the email to be received in Lynne's Inbox. Do not proceed until the email has arrived. If you are unable to login to outlook, then we need to assign assign Microsoft 365 Business Premium license. To assign the license please follow the below steps.
+	>**Note:** It takes up to 24 hours after creating or updating an alert policy before alerts can be triggered by the policy. This is because the policy has to be synced to the alert detection engine.
 
    i. Go to **Microsoft 365 admin center** tab, from the left pane select **Users** then **Active users**. Select **Lynne Robbins** from the list.
  
