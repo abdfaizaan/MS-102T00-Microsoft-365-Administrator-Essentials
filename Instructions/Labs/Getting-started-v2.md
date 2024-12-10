@@ -69,5 +69,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 6. Click "Next" from the bottom right corner to embark on your Lab journey!
  
      ![Start Your Azure Journey](../Images/image-06.png)
+
+7. If you are facing network connectivity issue with any of the **LON-CL1** , please make sure to **Turn On** the **DC-01** VM.
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
