@@ -125,6 +125,6 @@ In this lab, you have:
 - Deployed Microsoft Entra Pass-Through Authentication.
 - Deployed Microsoft Entra Smart Lockout.
 
-## You have successfully completed Lab 03. Proceed to the next exercise.
+## Proceed to the next exercise.
 
 

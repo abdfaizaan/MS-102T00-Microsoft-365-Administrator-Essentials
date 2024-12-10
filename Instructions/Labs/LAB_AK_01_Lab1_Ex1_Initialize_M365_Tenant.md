@@ -10,7 +10,7 @@ In your lab environment, your lab hosting provider has already obtained a Micros
 
 You are logged into the LON-CL1. When you access Microsoft 365 for the first time, you will initially log in using the Microsoft 365 tenant admin account (ODL user). You will then update Adatum's Microsoft 365 organizational profile, and you'll prepare your tenant for Microsoft Entra ID and for later labs using Information Rights Management, audit alerts, Microsoft Graph PowerShell.
  
-## Task 0- Pre-requisite
+### Task 0- Pre-requisite
 
 1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the Client 1 VM (LON-CL1). If your VM environment opens with one of the other machines (such as LON-DC1), then switch to LON-CL1 now.
 

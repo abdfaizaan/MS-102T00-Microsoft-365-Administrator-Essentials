@@ -331,5 +331,5 @@ In this lab, you have:
 - Recovered Groups using PowerShell.
 
 
-## You have successfully completed Lab 01. Proceed to the next exercise.
+## Proceed to the next exercise.
 

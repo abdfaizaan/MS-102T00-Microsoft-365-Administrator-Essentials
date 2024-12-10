@@ -148,5 +148,5 @@ In this lab, you have:
 - Created a Safe Links Policy.
 - Validated the Safe Links policy.
 
-## You have successfully completed Lab 05. Proceed to the next exercise.
+## Proceed to the next exercise.
 
