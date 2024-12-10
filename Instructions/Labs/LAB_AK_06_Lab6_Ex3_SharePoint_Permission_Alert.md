@@ -72,11 +72,13 @@ In the prior task, you configured an alert designed to notify Lynne Robbins when
 
 1. Once the email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal in a new tab.
 
-	>**Note:** It takes up to 24 hours after creating or updating an alert policy before alerts can be triggered by the policy. This is because the policy has to be synced to the alert detection engine.
+	>**Note:** If you are unable to login to outlook, then we need to assign assign Microsoft 365 Business Premium license. To assign the license please follow the below steps.
 
-   i. Go to **Microsoft 365 admin center** tab, from the left pane select **Users** then **Active users**. Select **Lynne Robbins** from the list.
+   	- i. Go to **Microsoft 365 admin center** tab, from the left pane select **Users** then **Active users**. Select **Lynne Robbins** from the list.
  
-   ii. Select **Licenses and apps**, then **Microsoft 365 Business Premium** and click on **Save changes**.
+   	- ii. Select **Licenses and apps**, then **Microsoft 365 Business Premium** and click on **Save changes**.
+
+   >**Note:** It takes up to 24 hours after creating or updating an alert policy before alerts can be triggered by the policy. This is because the policy has to be synced to the alert detection engine.
 
 1. Once the email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal in a new tab.
 
