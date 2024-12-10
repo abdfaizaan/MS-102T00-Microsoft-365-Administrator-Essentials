@@ -12,9 +12,9 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
  
 ### Task 0- Pre-requisite
 
-1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the Client 1 VM (LON-CL1). If your VM environment opens with one of the other machines (such as LON-DC1), then switch to LON-CL1 now.
+1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the LON-CL1. If your VM environment opens with one of the other machines (such as LON-DC1), then switch to LON-CL1 now.
 
-1. Log into LON-CL1 as the **Administrator** account that was created by your lab hosting provider with the password **Pa55w.rd**.
+    >**Important**: LON-CL1 is the Lab-VM itself.
 
 1. On the taskbar at the bottom of your screen, select the **Microsoft Edge** icon. If necessary, maximize your browser window when it opens.
 
