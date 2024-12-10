@@ -16,7 +16,7 @@ During this exercise you will set up and manage Microsoft Entra Connect. You wil
 	CD C:\labfiles\
 	```
 
-3. Enter the following command that runs a PowerShell script that creates a problem user account. This script, which is stored in the C:\labfiles folder, will purposely create an issue with the UserPrincipalName for Klemen Sic's on-premises user account; this will enable you to troubleshoot this account in the next task using the IdFix tool.  
+1. Enter the following command that runs a PowerShell script that creates a problem user account. This script, which is stored in the C:\labfiles folder, will purposely create an issue with the UserPrincipalName for Klemen Sic's on-premises user account; this will enable you to troubleshoot this account in the next task using the IdFix tool.  
 
 	```powershell
 	.\CreateProblemUsers.ps1
@@ -26,7 +26,7 @@ During this exercise you will set up and manage Microsoft Entra Connect. You wil
 
 	<!-- - **Klemen Sic**. Update the UserPrincipalName for Klemen to include an extra "@" character.  -->
 
-4. Minimize your Windows PowerShell window.
+1. Minimize your Windows PowerShell window.
 
 
 ### Task 2: Run the IdFix tool and fix identified issues 

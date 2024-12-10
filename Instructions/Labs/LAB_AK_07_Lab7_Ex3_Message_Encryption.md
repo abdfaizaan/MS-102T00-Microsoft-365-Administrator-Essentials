@@ -59,8 +59,10 @@ In this exercise you will learn how to create a mail flow encryption rule using 
 
 5. You must then connect to the module by running the following command at the command prompt:
 
+	>**Note:** Replace **ZZZZZZ** with the tenant prefix provided by your lab hosting provider.
+
 	```powershell
-	Connect-ExchangeOnline -UserPrincipalName Holly@otuwamoc<inject key="DeploymentID" enableCopy="false"/>.onmicrosoft.com
+	Connect-ExchangeOnline -UserPrincipalName Holly@otuwamocZZZZZZ.onmicrosoft.com
 	```
 	
 6. In the **Enter password** dialog box that appears, enter the password provided and then select **Sign in**.
@@ -87,4 +89,4 @@ In this lab, you have:
 - Created a Mail Flow Encryption Rule using Windows PowerShell.
 
 
-## You have successfully completed Lab 07. Proceed to the next exercise.
+## Proceed to the next exercise.

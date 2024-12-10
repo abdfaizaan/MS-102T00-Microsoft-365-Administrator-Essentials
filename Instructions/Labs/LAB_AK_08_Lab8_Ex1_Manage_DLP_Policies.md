@@ -8,27 +8,27 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In **Microsoft Edge**, the Microsoft Purview portal should still be open; if not, then open a new tab and navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal should still be open; if not, then open a new tab and navigate to **https://compliance.microsoft.com**.
 
-3. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions** then select **Data loss prevention**, and select **Policies**.
+1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions** then select **Data loss prevention**, and select **Policies**.
 
-4. In the **Policies** page, select the **+ Create policy** option on the menu bar to start the **Create policy** wizard.
+1. In the **Policies** page, select the **+ Create policy** option on the menu bar to start the **Create policy** wizard.
 
-5. On the **Start with a template or create a custom policy** page, the **Categories** column displays the policy categories. Each policy category provide templates that can be used to create that type of policy, except for the **Custom** category. This category does not provide any specific template; instead, it enables organizations to create custom policies from scratch. When you select a category, **Templates** column appears that displays the available templates to choose from for the selected category. When you select a template, another column appears that displays the type of information that is protected in that template. 
+1. On the **Start with a template or create a custom policy** page, the **Categories** column displays the policy categories. Each policy category provide templates that can be used to create that type of policy, except for the **Custom** category. This category does not provide any specific template; instead, it enables organizations to create custom policies from scratch. When you select a category, **Templates** column appears that displays the available templates to choose from for the selected category. When you select a template, another column appears that displays the type of information that is protected in that template. 
 
-6. For example, select **Financial** in the left-hand pane and then scroll through the various templates that you can choose from in the **Templates** column. Select one or two of the templates to see what type of information it protects. If you want, select each of the remaining categories to see what type of templates are provided. 
+1. For example, select **Financial** in the left-hand pane and then scroll through the various templates that you can choose from in the **Templates** column. Select one or two of the templates to see what type of information it protects. If you want, select each of the remaining categories to see what type of templates are provided. 
   
-6. For the purpose of this lab, you will create a custom DLP policy. Select **Custom** in the **Categories** column, select the **Custom policy** template in the **Templates** column, and then select **Next**.
+1. For the purpose of this lab, you will create a custom DLP policy. Select **Custom** in the **Categories** column, select the **Custom policy** template in the **Templates** column, and then select **Next**.
 
-7 In the **Name your DLP policy** page, enter the following information and then select **Next**:
+1. In the **Name your DLP policy** page, enter the following information and then select **Next**:
 
   - Name: Replace the default name with **IP Address DLP policy**
 
   - Description: Replace the default description with **This policy detects the presence of IP addresses in emails. End users are notified of the detection and admins receive a notification. Emails with 2 or more IP addresses are blocked from being sent.**
 
-8. On the **Assign admin units** page, select **Next**. 
+1. On the **Assign admin units** page, select **Next**. 
 
-9. On the **Choose locations to apply the policy** page, verify the **Status** toggle is set to **On** for the following locations (if any of these locations is not set to **On** by default, then set it to **On** now): 
+1. On the **Choose locations to apply the policy** page, verify the **Status** toggle is set to **On** for the following locations (if any of these locations is not set to **On** by default, then set it to **On** now): 
 
     - **Exchange email**
     
@@ -40,11 +40,11 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
     
     - Set all other locations to **Off**, and then select **Next**.
 
-10. On the **Define policy settings** page, the **Create or customize advanced DLP rules** option should be set by default (if it isn't already selected by default, then select it now) and then select **Next**. 
+1. On the **Define policy settings** page, the **Create or customize advanced DLP rules** option should be set by default (if it isn't already selected by default, then select it now) and then select **Next**. 
 
-11. On the **Customize advanced DLP rules** page, select the **+ Create rule** option on the menu bar.
+1. On the **Customize advanced DLP rules** page, select the **+ Create rule** option on the menu bar.
 
-12. On the **Create rule** page, enter the following information:
+1. On the **Create rule** page, enter the following information:
     
       - Name: **Single IP Address rule**
     
@@ -68,9 +68,9 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
     - Select the **Save** button at the bottom of the page.
 
-13. On the **Customize advanced DLP rules** page, the **Single IP Address rule** that you just created should now appear. Select the **+ Create rule** option to create the second DLP rule. 
+1. On the **Customize advanced DLP rules** page, the **Single IP Address rule** that you just created should now appear. Select the **+ Create rule** option to create the second DLP rule. 
 
-14. On the **Create rule** page, enter the following information:
+1. On the **Create rule** page, enter the following information:
     
       - Name: **Multiple IP Address rule**
     
@@ -107,13 +107,13 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
     - Select the **Save** button at the bottom of the page.
 
-15. On the **Customize advanced DLP rules** page, both the **Single IP Address rule** and **Multiple IP Address rule** should now appear. Select **Next**.
+1. On the **Customize advanced DLP rules** page, both the **Single IP Address rule** and **Multiple IP Address rule** should now appear. Select **Next**.
 
-  ![](../Images/conditions-message.png)
+    ![](../Images/conditions-message.png)
 
-16. On the **Policy mode** page, select the **Turn the policy on immediately** option and then select **Next**.
+1. On the **Policy mode** page, select the **Turn the policy on immediately** option and then select **Next**.
 
-17. On the **Review your policy and create it** page, review the policy that you just created. If anything needs to be corrected, select the appropriate **Edit** option and make your corrections. When everything appears OK, select **Submit**.
+1. On the **Review your policy and create it** page, review the policy that you just created. If anything needs to be corrected, select the appropriate **Edit** option and make your corrections. When everything appears OK, select **Submit**.
 
 I8. it may take a minute or so for the **New policy created** page to appear. When it does, select **Done**.
 
