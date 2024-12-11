@@ -69,7 +69,7 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 	
 	- Password:- <inject key="AzureAdUserPassword"></inject> and then select **Sign in.**
 
-	>**Note**: if it asks you to change the password, then change the password for the laura's account.
+		>**Note**: if it asks you to change the password, then change the password for the laura's account.
 
 1. In the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**. In the **Save password** window, select **Never**.
 
@@ -181,6 +181,36 @@ In the prior task, you logged into Laura Atkins client PC, and you verified that
 1. In the **Start** menu, type and select **Word**.
 
 1. Verify that Word is functioning properly by opening a blank Word document, entering some text, and saving the document to the **Documents** folder. 
+	
+	- If you recieve a pop-up which says **Microsoft office is not activated**, select **Close**. Now, follow the below steps:
+
+		![](../Images/activated.png)
+	
+	- On the **Type here to search**, search **Add or remove programs** and select it.
+		
+		![](../Images/addorremove.png)
+
+	- Under **Apps & Features**, in Search this list, search for **Office (1)**, select the result, and click the **Uninstall (2)** button twice to remove the app.
+
+	- On the **Ready to uninstall?**, select **Uninstall**.
+
+	- Select **Yes** on **Do you want to allow this app to make the changes**.
+
+	- Wait for the Uninstallation.
+
+	- From the **Type here to search**, type **PowerShell** right-click on the **Windows PowerShell**, and select **Run as administrator**.
+
+	- Run the below command to install the updated version of the **Microsoft Office 365**,
+
+		```Powershell
+		choco install office365business
+		```
+
+	- Wait for the command to run successfully. Close the PowerShell. 
+
+	- Repeat the steps starting from step 04, and ensure that you are not receiving any pop-ups for activating Microsoft Office.
+
+	- If it asks you to sign in, use Laura's credentials that you used to sign in to the Microsoft 365 administrator.
 
 1. Close Word.
 
