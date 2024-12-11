@@ -310,7 +310,7 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 	>**Note:** Select this banner now to turn on audit logging, and on the **Security** pop-up select **Yes**, and if it says **We're updating your organization to support customization. Please allow 24 to 48 hours before you retry this operation.**, select **OK**.
 
-    ![](../Images/auditsearch.png)
+     ![](../Images/auditsearch.png)
 
 1. In the **Audit** window, the banner will disappear once audit logging is turned on. In a later lab, you will return to this page to view audited activities that you completed during your lab work.  
  
