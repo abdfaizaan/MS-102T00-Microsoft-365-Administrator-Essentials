@@ -63,7 +63,7 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 	
 	- In the Edge browser, go to the **Microsoft 365 Home** page by entering the following URL in the address bar: **https://portal.office.com/**
 
-1. In the **Sign in** window, enter **Laura@otuwamoc<inject key="DeploymentID" enableCopy="false"/>.onmicrosoft.com** (where otuwamoc<inject key="DeploymentID" enableCopy="false"/> is the tenant prefix provided by your lab hosting provider), and then select **Next**.
+1. In the **Sign in** window, enter **Laura@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**, and then select **Next**.
 
 1. In the **Enter password** window, For the password, sign-in with the same **Microsoft 365 Tenant Password**.
 	
