@@ -180,6 +180,10 @@ In the prior task, you logged into Laura Atkins client PC, and you verified that
 
 1. In the **Start** menu, type and select **Word**.
 
+1. Click on **Sign in or create account**.
+ 
+1. Sign in with the credentials, **Email/Username:** **Laura@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** and **Password:** - <inject key="AzureAdUserPassword"></inject> to activate Office. If prompted, select **No, sign in to this app only** and close any additional pop-ups.
+
 1. Verify that Word is functioning properly by opening a blank Word document, entering some text, and saving the document to the **Documents** folder. 
 
 1. Close Word.
