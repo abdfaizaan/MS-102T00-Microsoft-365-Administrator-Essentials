@@ -306,13 +306,13 @@ To verify whether the protection that you assigned to the document works, you wi
 	>**Note:** On Stay signed in to all your apps, select **No, sign in to this app only.**
 
 
-23. The file should open in Word, since you assigned Joni with Read-only permission. Review the three notification bars that appear above the document. 
+23. The file should open in MS Word, since you assigned Joni with Read-only permission. Review the three notification bars that appear above the document. 
 
 	>**Note:** You have just verified that the permissions assigned to the file are working properly. Joni can read the file (since she was assigned Read-only permission), but she is unable to change it (no one was assigned Edit permission).
 
 	![](../Images/sensitive.png)
 
-25. Close Word.
+25. Close the Word Tab.
 
 26. You will now test what happens when you attempt to open the document that was sent to your personal email address. Use your phone or classroom PC to access your personal email address. Open the email that you (in the role of Holly) just sent to your personal email address, and then attempt to open the attached file. 
 
