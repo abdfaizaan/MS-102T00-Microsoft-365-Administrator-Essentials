@@ -68,7 +68,7 @@ Welcome to the PL-900 Microsoft Power Platform Fundamentals Lab! We've prepared 
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-   ![](./media/i3.jpg)  
+   ![Enter Your Password](../Images/gettingstarted1.png) 
 
 ## Virtual Machine & Lab Guide
 
@@ -80,19 +80,19 @@ In the integrated environment, the lab VM serves as the designated workspace, wh
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-   ![Create storage by clicking confirm.](./media/i4.jpg)
+   ![Enter Your Password](../Images/enviornment.png) 
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](./media/i5.jpg)
+   ![Enter Your Password](../Images/env09.png) 
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-  ![](./media/i7.jpg)
+  ![Enter Your Password](../Images/resources.png) 
 
 
 ## Support Contact
@@ -105,6 +105,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![](./media/i8.jpg)
+![Enter Your Password](../Images/next.png)
 
 ### Happy Learning!!

@@ -224,13 +224,6 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. Remain logged into LON-CL1 with the **Microsoft 365 admin center** open in your browser for the next task.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="936c883d-0e2c-4883-9724-07ccddf45edc" />
-
 
 ### Task 4 – Recover Groups using PowerShell 
 
@@ -320,6 +313,13 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 14. Close the **Inside Sales** window.
 
 15. Remain logged into LON-CL1 and leave your browser tabs open so that they’re ready for the next task. 
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="936c883d-0e2c-4883-9724-07ccddf45edc" />
 
 ## Review
 

@@ -4,9 +4,9 @@ Welcome to your MS-102 : MICROSOFT 365 ADMINISTRATOR AND ESSENTIALS workshop! We
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and laboratory guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
  
-![Access Your VM and Lab Guide](../Images/image-01.png)
+![Enter Your Password](../Images/gettingstarted1.png) 
 
 ### Virtual Machine & Lab Guide
  
