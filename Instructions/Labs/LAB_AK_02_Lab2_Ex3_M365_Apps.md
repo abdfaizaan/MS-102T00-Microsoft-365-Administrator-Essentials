@@ -51,6 +51,14 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 
 1. In the **Other user** log in, enter **adatum\laura** in the **Username** field, enter **Pa55w.rd** as the **Password**, and then select the forward arrow to log in.  
 
+	>**Note:** If you receive a message that _"To sign in remotely, you need the right to sign in through Remote Desktop Services. By default, members of the Remote Desktop Users group have this right..."_ please follow the below steps to add user Laura to the Remote Desktop Users group -
+ 
+	>Login to LON-CL2 using **Admin** user and password as **Pa55w.rd**
+	>Open **Computer Management** app and go to **Local users and groups > Groups > Open Remote Desktop Users** group.
+	>Click on **Add** and in **Enter object names to select**, type Laura and click on **Ok**.
+	>It will pop up a dialog box to enter **Network Credentials** of Laura, please enter **Username** as **adatum\laura** and **password** as **Pa55w.rd**
+	>Now restart the LON-CL2 VM and try logging in with Laura user again.
+
 1. Select the **Microsoft Edge** icon on the taskbar.
 
 1. In **Microsoft Edge**, maximize your browser if necessary. If you receive a **Welcome to Microsoft Edge** window that displays a message indicating **Let's start by signing you in and bringing over your passwords, history, and more**, perform the following steps to initialize your Edge browser and navigate to the Microsoft 365 Home page:  
