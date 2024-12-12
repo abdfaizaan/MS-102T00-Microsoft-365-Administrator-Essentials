@@ -323,7 +323,7 @@ To verify whether the protection that you assigned to the document works, you wi
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="96ad56b5-499f-4719-aed9-c6e61631b6a6" />
+<validation step="6d780c04-ac8f-4dea-a9d4-66ff39161d9f" />
 
 ## Review
 

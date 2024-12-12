@@ -9,9 +9,12 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 1. You should still be logged into LON-CL1 after having completed the prior exercise, and you should still be logged into Microsoft 365 as Holly Dickson.
 
 2. In your **Microsoft Edge** browser, select the **Home | Microsoft 365** tab to display Holly's Microsoft 365 Home page, which should still be open. If not, navigate to **https://portal.office.com** and log in as **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
+	
 	- Password:- <inject key="AzureAdUserPassword"></inject>
 
-3. In the **Welcome to Microsoft 365** page, select the **Outlook** icon in the column of app icons on the left. 
+3. In the **Welcome to Microsoft 365** page, select the **Outlook (2)** icon in the column of **App lanuncher (1)** icons on the left. 
+
+	![](../Images/outlook.png)
 
 4. If you're automatically signed into Outlook using Holly's account, then proceed to the next step. However, if a **Pick an account** window appears, select Holly's account, if an **Enter password** window appears, enter Password:- <inject key="AzureAdUserPassword"></inject> and select **Sign in**.
 
@@ -27,15 +30,20 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 8. Wait for the non-delivery report (NDR) message to appear in Holly’s Inbox, then double-click the message to open it in a new window. This will make it easier to copy the text of the message in the next step. 
 
+	![](../Images/dns.png)
+
 9. In the message window, scroll down through the message until you reach the body of text that says **Diagnostic information for administrators**. Select the text in the body of the message starting AFTER **Diagnostic information for administrators** through the end of the message. With this text selected, press **Ctrl+C** to copy it to the clipboard, and then close the message window.
 
 10. Open a new tab in your web browser and enter the following URL in the address bar: **https://testconnectivity.microsoft.com**. 
 
 11. This opens the **Microsoft Remote Connectivity Analyzer** portal. In the navigation bar on the left, select **Message Analyzer**. This opens the **Message Header Analyzer** tool.
 
+	![](../Images/messageana.png)
+
 12. Take a moment to review the **Message Header Analyzer** tool. It consists of two sections: 
 
 	- In the top section, you will paste in the diagnostic data that you copied from the NDR email message.
+	
 	- In the bottom section, the tool will display its analysis of this data. 
 
 13. In the **Message Analyzer Header** window, paste the NDR diagnostic data (right-click and select **Paste**, or press **Ctrl+V**) in the field that appears below the **Insert the message header you would like to analyze** row. Then select the **Analyze headers** button. 
@@ -80,13 +88,17 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 30. In the **New message trace** pane that appears, both the **Senders** and **Recipients** fields are set to **All** be default. Holly wants to configure the trace to just look for email messages that she sent. In the **Senders** field, enter **Holly**. This displays the list of active users whose name starts with Holly. In the list of users that appears, select **Holly Dickson**.
 
-31. Under the **Time range** section, select the slider bar below **1 day** (don't select the **1 day** heading; you must select on the slider bar itself). Note how the slider circle moved under **1 day**.
+31. Under the **Time range** section, select the **slider** bar. Move the slider circle under **1 day**.
+
+	![](../Images/slider.png)
 
 32. The drop-down arrow to the right of **Detailed search options** should be selected by default. This displays options such as Delivery status, Message ID, Direction, and others. If this information isn't displayed under **Detailed search options**, then select the drop-down arrow to expand this section. Holly wants to customize the trace to look for failed messages. Select the **Delivery status** field, and in the drop-down menu that appears, select **Failed**.
 
 33. Note the **Report type** option is set to **Summary report**. This is the report type that you want to create, so leave this option selected. At the bottom of the page, select the **Search** button. 
 
 34. In the **Message trace search results** page that appears, if no failed message deliveries appear in the list, you may need to wait several minutes before selecting the **Refresh** button that appears above the item list. You should see the two failed email messages that Holly sent from Outlook - one to **user@alt.none**, and another to **nnnnnnnnYourName@outlook.com**.
+
+	![](../Images/messagetrace.png)
 
 35. Select the date and time values (which are hyperlinked) for the first failed message to view the properties pane for that message. This displays the sender, recipient, status, and error information, as well as the **How to fix it** instructions. Select the down arrows for the **Message events** and **More information** sections to view those sections. Once you've finished reviewing the message information, select the **X** in the upper right corner of the pane to close it. 
 
@@ -101,19 +113,21 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 1. On the LON-CL1 VM, go to the **Microsoft 365 admin center** tab within your Edge browser. 
 
-2. In the **Microsoft 365 admin center** navigation pane, select **Show all**,  select **Health** and then select **Service health**. 
+1. In the **Microsoft 365 admin center** navigation pane, select **Show all**,  select **Health** and then select **Service health**. 
 
-3. On the **Service health** page, the **Overview** tab is displayed by default. Select the **Issue history** tab.  
+1. On the **Service health** page, the **Overview** tab is displayed by default. Select the **Issue history** tab.  
 
-4. In the **Issue history** tab on the **Service health** window, the default option is to display a list of items from the past 7 days (this filter option appears to the right of the **Search** field). In the list of service health incidents, select the **Title** for any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it. 
+1. In the **Issue history** tab on the **Service health** window, the default option is to display a list of items from the past 7 days (this filter option appears to the right of the **Search** field). In the list of service health incidents, select the **Title** for any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it. 
 
-5. In the **Microsoft 365 admin center**, in the left navigation pane, select **Reports**, and then select **Usage**. 
+1. In the **Microsoft 365 admin center**, in the left navigation pane, select **Reports**, and then select **Usage**. 
 
-6. On the **Usage** page, scroll down and locate the **Active users - Microsoft 365 Services** chart. 
+1. On the **Usage** page, scroll down and locate the **Microsoft 365 apps** > **Active users** chart. 
 
 	>**Note:** If you are not able to see any charts, so as you can see the message on the Overview page, which displays **Microsoft 365 usage reports show how people in your business are using Microsoft 365 services. Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours**. 
 
-7. On the same row as this chart, view the **Email activity** chart.  
+	![](../Images/usageoverview.png)
+
+<!-- 7. On the same row as this chart, view the **Email activity** chart.  
 
 	**Note:** There may be little or no data shown due to the limited mailbox usage in the lab environment. 
 
@@ -123,21 +137,21 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 10. Scroll down below the charts to see mailbox details for each of the active users.
 
-11. Scroll back to the top of the page. On the navigation thread at the top of the page (**Home > Usage > Exchange**), select **Usage** to return to the Usage Overview page. 
+11. Scroll back to the top of the page. On the navigation thread at the top of the page (**Home > Usage > Exchange**), select **Usage** to return to the Usage Overview page.  -->
 
-12. Review the various reports on this page. While there may be limited or no data for each report, you can at least get a feel for the type of reporting that's available. 
+<!-- 12. Review the various reports on this page. While there may be limited or no data for each report, you can at least get a feel for the type of reporting that's available.  -->
 
-13. You now want to review the reports that are available in the **Exchange admin center**. In your browser, you should have the **Message trace - Exchange admin center** tab open from the prior task; if so, select it now. However, if you previously closed this tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group in the navigation pane, select **Exchange**.
+1. You now want to review the reports that are available in the **Exchange admin center**. In your browser, you should have the **Message trace - Exchange admin center** tab open from the prior task; if so, select it now. However, if you previously closed this tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group in the navigation pane, select **Exchange**.
 
-14. In the **Exchange admin center**, select **Reports** in the navigation pane, and then select **Mail flow**. 
+1. In the **Exchange admin center**, select **Reports** in the navigation pane, and then select **Mail flow**. 
 
-15. In the **Mail flow reports** window, select **Inbound messages report** (this report has data to view; none of the other reports have data). Review the information displayed for this report. 
+1. In the **Mail flow reports** window, select **Inbound messages report** (this report has data to view; none of the other reports have data). Review the information displayed for this report. 
 
-16. On the navigation thread at the top of the page (**Reports > Mail flow > Inbound messages report**), select **Mail flow** to return to this reporting page. 
+1. On the navigation thread at the top of the page (**Reports > Mail flow > Inbound messages report**), select **Mail flow** to return to this reporting page. 
 
-17. In the **Mail flow reports** window, review the various reports that are available. 
+1. In the **Mail flow reports** window, review the various reports that are available. 
 
-18. Once you have finished reviewing several of the reports, close the **Exchange admin center** tab in your Edge browser but leave the other tabs open for the next task.
+1. Once you have finished reviewing several of the reports, close the **Exchange admin center** tab in your Edge browser but leave the other tabs open for the next task.
  
 
 ### Task 3 – Submit a Help Request to Microsoft Support
@@ -148,11 +162,13 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 2. The **Service request history** window displays any outstanding service request tickets. You should verify that no service request tickets appear on this page. 
 
+	![](../Images/servicerequest.png)
+	
 2. In the navigation pane, under the **Support** group, select **Help & Support**.
 
 3. In the **How can we help?** pane that appears, select the **Message** field (which currently displays **Example: Can't install Office**) and type the following message: **Can't install Office**. Then select the forward arrow that appears next to the field. This displays self-help solutions with insights and recommended articles to assist with your request. 
 
-4. Select one of the recommended articles. After reviewing the article, close the Edge browser tab containing the article. This returns you to the **Support article** pane. 
+4. Select one of the recommended articles. After reviewing the article. 
 
 5. If you need further assistance and would like to speak to a Microsoft support agent, select the **headset** icon (the middle icon) at the top of the **Support article** pane to get help from a Microsoft support agent. Select the **headset** icon now.
 

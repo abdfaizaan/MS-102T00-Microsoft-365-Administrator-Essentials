@@ -11,7 +11,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. On the LON-CL1 VM, the **Microsoft 365 admin center** should still be open in your Microsoft Edge browser from the prior lab exercise. You should be signed into Microsoft 365 as the **ODL user**. 
 
-1. In the **Microsoft 365 admin center** navigation pane, select **Users** and then select **Active users**. In the **Active users** list, you will see the list of existing user accounts that were created by your lab hosting provider.
+1. Navigate back to the **Microsoft 365 admin center** navigation pane, select **Users** and then select **Active users**. In the **Active users** list, you will see the list of existing user accounts that were created by your lab hosting provider.
 
 1. On the **Active users** page, in the list of users, select **Holly Dickson**.
 
@@ -20,6 +20,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
 
 1. Select **Reset Password** button. If a **Save password** dialog box appears towards the top of the screen, select **Never**.
+
+1. Go back from the **Password has been reset** page.
 
 1. Now on the **Holly Dickson** page. Select **Manage Roles** under **Roles** section. 
 
@@ -43,7 +45,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 	>**Note:** If a window appears asking whether you want to respond to a survey on your experience, select **Cancel**.
 
-1. Remain logged into the Client 1 VM (LON-CL1) with the Microsoft 365 admin center open in your browser for the next task.
+1. Remain logged into the LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
 ### Task 2 – Set up Microsoft 365 User Accounts
 
@@ -55,7 +57,9 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. In the **Pick an account** window, select **Use another account**. 
 
-1. In the **Sign in** window, enter Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
+1. In the **Sign in** window, enter **Holly@otuwamocZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
+
+	>**Note:** You can copy the complete username from the **Environment** details page or from the **Microsoft entra ID** > **Users** page. 
 
 1. In the **Enter password** window, enter <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
@@ -64,6 +68,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 1. If a **Find more apps** window appears, select the **X** in the upper right-hand corner of the window to close it. 
 
 1. The **Welcome to Microsoft 365** page appears in your Edge browser in the **Home | Microsoft 365** tab. This is Holly's Microsoft 365 home page. Note that Holly's initials appear in the upper-right corner of the screen, however, Holly's name is not displayed. This is because Holly's account did not exist at the time you added the Microsoft 365 pilot project users to the group that was associated with the custom theme in the prior lab exercise. Since Holly wants to see her name at the top of each Microsoft 365 window when she's logged into the system, she first wants to add her account to the group of Microsoft 365 pilot project users.
+
+	>**Note:** Select **Skip for now** twice on the **Business Advisor** pop-up.
 
 1. In the column of application icons that appears on the far left-side of the screen, select **Admin**. This opens the **Microsoft 365 admin center** in a new browser tab. 
 
@@ -95,13 +101,13 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. In the **Reset password** pane for Alex, clear (uncheck) the **Automatically create password** check box. 
 
-1. In the **Password** field that appears, enter the same **Microsoft 365 Tenant Password** provided by your lab hosting provider for the tenant admin account (i.e. the ODL user account). Select the eye (**Show Password**) icon at the end of the **Password** field to display the value that you entered. Verify that you correctly entered the tenant password.
+1. In the **Password** field that appears, enter <inject key="AzureAdUserPassword"></inject>. Select the eye (**Show Password**) icon at the end of the **Password** field to display the value that you entered. Verify that you correctly entered the tenant password.
 
 1. Clear (uncheck) the **Require this user to change their password when they first sign in** check box.
 
 1. Select **Reset Password**. If a **Save password** dialog box appears at the top of the screen, select **Never**. Then select **Close** on the **Password has been reset** pane.
 
-1. Repeat steps 17-21 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, reset each of their passwords to the same **Microsoft 365 Tenant Password** 
+1. Repeat steps 19-23 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, reset each of their passwords to the same **Microsoft 365 Tenant Password** 
 	- Password:- <inject key="AzureAdUserPassword"></inject>
 
 1. Remain logged into LON-CL1 with the **Microsoft 365 admin center** open in your browser for the next task.
@@ -136,9 +142,11 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 	
 	- In the **Privacy** field, **Public** should be selected by default. Do not change this value.
 
+	- Select **Next**.
+
 1. In the **Review and finish adding group** page, review the content that you entered. If anything needs to be fixed, select **Edit** under the specific area that needs adjustment, make any necessary corrections, and then select **Next** to continue back to this page. Once everything is correct, select **Create group**.
 
-1. It may take a minute or so for the **Inside Sales** group created window to appear. Note the comment at the top of the page that it may take 5 minutes for the new group to appear in the list of Active groups.
+1. It may take a minute or so for the **Inside Sales** group created window to appear.
 
 1. Select **Close**. This returns you to the **Active teams and groups** page, which should display the **Microsoft 365** group tab. Since the Inside Sales group was a Microsoft 365 group, it should eventually display on this tab.
 
@@ -182,7 +190,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 	- Description: **IT administrative personnel**
 
-	>**Note:** There is no owner, email address, or privacy setting for Security groups. Members must be added to a Security group after creating the group, which you will do in the next few steps. On the **Edit settings** page, you're NOT going to assign Azure AD roles to the group, so simply select **Next**.
+1. There is no owner, email address, or privacy setting for Security groups. Members must be added to a Security group after creating the group, which you will do in the next few steps. On the **Edit settings** page, you're NOT going to assign Azure AD roles to the group, so simply select **Next**.
 
 1. After you finish adding the group, the **Active teams and groups** page should be displayed. Check whether the **IT Admins (2)** group appears under the **Security groups (1)** tab.   
 
@@ -227,39 +235,46 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 ### Task 4 – Recover Groups using PowerShell 
 
->**IMPORTANT - Microsoft Graph PowerShell work around:** In a normal situation, you would use the Restore-MgDirectoryDeletedItem cmdlet to restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from the deleted items "container" (deleted items will remain available to restore for up to 30 days; after 30 days, the items are permanently deleted). This Microsoft Graph PowerShell cmdlet requires that you provide the object ID of the item being restored. While you would normally use the Get-MgDirectoryDeletedItem cmdlet to display the list of deleted objects (along with their object IDs), this cmdlet is currently not returning any data. As a workaround, this task will invoke a direct REST API call by using the Invoke-MgGraphRequest cmdlet.
+>**IMPORTANT - Microsoft Graph PowerShell work around:** In a normal situation, you would use the Restore-MgDirectoryDeletedItem cmdlet to restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from the deleted items "container" (deleted items will remain available to restore for up to 30 days; after 30 days, the items are permanently deleted). This Microsoft Graph PowerShell cmdlet requires that you provide the ID of the item being restored. While you would normally use the Get-MgDirectoryDeletedItem cmdlet to display the list of deleted objects (along with their IDs), this cmdlet is currently not returning any data. As a workaround, this task will invoke a direct REST API call by using the Invoke-MgGraphRequest cmdlet.
 
 >**NOTE - Microsoft Graph PowerShell:** If you'll recall, in the first lab exercise for this course, you installed Microsoft Graph PowerShell. However, you did not import any of its 30+ sub-modules. You were told at the time that only 3 modules will be used in the labs for this training course, so you would install each sub-module individually as they were needed. For this lab exercise, you will import the **Microsoft.Graph.Identity.DirectoryManagement** sub-module and the **Microsoft.Graph.Groups** sub-module. You will then connect to these sub-modules with the appropriate Read/Write permissions that are needed to view and recover a deleted group. 
 
 1. On LON-CL1, if Windows PowerShell is still open from the previous lab exercise, select the **Windows PowerShell** icon on the taskbar; otherwise, you must open an elevated instance of Windows PowerShell just as you did before. Maximize your PowerShell window.
 
-2. In the prior lab exercise, you installed Microsoft Graph PowerShell. You must now import both the **Microsoft.Graph.Groups** sub-module (which contains the cmdlets to view and maintain Microsoft groups) and the **Microsoft.Graph.Identity.DirectoryManagement** sub-module (which contains the cmdlets necessary to recover the deleted group). To do so, type the following commands and then press Enter:  
+1. In the prior lab exercise, you installed Microsoft Graph PowerShell. You must now import both the **Microsoft.Graph.Groups** sub-module (which contains the cmdlets to view and maintain Microsoft groups) and the **Microsoft.Graph.Identity.DirectoryManagement** sub-module (which contains the cmdlets necessary to recover the deleted group). To do so, type the following commands and then press Enter:  
+	
 	```powershell
 	Import-Module Microsoft.Graph.Groups
 	
 	Import-Module Microsoft.Graph.Identity.DirectoryManagement
 	```
 
-3. At the command prompt, you must now connect to Microsoft Graph and perform a request for permission to use the cmdlets that were just imported. Microsoft Graph PowerShell permissions are NOT pre-authorized. As such, you must perform a one-time, per-module request for permissions depending on your needs. 
+1. At the command prompt, you must now connect to Microsoft Graph and perform a request for permission to use the cmdlets that were just imported. Microsoft Graph PowerShell permissions are NOT pre-authorized. As such, you must perform a one-time, per-module request for permissions depending on your needs. 
 
 	- The 'Group.ReadWrite.All' scope is required to display the current list of active groups and restore the deleted group. 
+	
 	- The 'Directory.ReadWrite.All' scope provides permission to read and write data in Adatum's directory, such as users and groups, and restore the deleted group. 
 
-	Copy and paste the following command and then press Enter: 
+	- Copy and paste the following command and then press Enter: 
 	
-	```powershell
-	Connect-MgGraph -Scopes 'Group.ReadWrite.All', 'Directory.ReadWrite.All'
-	```
-4. A **Sign in** window will appear requesting your credentials. Sign in using Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). For the password, sign-in with the same **Microsoft 365 Tenant Password** 
+		```powershell
+		Connect-MgGraph -Scopes 'Group.ReadWrite.All', 'Directory.ReadWrite.All'
+		```
+
+1. select **Use another account**. 
+
+1. A **Sign in** window will appear requesting your credentials. Sign in using Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). For the password, sign-in with the same **Microsoft 365 Tenant Password** 
+	
 	- Password:- <inject key="AzureAdUserPassword"></inject>
 
-5. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization** check box and then select **Accept**.
+1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization** check box and then select **Accept**.
 
-6. You will now use Microsoft Graph PowerShell to display the list of active groups. The Inside Sales group should not appear in this list. Type the following command and press Enter (Note: it may take a minute or so for the list of groups to appear):
+1. You will now use Microsoft Graph PowerShell to display the list of active groups. The Inside Sales group should not appear in this list. Type the following command and press Enter (Note: it may take a minute or so for the list of groups to appear):
+	
 	```powershell
 	Get-MgGroup
 	```
-7. As the note at the start of this task indicated, at this point you would normally run the **Get-MgDirectoryDeletedItem** cmdlet to display the list of deleted objects, which would include the object ID of the **Inside Sales** group that you deleted in the prior task. However, given the current issues with this cmdlet, you should instead run the following series of commands to retrieve this object ID. Type in each command and press Enter:    
+1. As the note at the start of this task indicated, at this point you would normally run the **Get-MgDirectoryDeletedItem** cmdlet to display the list of deleted objects, which would include the ID of the **Inside Sales** group that you deleted in the prior task. However, given the current issues with this cmdlet, you should instead run the following series of commands to retrieve this ID. Type in each command and press Enter:    
 	
 	```powershell
 	$url = "https://graph.microsoft.com/v1.0/directory/deleteditems/microsoft.graph.group"
@@ -278,17 +293,17 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 	>**Note:** After running **$DeletedGroup**, copy the **ID**.
 
 	```powershell
-	Get-MgDirectoryDeletedItem -DirectoryObjectId "<Replace object ID>"
+	Get-MgDirectoryDeletedItem -DirectoryObjectId "<Replace ID>"
 	```
-	>**Note:** Paste the ID which you have copied from the previous command, in place of **Replace object ID.**
+	>**Note:** Paste the ID which you have copied from the previous command, in place of **Replace ID.**
 
-8. Now that you have captured the attributes of the Inside Sales group, you can run the **Restore-MgDirectoryDeletedItem** cmdlet to restore the group. When doing so, you must declare the group's object ID as the parameter next to "-DirectoryObjectId". While you would normally copy and paste in the object ID (for example: -DirectoryObjectId 'e76bbcdb-24c5-41a6-805d-b352976fd2a8'), the current issue with the **Get-MgDirectoryDeletedItem** cmdlet doesn't allow us to identify the actual Id value. As such, you had to run the prior commands to capture the group's attributes in the $DeletedGroup variable. You will now run the **Restore-MgDirectoryDeletedItem** cmdlet, where you will direct it to use the **id** field from among the attributes stored in the $DeletedGroup variable. Type in the following command and press Enter:  
+1. Now that you have captured the attributes of the Inside Sales group, you can run the **Restore-MgDirectoryDeletedItem** cmdlet to restore the group. When doing so, you must declare the group's ID as the parameter next to "-DirectoryObjectId". While you would normally copy and paste in the ID (for example: -DirectoryObjectId 'e76bbcdb-24c5-41a6-805d-b352976fd2a8'), the current issue with the **Get-MgDirectoryDeletedItem** cmdlet doesn't allow us to identify the actual Id value. As such, you had to run the prior commands to capture the group's attributes in the $DeletedGroup variable. You will now run the **Restore-MgDirectoryDeletedItem** cmdlet, where you will direct it to use the **id** field from among the attributes stored in the $DeletedGroup variable. Type in the following command and press Enter:  
 
 	```powershell
-	Restore-MgDirectoryDeletedItem -DirectoryObjectId "<Replace object ID>"
+	Restore-MgDirectoryDeletedItem -DirectoryObjectId "<Replace ID>"
 	```
 
-9. You should now verify the **Inside Sales** group has been recovered. While you can obviously do this in the **Microsoft 365 admin center**, since this task is working with PowerShell, let's verify the recovery using Microsoft Graph PowerShell. To do so, type the following command to get a list of the active groups, which should now include the Inside Sales Group:  
+1. You should now verify the **Inside Sales** group has been recovered. While you can obviously do this in the **Microsoft 365 admin center**, since this task is working with PowerShell, let's verify the recovery using Microsoft Graph PowerShell. To do so, type the following command to get a list of the active groups, which should now include the Inside Sales Group:  
 
 	```
 	Get-MgGroup
@@ -296,30 +311,30 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 	![Access Your VM and Lab Guide](../Images/insidesales.png)
 
-10. Leave your Windows PowerShell window open for the next exercise, simply minimize the PowerShell window for now.
+1. Leave your Windows PowerShell window open for the next exercise, simply minimize the PowerShell window for now.
 
-11. You now want to verify that the recovery process correctly updated the group's membership. In your Edge browser, in the **Microsoft 365 admin center**, navigate to the **Active teams & groups** windows, review the **Teams & Microsoft 365 groups** tab in the list of Teams & Microsoft 365 groups, select the **Inside Sales** group (select the name and not the check box). 
+1. You now want to verify that the recovery process correctly updated the group's membership. In your Edge browser, in the **Microsoft 365 admin center**, navigate to the **Active teams & groups** windows, review the **Teams & Microsoft 365 groups** tab in the list of Teams & Microsoft 365 groups, select the **Inside Sales** group (select the name and not the check box). 
 
 	>**Note:** If the Inside Sales group does not appear, wait a minute or two and then select **Refresh** on the menu bar above the list of groups.
 
-12. In the **Inside Sales** pane that appears, select the **Membership** tab. In the **Membership** tab, three sub-tabs (Owners, Members, and About membership and permissions) are displayed in the left-hand column. The **Owners** sub-tab is displayed by default. **Allan Deyoung** and **Patti Fernandez** should appear as owners of the group.
+1. In the **Inside Sales** pane that appears, select the **Membership** tab. In the **Membership** tab, three sub-tabs (Owners, Members, and About membership and permissions) are displayed in the left-hand column. The **Owners** sub-tab is displayed by default. **Allan Deyoung** and **Patti Fernandez** should appear as owners of the group.
 
 	![Access Your VM and Lab Guide](../Images/insideslaesgriup.png)
 
-13. Select the **Members** sub-tab. **Diego Siciliani** and **Lynne Robbins** should appear as members of the group. You have just verified that the deleted group is now fully restored.
+1. Select the **Members** sub-tab. **Diego Siciliani** and **Lynne Robbins** should appear as members of the group. You have just verified that the deleted group is now fully restored.
 
 	![Access Your VM and Lab Guide](../Images/membership.png)
 
-14. Close the **Inside Sales** window.
+1. Close the **Inside Sales** window.
 
-15. Remain logged into LON-CL1 and leave your browser tabs open so that they’re ready for the next task. 
+1. Remain logged into LON-CL1 and leave your browser tabs open so that they’re ready for the next task. 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="936c883d-0e2c-4883-9724-07ccddf45edc" />
+<validation step="cbb4c7da-820d-421d-bafb-b9b58ce7bd4c" />
 
 ## Review
 

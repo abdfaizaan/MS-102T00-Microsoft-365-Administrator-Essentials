@@ -23,11 +23,11 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
    - Username:- <inject key="AzureAdUserEmail"></inject>
    - Password:- <inject key="AzureAdUserPassword"></inject>
 
-   >**Note:** If a Action Required popup window appears, click **Ask Later**. 
+        >**Note:** If a Action Required popup window appears, click **Ask Later**. 
    
-   > If you see the pop-up Stay Signed in?, click **Yes**. 
+        > If you see the pop-up Stay Signed in?, click **Yes**. 
    
-   > If a Welcome to Microsoft Azure popup window appears, click **Maybe Later** to skip the tour.
+        > If a Welcome to Microsoft Azure popup window appears, click **Maybe Later** to skip the tour.
 
 1. In **search resources, services, and docs**, type **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
@@ -136,7 +136,7 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
     - Phone: Keep it as Default
 
-    - Technical contact: Keep it as Default
+    - Technical contact: Give a random email ID.
 
     - Preferred language: **English**
 
@@ -214,7 +214,11 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 1. In the **Edit settings** page, enter the following information:
 
 	- Enter **m365pilotproject** in the **Group email address** field.
-	- In the **Privacy** field, select **Private**.
+	
+    - In the **Privacy** field, select **Private**.
+
+    - Select **Next**.
+
 
 1. In the **Review and finish adding group** page, review the content that you entered. If anything needs to be fixed, select **Edit** under the specific area that needs adjustment, make any necessary corrections, and then select **Next** to continue back to this page. Once everything is correct, select **Create group**.
 
@@ -236,7 +240,7 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. In the **Customize Microsoft 365 for your organization** pane that appears, you can customize the default theme that users see when signed into Microsoft 365, and you can add additional custom themes. Select the **+ Add theme** option.
 
-1. In the **Customize Microsoft 365 for your organization** pane that appears, notice how it displays the **Default theme**. Select the **Default theme**. 
+1. In the **Customize Microsoft 365 for your organization** pane that appears, notice how it displays the **Default theme**.
 
 1. On the **Default theme** pane, notice how the **Show the user's display name** option is not selected. Select that check box, and **Save it**. Select the back arrow at the top of the pane to return to  the **Customize Microsoft 365 for your organization** pane.
 
@@ -297,20 +301,22 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="8c9fc7ff-176c-47b4-9729-0df4c4ad6dde" />
+<validation step="4727ed8b-1c44-4d48-8572-630a6026f8df" />
 
 
 ### Task 4 – Turn on Audit Logging to enable Alert Policies 
 
 1. In the **Microsoft 365 admin center**, under the **Admin centers** section in the left-hand navigation pane, select **Security**. This will open the **Microsoft 365 Defender** portal in a new tab in your browser.
 
-1. In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the left-hand navigation pane and select **Audit (1)**.
+1. In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the left-hand navigation pane and select **Audit (1)** under **System**.
 
 1. In the **Audit** window, wait a minute or so to see if a banner appears towards the top of the page that says: **Start recording user and admin activity (2)**. If this banner appears, then auditing is NOT turned on for your organization. This banner is your prompt to turn on audit logging.
 
-	>**Note:** Select this banner now to turn on audit logging, and on the **Security** pop-up select **Yes**, and if it says **We're updating your organization to support customization. Please allow 24 to 48 hours before you retry this operation.**, select **OK**.
+	  >**Note:** Select this banner now to turn on audit logging, and on the **Security** pop-up select **Yes**, and if it says **We're updating your organization to support customization. Please allow 24 to 48 hours before you retry this operation.**, select **OK**.
 
-    ![](../Images/auditsearch.png)
+      ![](../Images/auditsearch.png)
+
+      >**Note:** If you recieve **Client Error**, select **OK**.
 
 1. In the **Audit** window, the banner will disappear once audit logging is turned on. In a later lab, you will return to this page to view audited activities that you completed during your lab work.  
  
@@ -322,7 +328,8 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 1. On LON-CL1, you must open an elevated instance of **Windows PowerShell**. Type **power** in the Search box that appears in the bottom left corner of the taskbar. In the list of search results, right-click on **Windows PowerShell** (do not select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu that appears. 
 
 2. Maximize your PowerShell window. In **Windows PowerShell**, type the following command at the command prompt to install the Microsoft Graph PowerShell module from the PowerShell Gallery and then press Enter:
-	```powershell
+	
+    ```powershell
     Install-Module Microsoft.Graph -Scope CurrentUser
     ```
 
@@ -332,11 +339,11 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 4. A command prompt will appear once Microsoft Graph PowerShell has been installed. Run the following command to see the complete list of sub-modules that were installed under the Microsoft.Graph primary module:  
 	
-	```powershell
-    Get-InstalledModule Microsoft.Graph.* 
-    ```
+      ```powershell
+      Get-InstalledModule Microsoft.Graph.* 
+      ```
 
-	>**Note:** The labs that use Microsoft Graph PowerShell in this course will use the following sub-modules: Microsoft.Graph.Identity.DirectoryManagement, Microsoft.Graph.Users, and Microsoft.Graph.Groups. To access the cmdlets for a sub-module, you must first import the sub-module. You can either import all 30+ sub-modules at one time using the "Import-Module Microsoft.Graph" command, or you can import each module that's needed to perform whatever function you're doing (for example, "Import-Module Microsoft.Graph.Users" to perform user maintenance) at a particular point in time. For the purpose of this training, since the later lab exercises will only use three sub-modules, you will NOT import all 40+ sub-modules now. Instead, you will wait to import these three sub-modules when they're needed in later labs. Proceed to the next step. 
+	  >**Note:** The labs that use Microsoft Graph PowerShell in this course will use the following sub-modules: Microsoft.Graph.Identity.DirectoryManagement, Microsoft.Graph.Users, and Microsoft.Graph.Groups. To access the cmdlets for a sub-module, you must first import the sub-module. You can either import all 30+ sub-modules at one time using the "Import-Module Microsoft.Graph" command, or you can import each module that's needed to perform whatever function you're doing (for example, "Import-Module Microsoft.Graph.Users" to perform user maintenance) at a particular point in time. For the purpose of this training, since the later lab exercises will only use three sub-modules, you will NOT import all 40+ sub-modules now. Instead, you will wait to import these three sub-modules when they're needed in later labs. Proceed to the next step. 
 
 5. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press Enter:
 	

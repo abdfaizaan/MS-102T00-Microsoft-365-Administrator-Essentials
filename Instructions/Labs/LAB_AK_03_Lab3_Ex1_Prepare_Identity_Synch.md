@@ -24,8 +24,6 @@ During this exercise you will set up and manage Microsoft Entra Connect. You wil
 	
 	>**Important:** Wait until the script has finished before proceeding to the next task. This Windows PowerShell script will make the following change in AD DS:
 
-	<!-- - **Klemen Sic**. Update the UserPrincipalName for Klemen to include an extra "@" character.  -->
-
 1. Minimize your Windows PowerShell window.
 
 

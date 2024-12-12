@@ -232,7 +232,7 @@ When you earlier configured the Intune Administrator role, you set up the notifi
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="1160834f-caae-424b-ae36-1ba794c58601" />
+<validation step="7f2aef73-ab8b-43a8-b70d-75bbef029a67" />
 
 ## Review
 

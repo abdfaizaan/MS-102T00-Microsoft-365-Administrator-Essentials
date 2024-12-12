@@ -27,12 +27,19 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 
 1. In the **Add a user** wizard, in the **Set up the basics** window, enter the following information:
 	- First name: **Laura**
+	
 	- Last name: **Atkins** 
+	
 	- Display name: When you tab into this field, **Laura Atkins** will appear
+	
 	- Username: **Laura**
+	
 	- Password settings: Clear (uncheck) the **Automatic create a password** option
+	
 	- Password: Enter the enter Password:- <inject key="AzureAdUserPassword"></inject>.
+	
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
+	
 	- Select **Next**.
 
 1. In the **Assign product licenses** window, select the **Create user without product license (not recommended)** option, and then select **Next**.
@@ -43,7 +50,27 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 
 1. On the **Laura Atkins added to active users** page, select **Close**. If a survey form appears, select **Cancel**. 
 
-1. Minimize the **LON-CL1** VM, on the **Hyper-V Manager** page, right click on **LON-CL2**, and select **Turn-off** option, it will turn-off your VM, as you can see the state of the **LON-CL2** VM is showing as **Off**. Now, right click on the **LON-CL2** VM, select **Start** button, and see the VM is now in running state. Again right click on the Client-2 VM (LON-CL2) and select **Connect**, and select **Connect**.
+1. Open **Hyper-V Manager** page, Right click on the **LON-CL2** VM, click on **Connect**, and on the **Connect to LON-CL2** pop-up select **Connect**.
+
+	>**Note:** if required maximize the **LON-CL2** VM.
+
+1. In **LON-CL2**, on the log-in screen, you will log in as the local **Admin** account with a password of **Pa55w.rd**.
+
+	>**Note:** If a **Networks** window appears, select **Yes**.
+
+1. In the **Type here to search**, search and select **Computer Management**. 
+
+1. Under **Computer Management (Local) (1)**, select **Local users and groups (2)** > **Groups (3)** > Open **Remote Desktop Users (4)** group.
+
+	![](../Images/computermanagement.png)
+
+1. Click on **Add** and in **Enter the object names to select**, type **Laura** and click on **Ok**. It will pop up a dialog box to enter **Network Credentials** of Laura, please enter **Username** as **adatum\laura** and **password** as **Pa55w.rd**. 
+
+1. Select **Apply** and **OK**.
+
+1. Now restart the LON-CL2 VM and try logging in with Laura user again. Minimize **LON-CL2**. Inside **LON-CL1** open **Hyper-V Manager**.
+
+1. Right click on **LON-CL2**, and select **Turn-off** option, it will turn-off your VM, as you can see the state of the **LON-CL2** VM is showing as **Off**. Now, right click on the **LON-CL2** VM, select **Start** button, and see the VM is now in running state. Again right click on the Client-2 VM (LON-CL2) and select **Connect**, and select **Connect**.
 
 	>**Note:** if the **Connect to LON-CL2** pop-up appears select **Connect**.
 
@@ -63,7 +90,7 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 	
 	- In the Edge browser, go to the **Microsoft 365 Home** page by entering the following URL in the address bar: **https://portal.office.com/**
 
-1. In the **Sign in** window, enter **Laura@otuwamoc<inject key="DeploymentID" enableCopy="false"/>.onmicrosoft.com** (where otuwamoc<inject key="DeploymentID" enableCopy="false"/> is the tenant prefix provided by your lab hosting provider), and then select **Next**.
+1. In the **Sign in** window, enter **Laura@otuwamocZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant prefix provided by your lab hosting provider), and then select **Next**.
 
 1. In the **Enter password** window, For the password, sign-in with the same **Microsoft 365 Tenant Password**.
 	
@@ -91,8 +118,6 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 ### Task 2 – Verify how the global Office download setting affects installing Microsoft 365 Apps for enterprise
 
 Microsoft 365 includes a global Office download setting that controls the downloading of mobile and desktop apps for all users. Holly is now going to test whether users can be prohibited from downloading Microsoft 365 Apps for enterprise if an admin turns off this setting. In this test, Holly will once again use Laura Atkins as her test case. However, since you just proved in the prior task that Laura can't install Microsoft 365 Apps for enterprise without a proper license, you must first assign her a license. 
-
-**License Note:** If you recall from the earlier lab exercise when you created Holly Dickson's Microsoft 365 account, there were no available Microsoft 365 Business Premium or Enterprise Mobility + Security E5 licenses available. As such, you had to first unassign one of each license from an existing user so that you could assign them to Holly. The same situation exists here with Laura. You must first unassign one of each license from an existing user so that you can assign them to Laura.
 	
 1. Switch back to **LON-CL1**. In your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson, Adatum’s Microsoft 365 Administrator.
 
@@ -106,13 +131,13 @@ Microsoft 365 includes a global Office download setting that controls the downlo
 
 1. At the top of the **Microsoft 365 app installation options** pane, select the **X** in the upper-right corner of this window to close it. 
 
-1. You should now test whether turning off this global download setting affects a **licensed** user from installing Microsoft 365 Apps for enterprise. In this case, you’re once again going to use **Laura Atkins**, so you must assign Laura a Microsoft 365 license. However, since there are no available licenses, you must first unassign a license from an existing Microsoft 365 user account. In this case, Holly will unassign Pradeep Gupta's licenses, since he has taken on a new role and will no longer be involved in Adatum's Microsoft 365 pilot project.  
+<!-- 1. You should now test whether turning off this global download setting affects a **licensed** user from installing Microsoft 365 Apps for enterprise. In this case, you’re once again going to use **Laura Atkins**, so you must assign Laura a Microsoft 365 license. However, since there are no available licenses, you must first unassign a license from an existing Microsoft 365 user account. In this case, Holly will unassign Pradeep Gupta's licenses, since he has taken on a new role and will no longer be involved in Adatum's Microsoft 365 pilot project.  
 
 	>**Note:** If **Pradeep Gupta** indicates **Unlicensed** then jump onto the Step-9.
 
 1. In the **Microsoft 365 admin center** navigation pane, select **Users** and then select **Active users**. On the **Active users** page, select **Pradeep Gupta**.
 
-1. In the **Pradeep Gupta** pane that appears, the **Account** tab is displayed by default. Select the **Licenses and apps** tab. Under **Licenses**, select the **Microsoft Business Premium** check box to clear it, and then select **Save Changes**. Close the **Pradeep Gupta** pane. The licenses that were previously assigned to Pradeep are now available for Laura.  
+1. In the **Pradeep Gupta** pane that appears, the **Account** tab is displayed by default. Select the **Licenses and apps** tab. Under **Licenses**, select the **Microsoft Business Premium** check box to clear it, and then select **Save Changes**. Close the **Pradeep Gupta** pane. The licenses that were previously assigned to Pradeep are now available for Laura.   -->
 
 1. In the **Active users** list, scroll down to **Laura Atkins**. The value in the **Licenses** column for Laura currently indicates that she is **Unlicensed**. Select **Laura Atkins**.
 
@@ -120,9 +145,11 @@ Microsoft 365 includes a global Office download setting that controls the downlo
 
 1. You should now check whether Laura can download Microsoft 365 Apps for enterprise to her client PC when the global Office download setting has been turned Off. 
 
-	>**Note:** To do this, you must first switch back to **LON-CL2**, Minimze **LON-CL1** VM, and navigate back to the hyper-v manager, right click on the **LON-CL2** VM and select **Connect**.
+	>**Note:** To do this, you must first switch back to **LON-CL2**, navigate back to the hyper-v manager, right click on the **LON-CL2** VM and select **Connect**.
 
-1. In **LON-CL2**, your Edge browser should still be open, and you should still be logged into Microsoft 365 as Laura Atkins (verify Laura's **LA** initials appear in the upper-right corner of the browser; note that Laura's name doesn't appear because she's not a member of the M365 pilot project group that was assigned to the custom theme). In your browser, verify you're on the **Home | Microsoft 365** tab. When you left off after the prior lab task, this page didn't display any Microsoft 365 apps in the navigation pane on the left because Laura wasn't assigned a Microsoft 365 license. Let's see what happens now that Laura has been assigned a license. 
+1. In **LON-CL2**, your Edge browser should still be open, and you should still be logged into Microsoft 365 as Laura Atkins (verify Laura's **LA** initials appear in the upper-right corner of the browser; note that Laura's name doesn't appear because she's not a member of the M365 pilot project group that was assigned to the custom theme). 
+
+1. In your browser, verify you're on the **Home | Microsoft 365** tab. When you left off after the prior lab task, this page didn't display any Microsoft 365 apps in the navigation pane on the left because Laura wasn't assigned a Microsoft 365 license. Let's see what happens now that Laura has been assigned a license. 
 
 1. Select the **Refresh** icon that appears to the left of the address bar at the top of your browser. After refreshing the page, notice the Microsoft 365 app icons that now appear on the left-side of the screen because Laura has been assigned a Microsoft 365 license. 
 
@@ -180,6 +207,18 @@ In the prior task, you logged into Laura Atkins client PC, and you verified that
 
 1. In the **Start** menu, type and select **Word**.
 
+1. On the **Sign in to get started with Word** pop-up select **Sign in or create account**.
+
+1. Enter **Laura@otuwamocZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant prefix provided by your lab hosting provider), and then select **Next**.
+
+1. In the **Enter password** window, For the password, sign-in with the same **Microsoft 365 Tenant Password**.
+	
+	- Password:- <inject key="AzureAdUserPassword"></inject> and then select **Sign in.**
+
+1. On the **Stay signed in to all your apps**, select **No, sign in to this app only**.
+
+	>**Note:** On **Your privacy matters** pop-up select **Close**.
+
 1. Verify that Word is functioning properly by opening a blank Word document, entering some text, and saving the document to the **Documents** folder. 
 
 1. Close Word.
@@ -190,6 +229,8 @@ In the prior task, you logged into Laura Atkins client PC, and you verified that
 
 1. You now want to log out of LON-CL2 as Laura Atkins and log back in as the Adatum administrator. This will prepare LON-CL2 for the next lab that uses this PC. 
 
+1. Minimize **LON-CL2**. Inside **LON-CL1** VM.
+
 1. Switch back to the Hyper-V Manager, on LON-CL2, right click on the **LON-CL2** VM and turn-off the VM, after the status shows Off, right click again and start the VM. Righ click on the **LON-CL2** VM click on **Connect**. 
 
 1. On the desktop, the **Laura Atkins** is selected by default. select **Other user**, enter **lon-cl2\admin** in the username filed and **Pa55w.rd** in the **Password** field and then select the forward arrow. The desktop should now display the logged-on user as **lon-cl2\admin**. LON-CL2 is now ready for the next lab that uses it.
@@ -199,7 +240,7 @@ In the prior task, you logged into Laura Atkins client PC, and you verified that
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="7aa92f00-ffc8-47a4-b15b-58246027044d" />
+<validation step="7d9fdfc3-5392-4896-ab0f-7b5f3a8a3b09" />
 
 ## Review
 
