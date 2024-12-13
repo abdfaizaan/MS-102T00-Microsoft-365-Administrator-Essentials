@@ -323,18 +323,18 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 	Get-MgGroup | Format-List Id, DisplayName, Description, GroupTypes
 	```
 
-1. You now want to display the members of the **Research** group. In the list of groups, highlight the object ID for the **Research** group and then press **Ctrl+C** to copy the ID to the clipboard. Then type the following command, paste in the Research group's object ID (**Ctrl+V**) in the appropriate spot, and then press Enter:  
+1. You now want to display the members of the **Research** group. In the list of groups, highlight the ID for the **Research** group and then press **Ctrl+C** to copy the ID to the clipboard. Then type the following command, paste in the Research group's ID (**Ctrl+V**) in the appropriate spot, and then press Enter:  
 
 	```powershell
-	Get-MgGroupMember -GroupId 'paste in the group's object ID here'
+	Get-MgGroupMember -GroupId 'paste in the group's ID here'
 	```
 
-1. In the list of group members that were displayed in the prior step, note how the results simply show the object ID of each member. Without displaying the user names, this command doesn't help you verify whether the group members were synchronized. To work around this issue, you're going to repeat the prior command, but this time you'll add an additional component that retrieves the User record for each member of the group and displays the User's attributes, which includes the user name. 
+1. In the list of group members that were displayed in the prior step, note how the results simply show the ID of each member. Without displaying the user names, this command doesn't help you verify whether the group members were synchronized. To work around this issue, you're going to repeat the prior command, but this time you'll add an additional component that retrieves the User record for each member of the group and displays the User's attributes, which includes the user name. 
 
-	- At the command prompt hit the UP arrow on your keyboard. This will automatically type the prior command that was run (which includes the Research group's object ID, so you don't have to re-paste it). Then following the object ID, type the remaining portion of the command (starting with **-All**) and press Enter:
+	- At the command prompt hit the UP arrow on your keyboard. This will automatically type the prior command that was run (which includes the Research group's ID, so you don't have to re-paste it). Then following the ID, type the remaining portion of the command (starting with **-All**) and press Enter:
 
 		```powershell
-		Get-MgGroupMember -GroupId 'the object ID of the Research group' -All | ForEach {Get-MgUser -UserId $_.Id}
+		Get-MgGroupMember -GroupId 'the ID of the Research group' -All | ForEach {Get-MgUser -UserId $_.Id}
 		```
 
 1. In the list of members of the Research group, verify the following users are **NOT** included. Remember, in the prior task you removed these three users from the Research group in the on-premises Active Directory, prior to synchronizing the group to Microsoft 365:  
@@ -345,15 +345,15 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 	- Tai Zecirevic  
 
-1. In the prior task, you added the **Manufacturing** group in the on-premises Active Directory, and you assigned three users to the group. You now want to verify the members of the **Manufacturing** group were synchronized when the group was added in Microsoft 365 during the synchronization process, to do so, you must first scroll back up to the list of groups, highlight the object ID for the **Manufacturing** group and then press **Ctrl+C** to copy the ID to the clipboard. 
+1. In the prior task, you added the **Manufacturing** group in the on-premises Active Directory, and you assigned three users to the group. You now want to verify the members of the **Manufacturing** group were synchronized when the group was added in Microsoft 365 during the synchronization process, to do so, you must first scroll back up to the list of groups, highlight the ID for the **Manufacturing** group and then press **Ctrl+C** to copy the ID to the clipboard. 
 
-1. Then hit the UP arrow on your keyboard to automatically type the prior command, which contains the object ID of the Research group that you pasted in during the prior step:  
+1. Then hit the UP arrow on your keyboard to automatically type the prior command, which contains the ID of the Research group that you pasted in during the prior step:  
 
 	```powershell
-	Get-MgGroupMember -GroupId 'the object ID of the Research group' -All | ForEach {Get-MgUser -UserId $_.Id}   
+	Get-MgGroupMember -GroupId 'the ID of the Manufacturing group' -All | ForEach {Get-MgUser -UserId $_.Id}   
 	``` 
 
-	>**Important:** You must then replace the object ID of the Research group with the object ID of the Manufacturing group before running this command. To do so, use the left arrow on your keyboard to move your cursor to the start of the object ID, then highlight the object ID of the Research group and hit **Ctrl+V**. This will replace the ID of the Research group by pasting in the object ID of the **Manufacturing** group. Then press Enter to run the command. Doing so will display the members of the **Manufacturing** group. 
+	>**Important:** You must then replace the ID of the Research group with the ID of the Manufacturing group before running this command. To do so, use the left arrow on your keyboard to move your cursor to the start of the ID, then highlight the ID of the Research group and hit **Ctrl+V**. This will replace the ID of the Research group by pasting in the ID of the **Manufacturing** group. Then press Enter to run the command. Doing so will display the members of the **Manufacturing** group. 
 
 1. In the **Manufacturing** group, you earlier added the following members to the group in the on-premises Active Directory. You should now see each of these group members in this Microsoft 365 group following synchronization:  
 
