@@ -270,6 +270,16 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. In the list of organization profile data, select **Custom themes**. Close the **Customize Microsoft 365 for your organization** pane.
 
+1. In **Microsoft 365 admin center** page, select **Activer Users** from the left navigation pane.
+
+1. Select **Nestor Wilke** (not the check box). On the **Account** tab, under **Roles** select **Manage roles**.
+
+1. On the **Manage admin roles** page, select **Admin center access (1)**, and select **Global Administrator (2)**.
+
+    ![](../Images/admincenteraccess.png)
+
+1. Select **Save Changes**.
+
 1. Remain logged into **LON-CL1** with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
 
 ### Task 3 - Enable Information Rights Management for SharePoint Online  
