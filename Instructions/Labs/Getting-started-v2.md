@@ -14,7 +14,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 ## Exploring Your Lab Resources
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment** Details tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
 ![Explore Lab Resources](../Images/image-02.png)
 
@@ -66,7 +66,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
 
-6. If you want a list of users and their email IDs, you can select the **Environment** Details page and scroll down to view the users list. 
+6. If you want a list of users and their email IDs, you can select the **Environment** page and scroll down to view the users list. 
 
     >**Note:** You can also check the users on the **Microsoft Entra ID** portal. Follow the below steps:
 
