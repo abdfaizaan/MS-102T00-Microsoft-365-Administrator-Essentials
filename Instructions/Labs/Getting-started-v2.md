@@ -69,5 +69,15 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 6. Click "Next" from the bottom right corner to embark on your Lab journey!
  
      ![Start Your Azure Journey](../Images/image-06.png)
+
+7. If you want a list of users and their email IDs, you can select the Environment Details page and scroll down to view the user list. 
+
+    >**Note:** You can also check the users on the **Microsoft Entra ID** portal. Follow the below steps:
+
+    - In the **Search resources, services and docs** search and select **Microsoft Entra ID**.
+
+    - From the left-hand navigation pane select **Users**, it will display all the users list.
+
+    - Keep this tab open for your entire lab.
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!

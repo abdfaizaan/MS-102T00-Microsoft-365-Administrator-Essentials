@@ -10,13 +10,13 @@ The **MS-102: MICROSOFT 365 ADMINISTRATOR AND ESSENTIALS Workshop** introduces p
 
 This lab is designed to equip participants with hands-on experience in exploring Microsoft 365 administration, including managing identities, configuring services, and ensuring compliance within a secure and efficient environment.
 
--   **Initialize your Microsoft 365 Tenant** : Set up and configure your Microsoft 365 environment for organizational use. 
--   **Manage Users and Groups** : Create, manage, and organize users and groups within Microsoft 365.
--   **Manage Administration Delegation** : Assign and manage administrative roles and permissions in Microsoft 365.
--   **Monitor and Troubleshoot Microsoft 365** : Track performance and resolve issues across Microsoft 365 services.
--   **Manage a Microsoft 365 Apps for enterprise installation** : Deploy and manage Office apps across your organization.
--   **Prepare for Identity Synchronization** : Set up your environment to synchronize identities between on-premises and cloud.
--   **Implement Identity Synchronization** : Configure and enable identity synchronization using tools like Azure AD Connect.
+- **Initialize your Microsoft 365 Tenant** : Set up and configure your Microsoft 365 environment for organizational use. 
+- **Manage Users and Groups** : Create, manage, and organize users and groups within Microsoft 365.
+- **Manage Administration Delegation** : Assign and manage administrative roles and permissions in Microsoft 365.
+- **Monitor and Troubleshoot Microsoft 365** : Track performance and resolve issues across Microsoft 365 services.
+- **Manage a Microsoft 365 Apps for enterprise installation** : Deploy and manage Office apps across your organization.
+- **Prepare for Identity Synchronization** : Set up your environment to synchronize identities between on-premises and cloud.
+- **Implement Identity Synchronization** : Configure and enable identity synchronization using tools like Azure AD Connect.
 - **Manage secure user access** : Enhance security with multi-factor authentication and conditional access policies.
 - **PIM Administrator approval** : Configure Privileged Identity Management for administrator approval workflows.
 - **PIM Self-Approval** : Enable users to self-approve roles with Privileged Identity Management.
