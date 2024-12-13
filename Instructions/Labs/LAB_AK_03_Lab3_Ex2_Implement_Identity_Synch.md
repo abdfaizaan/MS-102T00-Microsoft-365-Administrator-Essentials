@@ -44,11 +44,11 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. Select **Next**. The wizard will deploy the recommended solution, **Microsoft Entra Connect Sync**. 
 
-1. On the **Sync your users** page, select the **Download Microsoft Entra Connect Sync** box. This opens a new tab in your browser and takes you to the Microsoft Download Center.
+1. On the **Sync your users** page, under the **Installation options**, select the hyperlink which states **Getting started with Microsoft Entra Connect Sync using express settings.** This opens a new tab in your browser and takes you to the Microsoft Download Center.
 
-1. In the **Microsoft Download Center**, a message indicating **Thank you for downloading Microsoft Entra Connect** should appear.
+1. Under **Microsoft Entra Connect**, select **Download**.
 
-	- If a **Downloads** window appears at the top of the screen, select the **Open file** link that appears below the **AzureADConnect.msi** file once it's finished downloading. <br/>
+	- If a **Downloads** window appears at the top of the screen, select the **Open file** link that appears below the **AzureADConnect.msi** file once it's finished downloading.
 
 	- However, if a **Downloads** window doesn't appear at the top of the screen, select the ellipsis icon (three dots) that appears to the right of the **Profile 1** icon (the image of a person inside a circle). In the drop-down menu that appears, select **Downloads**. If a **Downloads** window appears at the top of the screen and it includes the **AzureADConnect.msi** file, then select the **Open file** link that appears below it. However, if **AzureADConnect.msi**  does not appear in the **Downloads** window, then on the **Microsoft Download Center** page, select the **click here to download manually** hyperlink and then repeat this step to open the **AzureADConnect.msi** file.
 
@@ -56,7 +56,7 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. Once download complete open the **AzureADConnect.msi** by clicking on the **Open file**.
 
-	>**Note:** If the file fails to open and it says that TLS 1.2 needs to be enabled, run this command in PowerShell:
+1. If the file fails to open and it says that TLS 1.2 needs to be enabled, select **Exit** on the **Microsoft Entra Connect Sync**. Open a powershell window and run the below command:
 
 	```
 	If (-Not (Test-Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319'))
@@ -90,6 +90,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 	Write-Host 'TLS 1.2 has been enabled. You must restart the Windows Server for the changes to take affect.' -ForegroundColor Cyan
 	```
 
+1. From **Type here to search** search and select **Azure AD Connect**.
+   
 1. On the **Welcome to Microsoft Entra ID Connect** window in the setup wizard, select the **I agree to the license terms and privacy notice** check box and then select **Continue**.
 
 1. On the **Express Settings** page, read the instruction regarding a single Windows Server AD forest and then select **Use express settings**.
