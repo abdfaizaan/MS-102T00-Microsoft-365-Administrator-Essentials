@@ -317,9 +317,9 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. In the **Microsoft 365 admin center**, under the **Admin centers** section in the left-hand navigation pane, select **Security**. This will open the **Microsoft 365 Defender** portal in a new tab in your browser.
 
-1. In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the left-hand navigation pane and select **Audit (1)** under **System**.
+2. In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the left-hand navigation pane and select **Audit (1)** under **System**.
 
-1. In the **Audit** window, wait a minute or so to see if a banner appears towards the top of the page that says: **Start recording user and admin activity (2)**. If this banner appears, then auditing is NOT turned on for your organization. This banner is your prompt to turn on audit logging.
+3. In the **Audit** window, wait a minute or so to see if a banner appears towards the top of the page that says: **Start recording user and admin activity (2)**. If this banner appears, then auditing is NOT turned on for your organization. This banner is your prompt to turn on audit logging.
 
    >**Note:** Select this banner now to turn on audit logging, and on the **Security** pop-up select **Yes**, and if it says **We're updating your organization to support customization. Please allow 24 to 48 hours before you retry this operation.**, select **OK**.
    
@@ -327,9 +327,9 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
    >**Note:** If you recieve **Client Error**, select **OK**.
 
-1. In the **Audit** window, the banner will disappear once audit logging is turned on. In a later lab, you will return to this page to view audited activities that you completed during your lab work.  
+4. In the **Audit** window, the banner will disappear once audit logging is turned on. In a later lab, you will return to this page to view audited activities that you completed during your lab work.  
  
-1. Close the **Microsoft 365 Defender** tab in your Edge browser. Leave your browser open and proceed to the next task. 
+5. Close the **Microsoft 365 Defender** tab in your Edge browser. Leave your browser open and proceed to the next task. 
 
 
 ### Task 5 – Install Microsoft Graph PowerShell   
