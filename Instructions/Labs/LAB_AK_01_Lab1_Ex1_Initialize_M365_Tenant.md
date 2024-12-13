@@ -215,10 +215,9 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 	- Enter **m365pilotproject** in the **Group email address** field.
 	
-    - In the **Privacy** field, select **Private**.
-
-    - Select **Next**.
-
+	- In the **Privacy** field, select **Private**.
+	
+	- Select **Next**.
 
 1. In the **Review and finish adding group** page, review the content that you entered. If anything needs to be fixed, select **Edit** under the specific area that needs adjustment, make any necessary corrections, and then select **Next** to continue back to this page. Once everything is correct, select **Create group**.
 
@@ -322,11 +321,11 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. In the **Audit** window, wait a minute or so to see if a banner appears towards the top of the page that says: **Start recording user and admin activity (2)**. If this banner appears, then auditing is NOT turned on for your organization. This banner is your prompt to turn on audit logging.
 
-	>**Note:** Select this banner now to turn on audit logging, and on the **Security** pop-up select **Yes**, and if it says **We're updating your organization to support customization. Please allow 24 to 48 hours before you retry this operation.**, select **OK**.
+   >**Note:** Select this banner now to turn on audit logging, and on the **Security** pop-up select **Yes**, and if it says **We're updating your organization to support customization. Please allow 24 to 48 hours before you retry this operation.**, select **OK**.
 
     ![](../Images/auditsearch.png)
 
-    >**Note:** If you recieve **Client Error**, select **OK**.
+   >**Note:** If you recieve **Client Error**, select **OK**.
 
 1. In the **Audit** window, the banner will disappear once audit logging is turned on. In a later lab, you will return to this page to view audited activities that you completed during your lab work.  
  
