@@ -58,6 +58,8 @@ In this exercise, you will continue in your role as Holly Dickson, Adatum's new 
 	
 	- Password:- <inject key="AzureAdUserPassword"></inject>
 
+		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
 1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization** check box, and then select **Accept**.
 
 1. Holly wants to assign **Patti Fernandez** to the **Service Support Administrator** role. To assign this role using Microsoft Graph PowerShell, you must first obtain the object ID of the Service Support Administrator role so that you can assign it to Patti. However, in Microsoft Graph PowerShell, you can only assign roles that have been "enabled". Enabled roles are roles that were either enabled from a role template, or they have already been assigned to users through PowerShell or the Microsoft 365 admin center.
@@ -174,7 +176,10 @@ In this task, you will begin by examining the administrative properties of two u
 11. In your **Edge** browser navigate to **https://portal.office.com**. 
 
 12. You will begin by signing into Microsoft 365 as **Joni Sherman**. In the **Sign-in** window, enter **joni.sherman@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
+	
 	- Password:- <inject key="AzureAdUserPassword"></inject>
+
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 13. On the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**. If a **Save password** window appears, select **Never**.
 
@@ -187,7 +192,10 @@ In this task, you will begin by examining the administrative properties of two u
 17. You will now sign out of Microsoft 365 as Joni. In **Microsoft Edge**, at the top right of the **Welcome to Microsoft 365** page, select the user icon for **Joni Sherman** (the circle in the upper right-hand corner), and in the **Joni Sherman** window that appears, select **Sign out.** 
 
 18. You will now sign back into Microsoft 365 as **Lynne Robbins**. In your current **Edge** browser tab, it should display a message indicating **Joni, you're signed out now**. In this window, it gives you the option of signing back in as Joni, or signing in as a different user. Select **Switch to a different account**, and in the **Email address** field that appears, enter **lynne.robbins@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
+	
 	- Password:- <inject key="AzureAdUserPassword"></inject>
+
+		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 19. If a **Welcome to Microsoft 365** dialog box appears, select the forward arrow (>) two times and then select the check mark to close the window.
 
@@ -254,7 +262,10 @@ In this task, you will begin by examining the administrative properties of two u
 43. As a best practice, close all your browser tabs except for the **Sign out** tab once you have been signed out. On the **Sign out** tab, navigate to **https://portal.office.com**. 
 
 44. In the **Pick an account** window, select **Use another account**. In the **Sign in** window, enter **Alex.wilber@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
+	
 	- Password:- <inject key="AzureAdUserPassword"></inject>
+
+		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 45. The **Pick an account** window should appear, and it should display an error message indicating **Your account has been locked. Contact your support person to unlock it, then try again.** You have just verified that Alex (or someone who has obtained Alex's username and password) cannot log in. 
 
