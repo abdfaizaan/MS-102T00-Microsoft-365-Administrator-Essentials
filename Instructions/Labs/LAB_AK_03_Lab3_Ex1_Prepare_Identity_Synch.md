@@ -65,6 +65,8 @@ During this exercise you will set up and manage Microsoft Entra Connect. You wil
 
 14. In the query results, note how the Klemen Sic row no longer appears in the results, since the IdFix tool just fixed this user record. 	
 
+	![](../Images/kelmen.png)
+
 15. As you can see, there are still two users whose errors have not been fixed (**An Dung Dao** and **Ngoc Bich Tran**). We are purposely leaving these errors alone so that you can see what happens during the synchronization process using the Microsoft Entra Connect tool in the next exercise when it processes users with these conditions. 
 
 	>**Important:** When there are format and duplicate errors for distinguished names, the **UPDATE** column either contains the same string as the **VALUE** column, or the **UPDATE** column entry is blank. In either case, this means that IdFix cannot suggest a remediation for the error. You can either fix these errors outside IdFix, or manually remediate them within IdFix. You can also export the results and use Windows PowerShell to remediate many different errors. 
@@ -92,7 +94,9 @@ During this exercise you will set up and manage Microsoft Entra Connect. You wil
 
 7. The **Internet** zone should be selected by default. Towards the bottom of the window, select the **Custom level...** button. 
 
-8. In the **Security Settings – Internet Zone** window, scroll down to the **Downloads** section. The first option in this section is **File download**. Verify the **File download** option is set to **Enable** and then select **OK**. 
+8. In the **Security Settings – Internet Zone** window, scroll down to the **Downloads (1)** section. The first option in this section is **File download**. Verify the **File download** option is set to **Enable** and then select **OK (2)**. 
+
+	![](../Images/internetzone.png)
 
 9. This takes you back to the **Internet Options** window. Select the **Trusted sites** zone.
 

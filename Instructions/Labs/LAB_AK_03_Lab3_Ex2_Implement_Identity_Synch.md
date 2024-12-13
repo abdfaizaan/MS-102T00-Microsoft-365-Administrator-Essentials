@@ -12,6 +12,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. After finishing the previous lab exercise, you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. If not then enter the URL **https://admin.microsoft.com/** and sign-in with the Holly's account.
 
+	>**Note:** On the **Business Advisor** pop-up select **Skip for now** twice.
+
 1. In your **Edge** browser, select the **Microsoft 365 admin center** tab, and then in the navigation pane, select **Users**, and then select **Active Users**.
 
 1. In the **Active users** window, select the **ellipsis (1)** icon that appears at the end of the menu bar, and then in the drop-down menu that appears, select **Directory synchronization (2)**. This initiates the **Add or sync users to Microsoft Entra ID** wizard.
@@ -44,11 +46,11 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. Select **Next**. The wizard will deploy the recommended solution, **Microsoft Entra Connect Sync**. 
 
-1. On the **Sync your users** page, select the **Download Microsoft Entra Connect Sync** box. This opens a new tab in your browser and takes you to the Microsoft Download Center.
+1. On the **Sync your users** page, under the **Installation options**, select the hyperlink which states **Getting started with Microsoft Entra Connect Sync using express settings.** This opens a new tab in your browser and takes you to the Microsoft Download Center.
 
-1. In the **Microsoft Download Center**, a message indicating **Thank you for downloading Microsoft Entra Connect** should appear.
+1. Under **Microsoft Entra Connect**, select **Download**.
 
-	- If a **Downloads** window appears at the top of the screen, select the **Open file** link that appears below the **AzureADConnect.msi** file once it's finished downloading. <br/>
+	- Select the **Open file** link that appears below the **AzureADConnect.msi** file once it's finished downloading.
 
 	- However, if a **Downloads** window doesn't appear at the top of the screen, select the ellipsis icon (three dots) that appears to the right of the **Profile 1** icon (the image of a person inside a circle). In the drop-down menu that appears, select **Downloads**. If a **Downloads** window appears at the top of the screen and it includes the **AzureADConnect.msi** file, then select the **Open file** link that appears below it. However, if **AzureADConnect.msi**  does not appear in the **Downloads** window, then on the **Microsoft Download Center** page, select the **click here to download manually** hyperlink and then repeat this step to open the **AzureADConnect.msi** file.
 
@@ -56,7 +58,7 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. Once download complete open the **AzureADConnect.msi** by clicking on the **Open file**.
 
-	>**Note:** If the file fails to open and it says that TLS 1.2 needs to be enabled, run this command in PowerShell:
+1. If the file fails to open and it says that TLS 1.2 needs to be enabled, select **Exit** on the **Microsoft Entra Connect Sync**. Open a powershell window and run the below command:
 
 	```
 	If (-Not (Test-Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319'))
@@ -90,6 +92,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 	Write-Host 'TLS 1.2 has been enabled. You must restart the Windows Server for the changes to take affect.' -ForegroundColor Cyan
 	```
 
+1. From **Type here to search** search and select **Azure AD Connect**.
+
 1. On the **Welcome to Microsoft Entra ID Connect** window in the setup wizard, select the **I agree to the license terms and privacy notice** check box and then select **Continue**.
 
 1. On the **Express Settings** page, read the instruction regarding a single Windows Server AD forest and then select **Use express settings**.
@@ -110,9 +114,9 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. Wait for the configuration to complete (which may take several minutes). On the **Configuration complete** page, select **Exit**. 
 
-1. Select the **Windows (Start)** icon in the lower left corner of the taskbar. In the **Start** menu that appears, select the icon to display all apps. Select **Microsoft Entra ID Connect** to expand the group, and then select **Synchronization Service** to start this desktop application. 
+1. Select the **Windows (Start)** icon in the lower left corner of the taskbar. In the **Start** menu that appears, select the icon to display all apps. Select **Azure AD Connect** to expand the group, and then select **Synchronization Service** to start this desktop application. 
 
-	>**Note:** If you selected **Microsoft Entra ID Connect** in the **Start** menu and it expanded and you were able to select **Synchronization Service**, then proceed to the next step (step 32). However, if **Microsoft Entra ID Connect** did not expand when you selected it in the **Start** menu, then you will need to close all applications and then restart LON-DC1. 
+	>**Note:** If you selected **Azure AD Connect** in the **Start** menu and it expanded and you were able to select **Synchronization Service**, then proceed to the next step (step 27). However, if **Azure AD Connect** did not expand when you selected it in the **Start** menu, then you will need to close all applications and then restart LON-DC1. 
 
 	>**Note:** The remaining instructions in this step are what you should do if you needed to restart LON-DC1. 
 
@@ -120,11 +124,11 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. Minimize **Server Manager** after it opens, and then open the **Edge** browser and navigate to **htps://portal.office.com**. Log in as **Holly@otuwamocZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Password** field, enter <inject key="AzureAdUserPassword"></inject>. 
 
-1. On the **Microsoft Office Home** page, select **Admin** to open the **Microsoft 365 admin center**. Then select the **Windows (Start)** icon in the lower left corner of the taskbar. In the **Start** menu that appears, select **Microsoft Entra ID Connect** to expand the group (this time it should expand), and then select **Synchronization Service**.  
+1. On the **Microsoft Office Home** page, select **Admin** to open the **Microsoft 365 admin center**. Then select the **Windows (Start)** icon in the lower left corner of the taskbar. In the **Start** menu that appears, select **Azure AD Connect** to expand the group (this time it should expand), and then select **Synchronization Service**.  
 
 1. Maximize the **Synchronization Service Manager on LON-DC1** window. The **Operations** tab at the top of the screen is displayed by default so that you can monitor the synchronization process, which automatically started when you selected this program. 
 
-1. Wait for the **Export** profile to complete for **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD**. When it finishes, its **Status** should be **completed-export-errors**. Once it's complete and you see this status, select any of the these **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD** row.  
+1. Wait for the **Export** profile to complete for **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD**. When it finishes, its **Status** should be **completed-no-objects**. Once it's complete and you see this status, select any of the these **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD** row.  
 
 1. In the bottom portion of the screen, a detail pane appears showing the detailed information for this selected operation. 
 
@@ -321,7 +325,7 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 	Get-MgGroup | Format-List Id, DisplayName, Description, GroupTypes
 	```
 
-1. You now want to display the members of the **Research** group. In the list of groups, highlight the object ID for the **Research** group and then press **Ctrl+C** to copy the ID to the clipboard. Then type the following command, paste in the Research group's object ID (**Ctrl+V**) in the appropriate spot, and then press Enter:  
+1. You now want to display the members of the **Research** group. In the list of groups, highlight the ID for the **Research** group and then press **Ctrl+C** to copy the ID to the clipboard. Then type the following command, paste in the Research group's ID (**Ctrl+V**) in the appropriate spot, and then press Enter:  
 
 	```powershell
 	Get-MgGroupMember -GroupId 'paste in the group's object ID here'
@@ -329,10 +333,10 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. In the list of group members that were displayed in the prior step, note how the results simply show the object ID of each member. Without displaying the user names, this command doesn't help you verify whether the group members were synchronized. To work around this issue, you're going to repeat the prior command, but this time you'll add an additional component that retrieves the User record for each member of the group and displays the User's attributes, which includes the user name. 
 
-	- At the command prompt hit the UP arrow on your keyboard. This will automatically type the prior command that was run (which includes the Research group's object ID, so you don't have to re-paste it). Then following the object ID, type the remaining portion of the command (starting with **-All**) and press Enter:
+	- At the command prompt hit the UP arrow on your keyboard. This will automatically type the prior command that was run (which includes the Research group's ID, so you don't have to re-paste it). Then following the ID, type the remaining portion of the command (starting with **-All**) and press Enter:
 
 		```powershell
-		Get-MgGroupMember -GroupId 'the object ID of the Research group' -All | ForEach {Get-MgUser -UserId $_.Id}
+		Get-MgGroupMember -GroupId 'the ID of the Research group' -All | ForEach {Get-MgUser -UserId $_.Id}
 		```
 
 1. In the list of members of the Research group, verify the following users are **NOT** included. Remember, in the prior task you removed these three users from the Research group in the on-premises Active Directory, prior to synchronizing the group to Microsoft 365:  
@@ -345,10 +349,10 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. In the prior task, you added the **Manufacturing** group in the on-premises Active Directory, and you assigned three users to the group. You now want to verify the members of the **Manufacturing** group were synchronized when the group was added in Microsoft 365 during the synchronization process, to do so, you must first scroll back up to the list of groups, highlight the object ID for the **Manufacturing** group and then press **Ctrl+C** to copy the ID to the clipboard. 
 
-1. Then hit the UP arrow on your keyboard to automatically type the prior command, which contains the object ID of the Research group that you pasted in during the prior step:  
+1. Then hit the UP arrow on your keyboard to automatically type the prior command, which contains the ID of the Research group that you pasted in during the prior step:  
 
 	```powershell
-	Get-MgGroupMember -GroupId 'the object ID of the Research group' -All | ForEach {Get-MgUser -UserId $_.Id}   
+	Get-MgGroupMember -GroupId 'the object ID of the Manufacturing group' -All | ForEach {Get-MgUser -UserId $_.Id}   
 	``` 
 
 	>**Important:** You must then replace the object ID of the Research group with the object ID of the Manufacturing group before running this command. To do so, use the left arrow on your keyboard to move your cursor to the start of the object ID, then highlight the object ID of the Research group and hit **Ctrl+V**. This will replace the ID of the Research group by pasting in the object ID of the **Manufacturing** group. Then press Enter to run the command. Doing so will display the members of the **Manufacturing** group. 
