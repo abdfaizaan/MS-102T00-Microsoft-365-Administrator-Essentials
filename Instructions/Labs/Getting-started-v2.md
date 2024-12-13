@@ -73,5 +73,15 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 7. If you are facing network connectivity issue with any of the **LON-CL1** , please make sure to **Turn On** the **LON-DC1** VM and make sure all other Hyper-V VMs are running. 
 
 8. Switch Back to the **LON-CL1**, to check on the connectivity issue.
+
+9. If you want a list of users and their email IDs, you can select the **Environment** Details page and scroll down to view the users list. 
+
+    >**Note:** You can also check the users on the **Microsoft Entra ID** portal. Follow the below steps:
+
+    - In the **Search resources, services and docs** search and select **Microsoft Entra ID**.
+
+    - From the left-hand navigation pane select **Users**, it will display all the users list.
+
+    - Keep this tab open for your entire lab.
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
