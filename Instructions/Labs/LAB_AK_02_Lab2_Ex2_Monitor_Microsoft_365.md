@@ -12,6 +12,8 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 	
 	- Password:- <inject key="AzureAdUserPassword"></inject>
 
+		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
 3. In the **Welcome to Microsoft 365** page, select the **Outlook (2)** icon in the column of **App lanuncher (1)** icons on the left. 
 
 	![](../Images/outlook.png)

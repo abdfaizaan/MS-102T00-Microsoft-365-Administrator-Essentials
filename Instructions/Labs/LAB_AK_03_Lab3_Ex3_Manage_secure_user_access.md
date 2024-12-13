@@ -16,6 +16,8 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
 5. On the **Connect to Microsoft Entra** page, sign into Microsoft Entra ID. The **USERNAME** field is already filled with **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. In the **PASSWORD** field, enter the <inject key="AzureAdUserPassword"></inject>, and then select **Next**.
 
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
 6. On the **User sign-in** page, under **Select the Sign On method**, select **Pass-through authentication** and then select **Next**. 
 
 7. On the **Enable single sign-on** page, select **Enter credentials**. 
@@ -108,6 +110,8 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 19. Once you are signed out as Holly, the **Pick an account** window will appear in the **Sign in to Microsoft Azure** tab. As a best practice when signing out from a Microsoft online service as one user and signing back in as another, close all your browser tabs except for the **Sign out** or **Sign in** tab. In this case, close the other tabs now and leave the **Sign in** tab open. In the **Pick an account** window, select **Use another account**. 
 
 20. In the **Sign in** window, enter **Laura@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** username, and then select **Next**. 
+
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 21. On the **Enter password** window, enter any random mix of letters and then select **Sign in**. Note the invalid password error message that appears. Repeat this step 2 more times. Since you set the **Lockout threshold** to **3**, your account is temporarily locked to prevent unauthorized use. Try again later, and if you still have trouble, contact your admin.
 

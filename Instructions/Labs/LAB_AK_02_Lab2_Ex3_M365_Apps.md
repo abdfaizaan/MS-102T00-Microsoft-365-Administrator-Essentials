@@ -96,7 +96,9 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 	
 	- Password:- <inject key="AzureAdUserPassword"></inject> and then select **Sign in.**
 
-	>**Note**: if it asks you to change the password, then change the password for the laura's account.
+		>**Note**: if it asks you to change the password, then change the password for the laura's account.
+
+		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. In the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**. In the **Save password** window, select **Never**.
 
@@ -214,6 +216,8 @@ In the prior task, you logged into Laura Atkins client PC, and you verified that
 1. In the **Enter password** window, For the password, sign-in with the same **Microsoft 365 Tenant Password**.
 	
 	- Password:- <inject key="AzureAdUserPassword"></inject> and then select **Sign in.**
+
+		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. On the **Stay signed in to all your apps**, select **No, sign in to this app only**.
 

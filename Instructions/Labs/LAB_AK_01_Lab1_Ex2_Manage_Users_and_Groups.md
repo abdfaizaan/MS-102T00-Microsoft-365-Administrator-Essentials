@@ -59,7 +59,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. In the **Sign in** window, enter **Holly@otuwamocZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
 
-	>**Note:** You can copy the complete username from the **Environment** details page or from the **Microsoft entra ID** > **Users** page. 
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix. 
 
 1. In the **Enter password** window, enter <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
@@ -266,6 +266,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 1. A **Sign in** window will appear requesting your credentials. Sign in using Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). For the password, sign-in with the same **Microsoft 365 Tenant Password** 
 	
 	- Password:- <inject key="AzureAdUserPassword"></inject>
+
+		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization** check box and then select **Accept**.
 
