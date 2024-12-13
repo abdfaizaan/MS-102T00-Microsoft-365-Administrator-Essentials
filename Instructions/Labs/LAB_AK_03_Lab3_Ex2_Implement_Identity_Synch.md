@@ -126,7 +126,7 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. Maximize the **Synchronization Service Manager on LON-DC1** window. The **Operations** tab at the top of the screen is displayed by default so that you can monitor the synchronization process, which automatically started when you selected this program. 
 
-1. Wait for the **Export** profile to complete for **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD**. When it finishes, its **Status** should be **completed-export-errors**. Once it's complete and you see this status, select any of the these **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD** row.  
+1. Wait for the **Export** profile to complete for **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD**. When it finishes, its **Status** should be **completed-no-objects**. Once it's complete and you see this status, select any of the these **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD** row.  
 
 1. In the bottom portion of the screen, a detail pane appears showing the detailed information for this selected operation. 
 
