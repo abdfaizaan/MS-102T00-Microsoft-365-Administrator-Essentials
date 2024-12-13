@@ -73,6 +73,8 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 
 1. In the **Sign in** window, enter **Laura@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**, and then select **Next**.
 
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
 1. In the **Enter password** window, For the password, sign-in with the same **Microsoft 365 Tenant Password**.
 	
 	- Password:- <inject key="AzureAdUserPassword"></inject> and then select **Sign in.**
@@ -191,6 +193,8 @@ In the prior task, you logged into Laura Atkins client PC, and you verified that
 1. Click on **Sign in or create account**.
  
 1. Sign in with the credentials, **Email/Username:** **Laura@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** and **Password:** - <inject key="AzureAdUserPassword"></inject> to activate Office. If prompted, select **No, sign in to this app only** and close any additional pop-ups.
+
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. Verify that Word is functioning properly by opening a blank Word document, entering some text, and saving the document to the **Documents** folder. 
 

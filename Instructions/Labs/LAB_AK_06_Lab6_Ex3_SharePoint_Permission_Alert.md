@@ -62,6 +62,8 @@ In the prior task, you configured an alert designed to notify Lynne Robbins when
 
 1. In your **Microsoft Edge** browser, open a new tab and enter the following URL in the address bar: **https://otuwamocZZZZZZ.sharepoint.com/_layouts/15/settings.aspx (replace ZZZZZZ with the tenant prefix provided by your lab hosting provider)**. This opens the **Site Settings** for the global SharePoint Communication site.
 
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
 1. On the **Site Settings** window, under the **Users and Permissions** section, select **Site permissions**. 
 
 1. In the ribbon at the top of the page, the **Permissions** tab is displayed by default. Under the **Manage** drop-down, select **Site Collection Administrators**.

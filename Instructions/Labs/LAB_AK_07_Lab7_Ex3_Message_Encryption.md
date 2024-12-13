@@ -64,6 +64,8 @@ In this exercise you will learn how to create a mail flow encryption rule using 
 	```powershell
 	Connect-ExchangeOnline -UserPrincipalName Holly@otuwamocZZZZZZ.onmicrosoft.com
 	```
+
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 	
 6. In the **Enter password** dialog box that appears, enter the password provided and then select **Sign in**.
 

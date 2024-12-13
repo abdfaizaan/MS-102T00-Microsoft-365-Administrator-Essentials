@@ -100,6 +100,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 	>**Note:** If the **Next** button is not enabled, then tab off the **PASSWORD** field to enable it. 
 
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
 1. On the **Connect to AD DS** page, enter **adatum\Administrator** in the **USERNAME** field, enter **Pa55w.rd** in the **PASSWORD** field, and then select **Next**.  
 
 	>**Note:** (if the **Next** button is not enabled, then tab off the PASSWORD field to enable it). 
@@ -120,13 +122,17 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. If you restarted LON-DC1, then after it restarts, follow the instructions from your lab hosting provider to navigate back to hyper-v manager and connect to **LON-DC1** VM. Once connected this will display the log on screen for LON-DC1. Log in as **Adatum\Administrator** with a password of **Pa55w.rd**. 
 
-1. Minimize **Server Manager** after it opens, and then open the **Edge** browser and navigate to **htps://portal.office.com**. Log in as **Holly@otuwamocZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Password** field, enter <inject key="AzureAdUserPassword"></inject>. 
+1. Minimize **Server Manager** after it opens, and then open the **Edge** browser and navigate to **htps://portal.office.com**. Log in as **Holly@otuwamocZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Password** field, enter <inject key="AzureAdUserPassword"></inject>.
+
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. On the **Microsoft Office Home** page, select **Admin** to open the **Microsoft 365 admin center**. Then select the **Windows (Start)** icon in the lower left corner of the taskbar. In the **Start** menu that appears, select **Azure AD Connect** to expand the group (this time it should expand), and then select **Synchronization Service**.  
 
 1. Maximize the **Synchronization Service Manager on LON-DC1** window. The **Operations** tab at the top of the screen is displayed by default so that you can monitor the synchronization process, which automatically started when you selected this program. 
 
 1. Wait for the **Export** profile to complete for **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD**. When it finishes, its **Status** should be **completed-no-objects**. Once it's complete and you see this status, select any of the these **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD** row.  
+
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. In the bottom portion of the screen, a detail pane appears showing the detailed information for this selected operation. 
 
@@ -261,6 +267,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. Otherwise, enter **https://portal.office.com/** in the address bar to open the **Microsoft 365 Home** page, and then log in as **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. In the **Password** field, enter <inject key="AzureAdUserPassword"></inject>, and then on the **Microsoft 365 Home** page, navigate to the **Microsoft 365 admin center**. 
 
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
 1. In the **Microsoft 365 admin center**, select **Teams & groups** in the navigation pane, and then select **Active teams & groups**. 
 
 1. In the **Active teams and groups** window, the **Teams & Microsoft 365 gropus** tab is displayed by default. Select the **Security groups** tab. Verify the **Print Operators** group does NOT appear in the list of security groups. As mentioned previously, built-in security groups such as the **Print Operators** group are not synced from the on-premises AD to Microsoft Entra ID, even when you add members to the group as you did in the earlier task.
@@ -314,6 +322,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 	```
 
 1. In the **Pick an account** window that appears, select **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. In the **Enter password** window, enter <inject key="AzureAdUserPassword"></inject> and then select **Sign in**. 
+
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. If a **Permissions requested** dialog box appears, select the **Consent on behalf of your organization** check box and then select **Accept**.
 

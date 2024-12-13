@@ -277,6 +277,8 @@ To verify whether the protection that you assigned to the document works, you wi
 
 13. In the **Sign in** window, enter **JoniS@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** and then select **Next**.
 
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
 14. On the **Enter password** window, enter the same **Microsoft 365 Tenant Password** provided by your lab hosting provider for the tenant admin account and then select **Sign in**.
 
 15. If a **Welcome** window appears, select the X to close it.
@@ -304,6 +306,8 @@ To verify whether the protection that you assigned to the document works, you wi
 23. In the **Sign in** window, enter **JoniS@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** and then select **Next.** In the **Enter password** window, enter the same **Microsoft 365 Tenant Password** provided by your lab hosting provider for the tenant admin account (i.e. the MOD Administrator account) and then select **Sign in.** 
 
 	>**Note:** On Stay signed in to all your apps, select **No, sign in to this app only.**
+
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 
 23. The file should open in Word, since you assigned Joni with Read-only permission. Review the three notification bars that appear above the document. 
