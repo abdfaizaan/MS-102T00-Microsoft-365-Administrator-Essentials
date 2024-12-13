@@ -70,7 +70,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
      ![Start Your Azure Journey](../Images/image-06.png)
 
-7. If you want a list of users and their email IDs, you can select the Environment Details page and scroll down to view the user list. 
+7. If you want a list of users and their email IDs, you can select the **Environment** Details page and scroll down to view the users list. 
 
     >**Note:** You can also check the users on the **Microsoft Entra ID** portal. Follow the below steps:
 
