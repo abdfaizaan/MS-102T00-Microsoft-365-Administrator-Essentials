@@ -94,7 +94,7 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 1. In Holly's Outlook mailbox, monitor her Inbox for an **Informational-severity alert: eDiscovery search started or exported** email that was automatically sent by the Alerts notification system. The purpose of this message is to inform Holly that an eDiscovery search was created or exported. If necessary, select the **Refresh** icon to the left of the URL address. Once the email is received, open it and review the contents, then close the message. 
 	
-	>**Note:** It may take up to 10 minutes or so before the email arrives in Holly's Inbox.
+	>**Note:** It may take up to 24 hours for the email to arrive in Holly's inbox. You can proceed with the lab, and after 24 hours, you can check on it.
 
 1. In your **Edge** browser, switch back to the **Microsoft Purview** portal (the **Content search - Microsoft Purview** tab) and under the **Solutions** group in the left-hand navigation pane, select **Audit**. 
 
