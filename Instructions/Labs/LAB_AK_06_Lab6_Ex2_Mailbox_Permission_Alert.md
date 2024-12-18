@@ -92,7 +92,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 12. Lynne Robbins **Inbox** should include an email from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change.
 
-	>**WARNING:** Lab testing has shown that in some cases, it can take up to 15 minutes or so for the email to be received in Lynne's Inbox. You may need to refresh Outlook one or more times until you receive the email.
+	>**WARNING:** It may take up to 24 hours after creating or updating an alert policy for alerts to be triggered by the policy. This delay occurs because the policy needs to be synced with the alert detection engine. Please feel free to proceed with the next exercises and revisit this section after 24 hours.
 
 13. Once the notification email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal in a new tab.
 
