@@ -53,6 +53,15 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
     ![Access Your VM and Lab Guide](../Images/assignlicenses1.png)
 
+1. Go to **Subscriptions (1)** pane again and select **Microsoft 365 Business Premium (2)**.
+
+    ![](../Images/assign-m365-business1.png)
+
+1. On the **Microsoft 365 Business Premium**, select **+ Assign licenses**. On the **Assign license to users** pane, search and select for **Lynne Robbins (1)** and select **Assign (2)**. 
+
+    ![](../Images/assign-m365-business2.png)
+    ![](../Images/assign-m365-business3.png)
+
 1. Close the assigned licenses pane, and close the **Microsoft 365 admin center**.
 
 1. In **Type here to search**, type **Windows Powershell (1)**, on the **Windows Powershell (2)**, select **Run as administrator (3)**, and run the following commands to assign the usage location to all the users:
