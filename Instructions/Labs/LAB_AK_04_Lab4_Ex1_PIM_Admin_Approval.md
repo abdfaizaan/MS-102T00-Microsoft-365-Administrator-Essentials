@@ -169,7 +169,7 @@ Switch back to **LON-CL1**.
 
 14. Once verification is complete and you receive a message indicating Great job! You have successfully set up your security info. Choose "Done" to continue signing in, select **Done**.
 
-15. In the **Activate - Global Administrator** pane that appears on the right-side of the screen, enter **Testing PIM** in the **Reason** field, and then select the **Activate** button at the bottom of the pane, and wait for the Status to get succeeded for all the steps, it will automatically refresh the browser.
+15. In the **Activate - Global Administrator** pane that appears on the right-side of the screen, In **Duration (Hours)** field reduced the time to **0.5**, and enter **Testing PIM** in the **Reason** field. Select the **Activate** button at the bottom of the pane, and wait for the Status to get succeeded for all the steps, it will automatically refresh the browser.
 
 16. On the **My roles | Microsoft Entra roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note the Global Administrator role does not yet appear. While the role has been activated, it has not been assigned to Patti's account since Holly has not yet approved Patti's request.  
 
@@ -186,6 +186,8 @@ Switch back to **LON-CL1**.
 3. In the **Privileged Identity Management | Quick start** window, in the middle pane under **Tasks**, select **Approve requests**.
 
 4. In the **Approve requests | Microsoft Entra roles** window, in the **Requests for role activations** section, select the check box to the left of the Global Administrator request from Patti Fernandez, and then select the **Approve** button.
+
+	>**Note:** Wait for a while if the requests haven’t appeared yet. Since it may take some time, you can proceed with the next exercise and come back later to check here.
 
 5. In the **Approve Request** pane that appears on the right-side of the screen, enter **PIM testing** in the **Justification** field and then select **Confirm**.
 
