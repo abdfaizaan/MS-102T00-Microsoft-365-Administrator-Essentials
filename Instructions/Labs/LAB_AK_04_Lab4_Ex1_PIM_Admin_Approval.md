@@ -26,7 +26,6 @@ Because the username and password for this first Global admin account are typica
 
 ### Task 1 - Configure the Global Administrator role to require approval
 
-
 1. The prior lab exercise used Adatum's domain controller (LON-DC1). This lab will use LON-CL1.  
 Switch back to **LON-CL1**. 
 
@@ -54,13 +53,15 @@ Switch back to **LON-CL1**.
 
 12. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select **No approver selected (+)** option. In the **Select a member** pane that opens on the right, you would normally scroll through the list of users and select **Holly Dickson**. However, since over 200 users were synchronized from the on-premises Active Directory to Microsoft Entra ID in the prior lab exercise, scrolling through the user list will be too time consuming. 
 
-    Therefore, enter **Holly** in the **Search** box. In the list of users whose first name starts with Holly, select Holly Dickson's user account that pertains to the onmicrosoft.com domain (**Holly@yourtenant.onmicrosoft.com**). Do NOT select Holly's user account that applies to the custom domain. Then select the **Select** button.
+    Therefore, enter **Holly** in the **Search** box. In the list of users whose first name starts with Holly, select Holly Dickson's user account that pertains to the onmicrosoft.com domain (**Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**). Do NOT select Holly's user account that applies to the custom domain. Then select the **Select** button.
 
     ![](../Images/new-ms102-lab4-ex1-task1-1.png)
 
-13. In the **Edit role setting - Global Administrator** window, select the **Notification** tab at the top of the page.
+    >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-14. On the **Notification** tab, note the three activities that can trigger a notification being sent: **Send notifications when...**    
+14. In the **Edit role setting - Global Administrator** window, select the **Notification** tab at the top of the page.
+
+15. On the **Notification** tab, note the three activities that can trigger a notification being sent: **Send notifications when...**    
 
     - members are assigned as eligible to this role
     - members are assigned as active to this role
@@ -68,13 +69,15 @@ Switch back to **LON-CL1**.
 
     For each of these three activities, an alert can be sent (depending on the activity, it will either be a Role assignment alert or a Role activation alert). The default value for each of these alerts is **Admin**, which refers to the Global Administrators and any Privileged Role Administrators. Besides sending this alert notification email to these admins, Holly wants the alert for each activity sent to the ODL user account. 
 
-    In the **Additional recipients** field for each of the three alerts (the **Role assignment alert** for the first two activities and the **Role activation alert** for the final activity), enter the ODL user's email ID of **odl_user_<inject key="DeploymentID" enableCopy="false"/>@yourtenant.onmicrosoft.com**.
+    In the **Additional recipients** field for each of the three alerts (the **Role assignment alert** for the first two activities and the **Role activation alert** for the final activity), enter the ODL user's email ID of **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**.
 
 	![](../Images/new-ms102-lab4-ex1-task1-2.png)
 
-15. At the bottom of the **Edit role setting - Global Administrator** window, select **Update**.
+	>**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-16. Leave all browser tabs open for the next task.
+17. At the bottom of the **Edit role setting - Global Administrator** window, select **Update**.
+
+18. Leave all browser tabs open for the next task.
 
 
 ### Task 2 - Assign an eligible group to the Global Admin role
@@ -97,11 +100,13 @@ Switch back to **LON-CL1**.
 
     - Membership type - **Assigned**
 
-    - Owners - Select **No owners selected**. In the **Add owners** pane, enter **Holly** in the **Search** field and select the **Holly@yourtenant.onmicrosoft.com** user account
+    - Owners - Select **No owners selected**. In the **Add owners** pane, enter **Holly** in the **Search** field and select the **Holly@otuwamocZZZZZZ.onmicrosoft.com** user account
 
     - Members - Select **No members selected**. In the **Add members** pane, enter **Patti** in the **Search** field and select Patti Fernandez's user account and select **Select** option.
 
 	    ![](../Images/new-ms102-lab4-ex1-task1-4.png)
+
+	>**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 5. Select the **Create** button at the bottom of the page.
 
@@ -159,9 +164,9 @@ Switch back to **LON-CL1**.
 11. On the **Microsoft Authenticator** page, it will ask you to download the **Microsoft Authneticator App**, on the Start by getting the app, select **Next**. On Microsoft Authenticator select **Next**, scan the QR code using your authenticator app, after that enter the code which displays inside your authenticator app, and when it says **Notification approved** select **Next**.
 
     >**Note**: if you don't know how to use the Microsoft Authenticator app, you can follow these steps:
-    1. Download the Microsoft Authenticator App.
-    2. Sign in with your email ID.
-    3. On the Authenticator page select **+** icon, select **Work or school account**, and on the **Add work or school account** pop-up select **Scan QR code**, now proceed with the step-11.
+    - 1. Download the Microsoft Authenticator App.
+    - 2. Sign in with your email ID.
+    - 3. On the Authenticator page select **+** icon, select **Work or school account**, and on the **Add work or school account** pop-up select **Scan QR code**, now proceed with the step-11.
 
 12. In the Phone authentication page, Select **Your country** and provide your **Phone number**. Select **Receive a code** and click **Next**.
 
@@ -169,7 +174,7 @@ Switch back to **LON-CL1**.
 
 14. Once verification is complete and you receive a message indicating Great job! You have successfully set up your security info. Choose "Done" to continue signing in, select **Done**.
 
-15. In the **Activate - Global Administrator** pane that appears on the right-side of the screen, In **Duration (Hours)** field reduced the time to **0.5**, and enter **Testing PIM** in the **Reason** field. Select the **Activate** button at the bottom of the pane, and wait for the Status to get succeeded for all the steps, it will automatically refresh the browser.
+15. In the **Activate - Global Administrator** pane that appears on the right-side of the screen, in **Duration (Hours)** field reduced the time to **0.5**, and enter **Testing PIM** in the **Reason** field. Select the **Activate** button at the bottom of the pane, and wait for the Status to get succeeded for all the steps, it will automatically refresh the browser.
 
 16. On the **My roles | Microsoft Entra roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note the Global Administrator role does not yet appear. While the role has been activated, it has not been assigned to Patti's account since Holly has not yet approved Patti's request.  
 
