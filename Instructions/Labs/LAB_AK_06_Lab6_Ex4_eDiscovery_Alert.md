@@ -64,6 +64,18 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 	![](../Images/ediscovery.png)
 
+	> **Note:** If you encounter an **permission error -** _You are not a member of the content search case_ please follow the below steps to add the eDiscovery manager role to Holly.
+		- In the **Microsoft Purview** portal from the left pane click on **Settings (1)**, expand **Roles and scopes (2)** and select **Role groups (3)**.
+
+	![](../Images/ediscovery1.png)
+
+   In the list of Role groups, select **eDiscovery Manager (1)** and click on **Edit (2)**.
+ 
+	![](../Images/ediscovery2.png)
+
+   In the **eDiscovery Manager** page, click on **Choose users (1)** and search and select for **Holly Dickson (2)** and click on **Select (3)**. Now click on **Next, Next and Save**.
+	![](../Images/ediscovery3.png)
+   
 1. The **Content search** window has two tabs - a **Search** tab and an **Export** tab. The **Search** tab is displayed by default. Select the **+ New search** option that appears on the menu bar. This initiates the **New search** wizard.
 
 1. In the **New search** wizard, on the **Name and description** page, enter **Confidential search** in the **Name** field and then select **Next**.
