@@ -22,7 +22,11 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. In the **Add or sync users to Microsoft Entra ID** wizard, on the **About user synchronization** page, read through the content. In the **User status** section, note the number of existing Adatum cloud users and hybrid users. Select **Next**.
 
+	![](../Images/L3E2T1S5-2904.png)
+
 1. On the **Select a migration option** page, read the explanation of each option so that you understand the migration options that are available. Select the **Continuous sync** option and then select **Next**.
+
+	![](../Images/L3E2T1S5-2904.png)
 
 1. On the **Prepare by running IdFix** page, since you already ran IdFix in the prior lab exercise, there's no need to download and run it again. Select **Next**.
 
@@ -44,9 +48,15 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 		>**Note:** After selecting this third check box, the recommendation changes to **Microsoft Entra Connect Sync**. 
 
+	![](../Images/L3E2T1S10-2904.png)
+
 1. Select **Next**. The wizard will deploy the recommended solution, **Microsoft Entra Connect Sync**. 
 
-1. On the **Sync your users** page, under the **Installation options**, select the hyperlink which states **Getting started with Microsoft Entra Connect Sync using express settings.** This opens a new tab in your browser and takes you to the Microsoft Download Center.
+1. On the **Sync your users** page, under the **Installation options**, select the hyperlink which states **Getting started with Microsoft Entra Connect Sync using express settings.** This opens a new tab in your browser and takes you to the Microsoft Learn page. Here, click on the hyperlink **download Microsoft Entra Connect sync**, which will take you to Download Center.
+
+	![](../Images/L3E2T1S12-2904.png)
+
+	![](../Images/L3E2T1S12.2-2904.png)
 
 1. Under **Microsoft Entra Connect**, select **Download**.
 
