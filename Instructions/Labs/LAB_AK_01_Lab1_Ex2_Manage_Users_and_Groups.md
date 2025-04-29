@@ -11,19 +11,21 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. On the LON-CL1 VM, the **Microsoft 365 admin center** should still be open in your Microsoft Edge browser from the prior lab exercise. You should be signed into Microsoft 365 as the **ODL user**. 
 
-1. Navigate back to the **Microsoft 365 admin center** navigation pane, select **Users** and then select **Active users**. In the **Active users** list, you will see the list of existing user accounts that were created by your lab hosting provider.
+1. Navigate back to the **Microsoft 365 admin center** navigation pane, select **Users (1)** and then select **Active users**. In the **Active users (2)** list, you will see the list of existing user accounts that were created by your lab hosting provider.
 
-1. On the **Active users** page, in the list of users, select **Holly Dickson**.
+1. On the **Active users** page, in the list of users, select **Holly Dickson (3)**.
 
-	- Select **Reset Password**. On the **Reset Password** page. Clear (uncheck) the **Automatically create a password** check box, which will display a new field for entering an administrator defined password, enter the same **Microsoft 365 Tenant Password** provided by your lab hosting provider for the tenant admin account (i.e. <inject key="AzureAdUserPassword"></inject>)
+	- Select **Reset Password (4)**.
 
-	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
+		![Access Your VM and Lab Guide](../Images/ms-102-32.png)
 
-1. Select **Reset Password** button. If a **Save password** dialog box appears towards the top of the screen, select **Never**.
+1. On the **Reset Password** page. Clear (uncheck) the **Automatically create a password (1)** check box, which will display a **new field (2)** for entering an administrator defined password, enter the same **Microsoft 365 Tenant Password** provided by your lab hosting provider for the tenant admin account (i.e. <inject key="AzureAdUserPassword"></inject>)
 
-1. Go back from the **Password has been reset** page.
+1. Clear (uncheck) the **Require this user to change their password when they first sign in (3)** check box. Select **Reset Password (4)** button. If a **Save password** dialog box appears towards the top of the screen, select **Never**.
 
-1. Now on the **Holly Dickson** page. Select **Manage Roles** under **Roles** section. 
+	![Access Your VM and Lab Guide](../Images/ms-102-33.png)
+
+1. Go back from the **Password has been reset** page. Now on the **Holly Dickson** page. Select **Manage Roles** under **Roles** section. 
 
 	![Access Your VM and Lab Guide](../Images/manageroles.png)
 
@@ -57,6 +59,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. In the **Pick an account** window, select **Use another account**. 
 
+	![Access Your VM and Lab Guide](../Images/ms-102-34.png)
+
 1. In the **Sign in** window, enter **Holly@otuwamocZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
 
 	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix. 
@@ -65,13 +69,17 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the screen, there's no option to close it. Instead, to the right of the window, select the forward arrow icon (**>**) two times and then select the check mark icon to advance through the slides in this messaging window. 
 
-1. If a **Find more apps** window appears, select the **X** in the upper right-hand corner of the window to close it. 
+	![Access Your VM and Lab Guide](../Images/ms-102-35.png)
 
-1. The **Welcome to Microsoft 365** page appears in your Edge browser in the **Home | Microsoft 365** tab. This is Holly's Microsoft 365 home page. Note that Holly's initials appear in the upper-right corner of the screen, however, Holly's name is not displayed. This is because Holly's account did not exist at the time you added the Microsoft 365 pilot project users to the group that was associated with the custom theme in the prior lab exercise. Since Holly wants to see her name at the top of each Microsoft 365 window when she's logged into the system, she first wants to add her account to the group of Microsoft 365 pilot project users.
+	>**Note:** If a any pop-up appears, select the **X** in the upper right-hand corner of the window to close it. 
 
-	>**Note:** Select **Skip for now** twice on the **Business Advisor** pop-up.
+1. The **Welcome to Microsoft 365 Copilot** page appears in your Edge browser in the **Home | Microsoft 365 Copilot** tab. This is Holly's Microsoft 365 home page. Note that Holly's initials appear in the below-left corner of the screen, however, Holly's name is not displayed. This is because Holly's account did not exist at the time you added the Microsoft 365 pilot project users to the group that was associated with the custom theme in the prior lab exercise. Since Holly wants to see her name at the top of each Microsoft 365 window when she's logged into the system, she first wants to add her account to the group of Microsoft 365 pilot project users.
+
+	![Access Your VM and Lab Guide](../Images/ms-102-36.png)
 
 1. In the column of application icons that appears on the far left-side of the screen, select **Admin**. This opens the **Microsoft 365 admin center** in a new browser tab. 
+
+	>>**Note:** Select **X** for closing the **Business Advisor** pop-up.
 
 1. In the **Microsoft 365 admin center**, select **Teams & groups** in the navigation pane, and then under it, select **Active teams & groups**. 
 
@@ -95,17 +103,19 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it, select **Active users**.
 
-1. In the **Active Users** window, when you hover your mouse over a user's **Display name**, a **key icon** appears to the right of the user's name. By selecting the key icon, you can reset a user's password. You must reset the passwords for **Alex Wilber, Joni Sherman, Lynne Robbins, and Patti Fernandez** to the same **Microsoft 365 Tenant Password**.
-
 1. Hover your mouse over **Alex Wilber** and select the key icon that appears.
 
-1. In the **Reset password** pane for Alex, clear (uncheck) the **Automatically create password** check box. 
+	![Access Your VM and Lab Guide](../Images/ms-102-37.png)
 
-1. In the **Password** field that appears, enter <inject key="AzureAdUserPassword"></inject>. Select the eye (**Show Password**) icon at the end of the **Password** field to display the value that you entered. Verify that you correctly entered the tenant password.
+1. In the **Reset password** pane for Alex, clear (uncheck) the **Automatically create password (1)** check box. 
 
-1. Clear (uncheck) the **Require this user to change their password when they first sign in** check box.
+1. In the **Password** field that appears, enter <inject key="AzureAdUserPassword"></inject>. Select the eye (**Show Password**) icon at the end of the **Password (2)** field to display the value that you entered. Verify that you correctly entered the tenant password.
 
-1. Select **Reset Password**. If a **Save password** dialog box appears at the top of the screen, select **Never**. Then select **Close** on the **Password has been reset** pane.
+1. Clear (uncheck) the **Require this user to change their password when they first sign in (3)** check box.
+
+1. Select **Reset Password (4)**. If a **Save password** dialog box appears at the top of the screen, select **Never**. Then select **Close** on the **Password has been reset** pane.
+
+	![Access Your VM and Lab Guide](../Images/ms-102-38.png)
 
 1. Repeat steps 19-23 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, reset each of their passwords to the same **Microsoft 365 Tenant Password** 
 	- Password:- <inject key="AzureAdUserPassword"></inject>
@@ -116,39 +126,57 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-1. In the **Microsoft 365 admin center**, select **Teams & groups** in the navigation pane, and then under it, select **Active teams & groups**. 
+1. In the **Microsoft 365 admin center**, select **Teams & groups (1)** in the navigation pane, and then under it, select **Active teams & groups (2)**. 
 
-1. In the **Active teams and groups** page, there's a tab for viewing each of the group types. The **Teams & Microsoft 365 groups** tab is displayed by default, this tab displays the existing Teams & Microsoft 365 groups.  
+1. In the **Active teams and groups** page, there's a tab for viewing each of the group types. The **Teams & Microsoft 365 groups (3)** tab is displayed by default, this tab displays the existing Teams & Microsoft 365 groups.  
 
-1. Select the **+ Add a Microsoft 365 group** option that appears on the menu bar above the list of groups. This initiates the **Add a group** wizard. 
+1. Select the **+ Add a Microsoft 365 group (4)** option that appears on the menu bar above the list of groups. This initiates the **Add a Microsoft 365 group** wizard. 
 
-1. In the **Set up the basics** page, enter **Inside Sales** in the **Name** field, and then enter **Collaboration group for the Inside Sales team** in the **Description** field (Note: even if you don't enter a description, you must still select into this field to enable the **Next** button). Select **Next**.
+	![Access Your VM and Lab Guide](../Images/ms-102-39.png)	
 
-1. You will now assign Allan Deyoung and Patti Fernandez as owners of the Inside Sales group. In the **Assign owners** window, select **+ Assign owners**.
+1. In the **Set up the basics** page, enter **Inside Sales (1)** in the **Name** field, and then enter **Collaboration group for the Inside Sales team (2)** in the **Description** field (Note: even if you don't enter a description, you must still select into this field to enable the **Next** button). Select **Next (3)**.
+
+	![Access Your VM and Lab Guide](../Images/ms-102-40.png)
+
+1. You will now assign Allan Deyoung and Patti Fernandez as owners of the Inside Sales group. In the **Assign owners** window, select **+ Assign owners (1)**.
 	
-1. In the **Assign owners** pane that appears, select the check boxes next to **Allan Deyoung** and **Patti Fernandez**, and then select the **Add (2)** button at the bottom of the pane.
+1. In the **Assign owners** pane that appears, select the check boxes next to **Allan Deyoung** and **Patti Fernandez** **user (3)**, and then select the **Add (3)** button at the bottom of the pane.
 
-1. On the **Assign owners** page, Allan and Patti should appear as owners of the group. Select **Next**.
+	![Access Your VM and Lab Guide](../Images/ms-102-41.png)
 
-1. You will now assign Diego Siciliani and Lynne Robbins as members of the Inside Sales group. In the **Add members** page, select **+ Add members**.
+1. On the **Assign owners** page, **Allan and Patti (1)** should appear as owners of the group. Select **Next (2)**.
 
-1. In the **Add members** pane that appears, select the check boxes next to **Diego Siciliani** and **Lynne Robbins**, and then select the **Add (2)** button at the bottom of the pane.
+	![Access Your VM and Lab Guide](../Images/ms-102-42.png)
 
-1. On the **Add members** page, Diego and Lynne should appear as members of the group. Select **Next**.
+1. You will now assign Diego Siciliani and Lynne Robbins as members of the Inside Sales group. In the **Add members** page, select **+ Add members (1)**.
+
+1. In the **Add members** pane that appears, select the check boxes next to **Diego Siciliani** and **Lynne Robbins** **users (2)**, and then select the **Add (3)** button at the bottom of the pane.
+
+	![Access Your VM and Lab Guide](../Images/ms-102-43.png)
+
+1. On the **Add members** page, **Diego and Lynne (1)** should appear as members of the group. Select **Next (2)**.
+
+	![Access Your VM and Lab Guide](../Images/ms-102-44.png)
 
 1. In the **Edit settings** page, enter the following information: 
 
-	- Enter **insidesales** in the **Group email address** field.
+	- Enter **insidesales (1)** in the **Group email address** field.
 	
-	- In the **Privacy** field, **Public** should be selected by default. Do not change this value.
+	- In the **Privacy** field, **Public (2)** should be selected by default. Do not change this value.
 
-	- Select **Next**.
+	- Select **Next (3)**.
+
+		![Access Your VM and Lab Guide](../Images/ms-102-45.png)
 
 1. In the **Review and finish adding group** page, review the content that you entered. If anything needs to be fixed, select **Edit** under the specific area that needs adjustment, make any necessary corrections, and then select **Next** to continue back to this page. Once everything is correct, select **Create group**.
 
+	![Access Your VM and Lab Guide](../Images/ms-102-46.png)
+
 1. It may take a minute or so for the **Inside Sales** group created window to appear.
 
-1. Select **Close**. This returns you to the **Active teams and groups** page, which should display the **Microsoft 365** group tab. Since the Inside Sales group was a Microsoft 365 group, it should eventually display on this tab.
+1. Select **Close**. This returns you to the **Active teams and groups** page, which should display the **Microsoft 365** group tab. Since the **Inside Sales** group was a Microsoft 365 group, it should eventually display on this tab.
+
+	![Access Your VM and Lab Guide](../Images/ms-102-47.png)
 
 1. Repeat steps 3-14 to add a new group with the following information: 
 
@@ -176,11 +204,15 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 	![Access Your VM and Lab Guide](../Images/ownersrole.png)
 
-1. Select the **Members** sub-tab. In the **Members** sub-tab, select the **Add members** button. 
+1. Select the **Members (1)** sub-tab. In the **Members** sub-tab, select the **Add members (2)** button. 
+
+	![Access Your VM and Lab Guide](../Images/ms-102-48.png)
 
 1. In the **Add team members to Accounting** pane, select in the **Search by name or email address** field. This displays the list of active users.
 
-1. In the list of users, select **Alex Wilber**,  **Joni Sherman**, and then select **Lynne Robbins**. Once all three users are selected, select the **Add (3)** button at the bottom of the pane.
+1. In the list of users, select **Alex Wilber**,  **Joni Sherman**, and then select **Lynne Robbins** **users (1)**. Once all three users are selected, select the **Add (2)** button at the bottom of the pane.
+
+	![Access Your VM and Lab Guide](../Images/ms-102-49.png)
 
 1. Once the three new members have been added to the group, select the **X** in the upper right-hand corner of the **Accounting** pane to close it. 
 
@@ -189,6 +221,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 	- Name: **IT Admins**
 
 	- Description: **IT administrative personnel**
+
+		![Access Your VM and Lab Guide](../Images/ms-102-50.png)
 
 1. There is no owner, email address, or privacy setting for Security groups. Members must be added to a Security group after creating the group, which you will do in the next few steps. On the **Edit settings** page, you're NOT going to assign Azure AD roles to the group, so simply select **Next**.
 
@@ -204,11 +238,17 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. In the **IT Admins** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
 
-1. The **Members** tab displays sections for the Owners and the Members. Under the **Members** section, you can see that there are no members. Under this section, select **View all and manage members** to add members to the group. 
+1. The **Members (1)** tab displays sections for the Owners and the Members. Under the **Members** section, you can see that there are no members. Under this section, select **View all and manage members (2)** to add members to the group. 
+
+	![Access Your VM and Lab Guide](../Images/ms-102-51.png)
 
 1. In the **Members** pane that appears, select **+ Add members**. This displays the list of active Microsoft 365 users.
 
-1. In the list of users, select the check boxes for **Isaiah Langer**, **Megan Bowen**, and **Nestor Wilke**, and then at the bottom of the pane select the **Add (3)** button. 
+	![Access Your VM and Lab Guide](../Images/ms-102-52.png)
+
+1. In the list of users, select the check boxes for **Isaiah Langer**, **Megan Bowen**, and **Nestor Wilke** **users (1)**, and then at the bottom of the pane select the **Add (2)** button. 
+
+	![Access Your VM and Lab Guide](../Images/ms-102-53.png)
 
 1. In the **Members** pane, verify the three users that you selected appear. Select the **X** in the upper right-hand corner to close the **Members** pane. 
 
@@ -220,6 +260,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. In the **Delete Inside Sales?** pane that appears, select the **Delete group** button.
 
+	![Access Your VM and Lab Guide](../Images/ms-102-54.png)
+
 1. Once the group is deleted, select the **Close** button. 
 
 1. This will return you to the list of **Active teams and groups**. The **Inside Sales** group should no longer appear under the **Microsoft 365** tab. If the Inside Sales group still displays, wait a couple of minutes and then select the **Refresh** option on the menu bar. The updated **Active teams and groups** list should no longer include the Inside Sales group.
@@ -229,6 +271,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 1. To verify whether deleting this group affected any of its owners or members, select **Active Users** in the navigation pane. 
 
 1. In the **Active users** list verify that the Inside Sales group's two owners (**Allan Deyoung** and **Patti Fernandez**) and the two members (**Diego Siciliani** and **Lynne Robbins**) still appear in the list of users. This verifies that deleting a group does not delete the user accounts that were owners or members of the group.
+
+	![Access Your VM and Lab Guide](../Images/ms-102-55.png)
 
 1. Remain logged into LON-CL1 with the **Microsoft 365 admin center** open in your browser for the next task.
 
@@ -271,11 +315,16 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization** check box and then select **Accept**.
 
+	![Access Your VM and Lab Guide](../Images/ms-102-56.png)
+
 1. You will now use Microsoft Graph PowerShell to display the list of active groups. The Inside Sales group should not appear in this list. Type the following command and press Enter (Note: it may take a minute or so for the list of groups to appear):
 	
 	```powershell
 	Get-MgGroup
 	```
+
+	![Access Your VM and Lab Guide](../Images/ms-102-57.png)
+	
 1. As the note at the start of this task indicated, at this point you would normally run the **Get-MgDirectoryDeletedItem** cmdlet to display the list of deleted objects, which would include the ID of the **Inside Sales** group that you deleted in the prior task. However, given the current issues with this cmdlet, you should instead run the following series of commands to retrieve this ID. Type in each command and press Enter:    
 	
 	```powershell
@@ -293,6 +342,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 	```
 	
 	>**Note:** After running **$DeletedGroup**, copy the **ID**.
+
+	![Access Your VM and Lab Guide](../Images/ms-102-58.png)
 
 	```powershell
 	Get-MgDirectoryDeletedItem -DirectoryObjectId "<Replace ID>"
@@ -348,5 +399,5 @@ In this lab, you have:
 - Recovered Groups using PowerShell.
 
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 

@@ -16,11 +16,15 @@ In this exercise, you will continue in your role as Holly Dickson, Adatum's new 
 
 	![](../Images/deigosales.png)
 
-1. In the **Manage admin roles** window, the **User (no admin center access)** option is currently selected by default. Now that you want to assign Diego an administrator role, select the **Admin center access** option. This enables a list of commonly used admin roles for selection. 
+1. In the **Manage admin roles** window, the **User (no admin center access)** option is currently selected by default. Now that you want to assign Diego an administrator role, select the **Admin center access (1)** option. This enables a list of commonly used admin roles for selection. 
 
-1. Diego has been promoted to Billing Administrator, but since this role does not appear in the list of commonly used roles, scroll down and select **Show all by category**. 
+1. Diego has been promoted to Billing Administrator, but since this role does not appear in the list of commonly used roles, scroll down and select **Show all by category (2)**. 
 
-1. In the list of roles that are sorted by category, scroll down to the **Other** category, select the **Billing Administrator** check box, and then select **Save changes**. Note the **Admin roles updated** message that appears at the top of the pane once the changes are saved.
+	![](../Images/ms-102-59.png)
+
+1. In the list of roles that are sorted by category, scroll down to the **Other** category, select the **Billing Administrator (1)** check box, and then select **Save changes (2)**. Note the **Admin roles updated** message that appears at the top of the pane once the changes are saved.
+
+	![](../Images/ms-102-60.png)
 
 1. On the **Manage admin roles** window, select the **X** in the upper-right corner of the screen to close it. This returns you to the **Active users** list. 
 
@@ -30,12 +34,13 @@ In this exercise, you will continue in your role as Holly Dickson, Adatum's new 
 
 1. In the **Manage admin roles** window, select the **Admin center access** option. This enables the list of commonly used admin roles for selection. 
  
-1. In the list of commonly used admin roles, select the **User Administrator** role and then select **Save changes**.
+1. In the list of commonly used admin roles, select the **User Administrator (1)** role and then select **Save changes (2)**.
+
+	![](../Images/ms-102-61.png)
 
 1. Close the **Manage admin roles** window once the message appears indicating Lynne's admin roles were updated. 
 
 1. Remain logged into LON-CL1 and the Microsoft 365 admin center as Holly Dickson.
-
 
 ### Task 2 - Assign Delegated Administrators with Windows PowerShell  
 
@@ -61,6 +66,8 @@ In this exercise, you will continue in your role as Holly Dickson, Adatum's new 
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization** check box, and then select **Accept**.
+
+	![](../Images/ms-102-56.png)
 
 1. Holly wants to assign **Patti Fernandez** to the **Service Support Administrator** role. To assign this role using Microsoft Graph PowerShell, you must first obtain the object ID of the Service Support Administrator role so that you can assign it to Patti. However, in Microsoft Graph PowerShell, you can only assign roles that have been "enabled". Enabled roles are roles that were either enabled from a role template, or they have already been assigned to users through PowerShell or the Microsoft 365 admin center.
 
@@ -129,8 +136,12 @@ In this exercise, you will continue in your role as Holly Dickson, Adatum's new 
 	```powershell
 	Get-MgDirectoryRoleMember -DirectoryRoleId 'paste the ID of the role here'
 	``` 
+
+	![](../Images/ms-102-62.png)
 				
-1. The prior command only displays the IDs of the users assigned to the selected role. However, you can match the ID that's displayed with Patti's ID to verify that her account has been assigned the **Service Support Administrator** role. As you can see, Patti is the only user assigned to the role. 
+1. The prior command only displays the IDs of the users assigned to the selected role. However, you can match the ID that's displayed with Patti's ID to verify that her account has been assigned the **Service Support Administrator** role. As you can see, Patti is the only user assigned to the role.
+
+	![](../Images/ms-102-63.png)
 
 1. Let's now repeat this process to see all the users assigned to the Global Administrator role. Repeat step 15 to verify how many Adatum users have been assigned to the **Global Administrator** role. To complete this command, you must first copy (**Ctrl+C**) the ID of the Global Administrator role to the clipboard. You can find this ID in the list of enabled roles when you ran step 12. 
 
@@ -151,51 +162,53 @@ In this exercise, you will continue in your role as Holly Dickson, Adatum's new 
 
 In this task, you will begin by examining the administrative properties of two users, Joni Sherman and Lynne Robbins. You will then log into the Microsoft 365 home page on the Client 2 VM (LON-CL2) as each user to confirm several of the changes that you made when managing their administrative delegation in the prior tasks. Finally, as Lynne Robbins, you will perform two important user account maintenance tasks - resetting passwords and blocking user accounts.
 
-1. On LON-CL1, you should still be logged into the Microsoft 365 admin center as Holly Dickson. If not, then do so now.
+1. On LON-CL1, you should still be logged into the Microsoft 365 admin center as Holly Dickson.
 
-2. In the **Microsoft 365 admin center**, if you are not displaying the **Active Users**, then navigate to that page now.  
+1. In the **Microsoft 365 admin center**, if you are not displaying the **Active Users**, then navigate to that page now.  
 
-3. In the **Active users** list, select **Joni Sherman**. 
+1. In the **Active users** list, select **Joni Sherman**. 
 
-4. In the **Joni Sherman** properties window, the **Account** tab is displayed by default. Under the **Roles** section, it should indicate that Joni has **No administrator access**. Select the **X** in the upper right corner to close Joni's properties window.
+1. In the **Joni Sherman** properties window, the **Account** tab is displayed by default. Under the **Roles** section, it should indicate that Joni has **No administrator access**. Select the **X** in the upper right corner to close Joni's properties window.
 
-5. In the **Active users** list, select **Lynne Robbins**. 
+	![](../Images/ms-102-64.png)
 
-6. In **Lynne Robbins's** properties window, it should indicate that Lynne has been assigned the **User Administrator** role. Close Lynne's properties window.
+1. In the **Active users** list, select **Lynne Robbins**. 
+
+1. In **Lynne Robbins's** properties window, it should indicate that Lynne has been assigned the **User Administrator** role. Close Lynne's properties window.
 
 	![](../Images/lynne.png)
 
-7. In **Type here to search** search and select **Hyper-V Manager**. Right click on the **LON-CL2** VM, click on **Connect**, and on the **Connect to LON-CL2** pop-up select **Connect**.
+1. From the top-menu drop-down, and on the **Connect to LON-CL2** pop-up select **Connect**.
 
 	>**Note:** if required maximize the **LON-CL2** VM.
 
-8. In **LON-CL2**, on the log-in screen, you will log in as the local **Admin** account with a password of **Pa55w.rd**.
+1. In **LON-CL2**, on the log-in screen, you will log in as the local **Admin** account with a password of **Pa55w.rd**.
 
 	>**Note:** If a **Networks** window appears, select **Yes**.
 
-10. On the taskbar, select the **Microsoft Edge** icon. Maximize your Edge browser window if necessary.
+1. On the taskbar, select the **Microsoft Edge** icon. Maximize your Edge browser window if necessary.
 
 	>**Note:** if any tabs opened close all the tabs.
 
-11. In your **Edge** browser navigate to **https://portal.office.com**. 
+1. In your **Edge** browser navigate to **https://portal.office.com**. 
 
-12. You will begin by signing into Microsoft 365 as **Joni Sherman**. In the **Sign-in** window, enter **joni.sherman@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
+1. You will begin by signing into Microsoft 365 as **Joni Sherman**. In the **Sign-in** window, enter **joni.sherman@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
 	
 	- Password:- <inject key="AzureAdUserPassword"></inject>
 
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-13. On the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**. If a **Save password** window appears, select **Never**.
+1. On the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**. If a **Save password** window appears, select **Never**.
 
-14. If a **Welcome to Microsoft 365** dialog box appears in the middle of the page, select the forward-arrow (>) twice and then the check mark to close it.
+1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the page, select the forward-arrow (>) twice and then the check mark to close it.
 
-15. If a **Find more apps** window appears, select the **X** in the upper right-hand corner of the window to close it.
+	>**Note:** Close the pop-up which appears.
 
-16. On the **Welcome to Microsoft 365** window, which is Joni's Microsoft 365 home page, a navigation pane appears on the left side of the screen that indicates the applications the user has permission to access. In this **Apps** pane, note how the **Admin** option is not displayed. This is because Joni was never assigned a Microsoft 365 administrator role. 
+1. On the **Welcome to Microsoft 365** window, which is Joni's Microsoft 365 home page, a navigation pane appears on the left side of the screen that indicates the applications the user has permission to access. In this **Apps** pane, note how the **Admin** option is not displayed. This is because Joni was never assigned a Microsoft 365 administrator role. 
 
-	![](../Images/joni.png)
+	![](../Images/ms-102-65.png)
 
-17. You will now sign out of Microsoft 365 as Joni. In **Microsoft Edge**, at the top right of the **Welcome to Microsoft 365** page, select the user icon for **Joni Sherman** (the circle in the upper right-hand corner), and in the **Joni Sherman** window that appears, select **Sign out.** 
+17. You will now sign out of Microsoft 365 as Joni. In **Microsoft Edge**, at the top right of the **Welcome to Microsoft 365** page, select the user icon for **Joni Sherman** (the circle in the bottom left-hand corner), and in the **Joni Sherman** window that appears, select **Sign out.** 
 
 18. You will now sign back into Microsoft 365 as **Lynne Robbins**. In your current **Edge** browser tab, it should display a message indicating **Joni, you're signed out now**. In this window, it gives you the option of signing back in as Joni, or signing in as a different user. Select **Switch to a different account**, and in the **Email address** field that appears, enter **lynne.robbins@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
 	
