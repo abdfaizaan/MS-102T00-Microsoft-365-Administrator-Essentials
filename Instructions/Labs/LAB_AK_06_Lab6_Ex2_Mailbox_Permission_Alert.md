@@ -16,15 +16,17 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 5. On the **Name your alert, categorize it, and choose a severity** page, enter the following information:
 
-	- Name: **Mailbox permission change**
+	- Name: **Mailbox permission change (1)**
 
-	- Description: **This alert notifies Lynne Robbins when FullAccess permissions are granted to any mailbox in Adatum Corporation**
+	- Description: **This alert notifies Lynne Robbins when FullAccess permissions are granted to any mailbox in Adatum Corporation (2)**
 
-	- Severity: **Medium**
+	- Severity: **Medium (3)**
 
-	- Category: **Permissions**
+	- Category: **Permissions (4)**
 
-6. Select **Next**.
+6. Select **Next (5)**.
+
+	![](../Images/ms-102-101.png)
 
 7. On the **Choose an activity, conditions and when to trigger the alert** page, enter the following information:
 
@@ -59,48 +61,59 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In your Edge browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane, under the **Admin centers** group, select **Exchange**. This opens the Exchange admin center for Exchange Online.
+1. In your Edge browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane, select **Users > Active Users**. 
 
-3. In the **Exchange admin center**, the **Manage Mailboxes** window appears by default (if it doesn't, then in the left-hand navigation pane, under the **Recipients** group, select **Mailboxes**). 
+1. From the **Active users** list, search and select for **Lynne Robbins** (not the check box). 
 
-4. In the **Manage Mailboxes** window, select **Alex Wilber** from the list of mailboxes (select Alex's name; do not select the check box to the left of his name).
+1. On the **Lynne Robbins** tab, select **Licenses and apps**. Ensure that the **Microsoft 365 Business Premium** license is assigned. If it is not, select the checkbox and click **Save changes**.
+
+1. From the left-hand navigation pane, under the **Admin centers** group, select **Exchange**. This opens the Exchange admin center for Exchange Online.
+
+1. In the **Exchange admin center**, the **Manage Mailboxes** window appears by default (if it doesn't, then in the left-hand navigation pane, under the **Recipients** group, select **Mailboxes**). 
+
+1. In the **Manage Mailboxes** window, select **Alex Wilber** from the list of mailboxes (select Alex's name; do not select the check box to the left of his name).
 
    >**Note:** If user **Alex Wilber** is not present under **Manage Mailboxes** then we need to assign Exchange Online (Plan 1) license. To assign the license please follow the below steps.
    
-   i. Go to **Microsoft 365 admin center** tab, from the left pane select **Users** then **Active users**. Select **Alex Wilber** from the list.
+   > i. Go to **Microsoft 365 admin center** tab, from the left pane select **Users** then **Active users**. Select **Alex Wilber** from the list.
 
-   ii. Select **Licenses and apps**, then **Exchange Online (Plan 1)** and click on **Save changes**.
+   > ii. Select **Licenses and apps**, then **Exchange Online (Plan 1)** and click on **Save changes**.
 
-6. In the **Alex Wilber** pane that appears, the **General** tab is displayed by default. Select the **Delegation** tab.
+1. In the **Alex Wilber** pane that appears, the **General** tab is displayed by default. Select the **Delegation** tab.
 
-7. On the **Delegation** tab, there are three mailbox permissions that can be updated: **Send as**, **Send on behalf**, and **Read and manage (Full Access)**. You want to add each of these permissions for Alex's mailbox to **Joni Sherman**. For each permission, perform the following steps to add Joni to that permission:
+1. On the **Delegation** tab, there are three mailbox permissions that can be updated: **Send as**, **Send on behalf**, and **Read and manage (Full Access)**. You want to add each of these permissions for Alex's mailbox to **Joni Sherman**. For each permission, perform the following steps to add Joni to that permission:
 
 	- Select the **Edit** button for the permission. 
+	
 	- On the **Manage mailbox delegation** pane, select **+ Add members**.
+	
 	- In the list of users that appears, select the check box for **Joni Sherman** and then select **Save**.
+	
 	- In the **Add delegate permissions?** pane, select **Confirm**.
+	
 	- Once the mailbox permission is added to Alex's mailbox, select the back arrow at the top of the pane. 
+	
 	- This returns you to the **Delegation** tab on the **Alex Wilber** pane, which displays the three permissions. Repeat these steps for each of the two remaining permissions. 
 
-8. Once you have assigned Joni to each of the three permissions on the **Delegation** tab, select the **X** in the upper right-hand corner to close the **Alex Wilber** pane. 
+1. Once you have assigned Joni to each of the three permissions on the **Delegation** tab, select the **X** in the upper right-hand corner to close the **Alex Wilber** pane. 
 
-9. Since **Holly Dickson** has changed the mailbox permissions for Alex Wilber by giving Joni Sherman full access permissions to his mailbox, an alert email should automatically be sent to Lynne Robbins’ Inbox that notifies her of this event. You will verify this email was sent by checking Lynne's Inbox on LON-CL2. Switch to **LON-CL2**. 
+1. Since **Holly Dickson** has changed the mailbox permissions for Alex Wilber by giving Joni Sherman full access permissions to his mailbox, an alert email should automatically be sent to Lynne Robbins’ Inbox that notifies her of this event. You will verify this email was sent by checking Lynne's Inbox on LON-CL2. Switch to **LON-CL2**. 
 
-10. On **LON-CL2**, you should be signed into the machine as the local **administrator** (lon-cl2\admin) account. Select the **Microsoft Edge** icon in the taskbar, maximize the window (if necessary), and then enter the following URL in the address bar: **https://outlook.office365.com**
+1. On **LON-CL2**, you should be signed into the machine as the local **administrator** (lon-cl2\admin) account. Select the **Microsoft Edge** icon in the taskbar, maximize the window (if necessary), and then enter the following URL in the address bar: **https://outlook.office365.com**
 
-11. In the **Pick an account** window, if Lynne Robbins account **lynne**'s account appears in the user list, then select it now; otherwise, select **Use another account** and sign in as **lynne**'s enter the username. Then enter the Password.
+1. In the **Pick an account** window, if Lynne Robbins account appears in the user list, then select it now; otherwise, select **+ Use another account**, enter the username as **lynne.robbins@otuwamocZZZZZZ.onmicrosoft.com**. Then enter the Password as **<inject key="AzureAdUserPassword"></inject>**.
 
-12. Lynne Robbins **Inbox** should include an email from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change.
+1. Lynne Robbins **Inbox** should include an email from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change.
 
 	>**WARNING:** It may take up to 24 hours after creating or updating an alert policy for alerts to be triggered by the policy. This delay occurs because the policy needs to be synced with the alert detection engine. Please feel free to proceed with the next exercises and revisit this section after 24 hours.
 
-13. Once the notification email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal in a new tab.
+1. Once the notification email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal in a new tab.
 
-14. The **Microsoft 365 Defender** portal displays the **Alerts** window, and it automatically opens the **Mailbox permission change** pane for this alert activity that triggered the email notification to Lynne. <br/>
+1. The **Microsoft 365 Defender** portal displays the **Alerts** window, and it automatically opens the **Mailbox permission change** pane for this alert activity that triggered the email notification to Lynne. <br/>
 
 	Scroll down through the **Mailbox permission change** pane and review all the information for this activity. When you are done, select **Close** to close the pane.
 
-15. In your Edge browser, close the **View Alerts - Microsoft 365 security** tab. Leave Lynne's **Outlook** tab open, as you will use that in the next lab exercise.
+1. In your Edge browser, close the **View Alerts - Microsoft 365 security** tab. Leave Lynne's **Outlook** tab open, as you will use that in the next lab exercise.
 
 
 You have just successfully tested a mailbox permission alert that sent an alarm message on granting FullAccess to a user mailbox. 
@@ -112,4 +125,4 @@ In this lab, you have:
 - Created a Mailbox Permission Alert.
 - Validated the Mailbox Permission Alert.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.

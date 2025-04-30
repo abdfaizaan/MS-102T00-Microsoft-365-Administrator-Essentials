@@ -35,7 +35,7 @@ Perform the following steps to assign Lynne Robbins the Compliance Data Administ
 
 4. In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the left-hand navigation pane and expand the **System** section a and select **Permissions**.
 
-5. On the **Permissions** page, there are four sections - Microsoft Defender XDR, Microsoft Entra ID, Email & collaboration roles, and Cloud Apps. Under the **Email & collaboration roles** section, select **Roles**. 
+5. On the **Permissions** page, there are three sections - Microsoft Defender XDR, Microsoft Entra ID, and Email & collaboration roles. Under the **Email & collaboration roles** section, select **Roles**. 
 
 6. In the list of roles that appears, select the **Name** column heading to sort the roles in ascending alphabetical name order. Select the **Compliance Data Administrator** role group. 
 
@@ -61,4 +61,4 @@ In this lab, you have:
 
 - Assigned RBAC Permissions for Alert Notification Testing.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.

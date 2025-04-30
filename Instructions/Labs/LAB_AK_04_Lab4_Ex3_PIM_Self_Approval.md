@@ -15,86 +15,85 @@ In addition, Holly doesn't want to be forced to approve the role assignment when
 
 1. You should still be logged into LON-CL1 and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
-2. In your Edge browser, select the tab containing the **Microsoft Entra admin center**, which should still be open from the prior lab exercise. 
+1. In your Edge browser, select the tab containing the **Microsoft Entra admin center**, which should still be open from the prior lab exercise. 
 
-3. In the **Microsoft Entra admin center**, in the left-hand navigation pane, under **Identity**, select **Groups** and then select **All groups**.
+1. In the **Microsoft Entra admin center**, in the left-hand navigation pane, under **Identity**, select **Groups** and then select **All groups**.
 
     ![](../Images/L4E2T1S3.png)
 
-4. In the **Groups | All groups** window, select **New group** in the menu bar.
+1. In the **Groups | All groups** window, select **New group** in the menu bar.
 
     ![](../Images/L4E2T1S4.png)
 
-5. In the **New group** window, enter the following information:
+1. In the **New group** window, enter the following information:
 
-    - Group type - **Security**
+    - Group type - **Security (1)**
 
-    - Group name - **PIM-Helpdesk-Administrators**
+    - Group name - **PIM-Helpdesk-Administrators (2)**
 
-    - Group description - **Group of eligible users who can be assigned to the Helpdesk Administrator role in PIM**
+    - Group description - **Group of eligible users who can be assigned to the Helpdesk Administrator role in PIM (3)**
 
-    - Microsoft Entra roles can be assigned to the group - **Yes**
+    - Microsoft Entra roles can be assigned to the group - **Yes (4)**
 
-    - Membership type - **Assigned**
+    - Membership type - **Assigned (5)**
 
-    - Owners - Select **No owners selected**. In the **Add owners** pane, enter **Holly** in the **Search** field and select the **Holly**'s user account.
+    - Owners - Select **No owners selected**. In the **Add owners** pane, enter **Holly@otuwamsbZZZZZZ.onmicrosoft.com (6)** in the **Search** field and select the **Holly**'s user account.
 
-    - Members - Select **No members selected**. In the **Add members** pane, Enter **Alex** in the search field and then select **Alex Wilber**. Enter **Joni** in the Search field, and then select **Joni Sherman**.
+    - Members - Select **No members selected (7)**. In the **Add members** pane, Enter **Alex** in the search field and then select **Alex Wilber**. Enter **Joni** in the Search field, and then select **Joni Sherman**.
 
-6. In the **New group** window, select the **Create** button at the bottom of the page.
+     - In the **New group** window, select the **Create (8)** button at the bottom of the page.
 
-     ![](../Images/L4E2T1S6.png)
+          ![](../Images/L4E2T1S6.png)
 
-7. A dialog box appears at the top of the page that says: **Creating a group to which Microsoft Entra roles can be assigned is a setting that cannot be changed later. Are you sure that you want to add this capability?**. Select **Yes**.
+          >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
+1. A dialog box appears at the top of the page that says: **Creating a group to which Microsoft Entra roles can be assigned is a setting that cannot be changed later. Are you sure that you want to add this capability?**. Select **Yes**.
 
      ![](../Images/L4E2T1S7.png)
 
-8. On the **Groups | All groups** window, if the **PIM-Helpdesk-Administrators** group does not appear below the PIM-Global-Administrators group that you created in the prior task, select **Refresh** on the menu bar.
+1. In the **Groups | All groups** window, if the **PIM-Helpdesk-Administrators** group does not appear, click **Refresh** on the menu bar.
 
      ![](../Images/L4E2T1S8.png)
 
-9. You must now make the **PIM-Helpdesk-Administrators** group eligible for role assignment. In the left-hand navigation pane, select **Identity Governance** to expand the section, and then select **Privileged Identity Management**.
+1. You must now make the **PIM-Helpdesk-Administrators** group eligible for role assignment. In the left-hand navigation pane, select **Identity Governance (1)** to expand the section, and then select **Privileged Identity Management (2)**.
 
-     ![](../Images/L4E2T1S9.png)
+     ![](../Images/ms-102-92.png)
 
-10. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
+1. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 
      ![](../Images/L4E2T1S10.png)
 
-11. In the **Adatum Corporation | Quick start** window, under the **Assign** section, select the **Assign Eligibility** button.
+1. In the **Adatum Corporation | Quick start** window, under the **Assign** section, select the **Assign Eligibility** button.
 
      ![](../Images/L4E2T1S11.png)
 
-12. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Helpdesk Administrator**.
+1. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Helpdesk Administrator**.
 
      ![](../Images/L4E2T1S12.png)
 
-13. In the **Helpdesk Administrator | Assignments** window, select **+ Add assignments** on the menu bar. 
+1. In the **Helpdesk Administrator | Assignments** window, select **+ Add assignments** on the menu bar. 
 
      ![](../Images/L4E2T1S13.png)
 
-14. In the **Add assignments** window, the **Membership** tab is displayed by default. Under **Select member(s)**, select **No member selected**.
+1. In the **Add assignments** window, the **Membership** tab is displayed by default. Under **Select member(s)**, select **No member selected (1)**.
 
-15. In the **Select a member** pane that appears on the right, enter **PIM** in the **Search** field. This will display the list of eligible users and groups whose name starts with **PIM**. Select the **PIM-Helpdesk-Administrators** group that appears, and then select the **Select** button.
+1. In the **Select a member** pane that appears on the right, enter **PIM (2)** in the **Search** field. This will display the list of eligible users and groups whose name starts with **PIM**. Select the **PIM-Helpdesk-Administrators (3)** group that appears, and then select the **Select (4)** button.
 
      ![](../Images/L4E2T1S15.png)
 
-16. In the **Add assignments** window, select **Next >** (this does the same thing as selecting the **Setting** tab). 
+1. In the **Add assignments** window, select **Next >** (this does the same thing as selecting the **Setting** tab). 
 
      ![](../Images/L4E2T1S16.png)
 
-17. In the **Add assignments** window, under the **Setting** tab, verify the **Assignment type** option is set to **Eligible**. Also verify the **Permanently eligible** check box is selected (if not, then do so now), and then select **Assign**. 
+1. In the **Add assignments** window, under the **Setting** tab, verify the **Assignment type** option is set to **Eligible**. Also verify the **Permanently eligible** check box is selected (if not, then do so now), and then select **Assign**. 
 
-     ![](../Images/L4E2T1S17.png)
-
-18. In the **Helpdesk Administrator | Assignments** window, note that the **PIM-Helpdesk-Administrators** group is an eligible assignment to the Helpdesk Administrator role. Because **PIM-Helpdesk-Administrators** is a group, it means that all members of this group (which consists of Alex Wilber and Joni Sherman) are now eligible to be assigned the Helpdesk Administrator role.
+1. In the **Helpdesk Administrator | Assignments** window, note that the **PIM-Helpdesk-Administrators** group is an eligible assignment to the Helpdesk Administrator role. Because **PIM-Helpdesk-Administrators** is a group, it means that all members of this group (which consists of Alex Wilber and Joni Sherman) are now eligible to be assigned the Helpdesk Administrator role.
 
      ![](../Images/L4E2T1S18.png)
 
     >**Note:** Lab testing has shown that it can sometimes take up to 30 minutes for new assignments to appear under the **Eligible assignments** tab. If **PIM-Helpdesk-Administrators** doesn't appear immediately, wait a few minutes and then select the **Refresh** option on the menu bar. Continue to select the **Refresh** option every few minutes until **PIM-Helpdesk-Administrators** appears in the list of **Eligible assignments**.
    
-19. Leave all browser tabs open for the next task.
-
+1. Leave all browser tabs open for the next task.
 
 ### Task 2 - Configure the Helpdesk Administrator role for self-activation
 
@@ -112,7 +111,7 @@ In the prior lab exercise involving the Global administrator role, Holly updated
 
 5. In the **Adatum Corporation | Settings** window, select the **Helpdesk Administrator** role.
 
-    *>*Tip:** If the roles are not displayed in alphabetical order, select the **Role** heading to sort them in ascending alphabetical order. This will make it easier to locate the Helpdesk administrator role.
+    **>Tip:** If the roles are not displayed in alphabetical order, select the **Role** heading to sort them in ascending alphabetical order. This will make it easier to locate the Helpdesk administrator role.
 
 6. In the **Role setting details -  Helpdesk Administrator** window, scroll through the page and review the information for role activation, assignment, and notification. Then select **Edit** on the menu bar at the top of the page.
 
@@ -141,17 +140,17 @@ In the prior lab exercise involving the Global administrator role, Holly updated
     - members are assigned as eligible to this role
     - members are assigned as active to this role
     - eligible members activate this role
-
-    Under the **Send notifications when eligible members activate this role** section, Holly wants to be notified when Alex or Joni self-approve this role. Therefore:
+    - Under the **Send notifications when eligible members activate this role (1)** section, Holly wants to be notified when Alex or Joni self-approve this role. Therefore:
 
     - Verify the **Role activation alert** check box is selected.
     - The default recipient for the **Role activation alert** is **Admin**. This refers to the Global Administrators (Holly) and any Privileged Role Administrators. 
     - Un-check (clear) the **Notification to activated user (requestor)**. Since Alex and Joni will be self-approving, they don't need to receive a notification when they do so.
 
-13. Select the **Update** button at the bottom of the window.
+13. Select the **Update (2)** button at the bottom of the window.
+
+     ![](../Images/ms-102-93.png)
 
 14. Leave all browser tabs open for the next task.
-
 
 ### Task 3 - Self-activate the Helpdesk Admin role
 
@@ -159,15 +158,17 @@ At this point in Holly's pilot project, the PIM-Helpdesk-Administrators group ha
 
 1. In LON-CL1, right-click on the **Edge** icon on the taskbar and in the menu that appears, select **New InPrivate window**. 
 
-2. In your InPrivate browsing session, enter the following URL in the address bar: **https://portal.azure.com**
+2. In your InPrivate browsing session, enter the following URL in the address bar: **[Azure Portal](https://portal.azure.com)**
 
-3. You're now going to log into Azure as Alex Wilber. In the **Sign in** window, enter **alex wilber's** account and then select **Next**. In the **Enter password** window, enter the password and then select **Sign in**. In the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes**.
+3. You're now going to log into Azure as Alex Wilber. In the **Sign in** window, enter the username as **alex.wilber@otuwamocZZZZZZ.onmicrosoft.com** and then select **Next**. In the **Enter password** window, enter the **<inject key="AzureAdUserPassword"></inject>** and then select **Sign in**. In the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes**.
+
+     >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 4. In the **Welcome to Microsoft Azure** dialog box that appears, select **Maybe later** to skip the tour.
 
 5. In the **Microsoft Azure** portal, in the middle of the screen is the section of **Azure services**. This section displays a row of Azure services and their associated icons. At the end of the row, select **More services** (with the forward arrow icon). This opens the **All services** window.
 
-6. In the **All services** window, enter **priv** in the **Filter services** search box at the top of the page. In the list of search results, select **Microsoft Entra Privileged Identity Management**.
+6. In the **All services** window, enter **Privileged** in the **Filter services** search box at the top of the page. In the list of search results, select **Microsoft Entra Privileged Identity Management**.
 
 7. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **My Roles**.
 
@@ -178,6 +179,8 @@ At this point in Holly's pilot project, the PIM-Helpdesk-Administrators group ha
 10. In the **Activate - Helpdesk Administrator** pane that appears, enter **Support requests from Sales team members that require resolution** in the **Reason** field. This is the reason why Alex wants to self-activate this role. Then select the **Activate** button at the bottom of the pane. Note the three stages of activation that appear in the **Activate - Helpdesk Administrator** pane and the progress made on each stage. Wait for all three stages to automatically complete (Stage 2 typically takes the longest). After the final stage is completed, the **Activate - Helpdesk Administrator** pane will automatically close, and you will be returned to the **My roles | Microsoft Entra roles** window.
 
 11. On the **My roles | Microsoft Entra roles** window, note that you're still in the **Eligible assignments** tab. Also note the message at the top of the window indicating **Your active roles have changed. Click here to view your active roles**. Select this message. This simply displays the **Active assignments** tab, which you could have selected yourself instead of selecting the message. 
+
+     ![](../Images/ms-102-94.png)
 
 12. In the **Active assignments** tab, note the **Helpdesk Administrator** role now appears. Prior to activating this role, remember that you checked this tab earlier and no Microsoft Entra roles appeared. Now that Alex has self-approved the **Helpdesk Administrator** role, it's now been assigned to his user account. 
 
@@ -192,19 +195,25 @@ As Alex Wilber, you have now self-approved the Helpdesk Administrator role. This
 
 When you earlier configured the Helpdesk Administrator role, you set up the notification feature so that Holly would be notified any time an eligible user activated the role. Since Alex Wilber just self-activated the role, Holly should receive a notification of this activity. This task will verify that Holly received a notification.
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson. In your Edge browser, select the **Home | Microsoft 365** tab.
+1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson. In your Edge browser, select the **Home | Microsoft 365 Copilot** tab.
 
-2. On the **Welcome to Microsoft 365** page, in the column of application icons on the left-side of the screen, select the **Outlook** icon. This will open Outlook for Holly Dickson's mailbox in a new tab.
+2. On the **Welcome to Microsoft 365 Copilot** page, select the **App Launcher (1)** on the left-side of the screen, select the **Outlook (2)** icon. This will open Outlook for Holly Dickson's mailbox in a new tab.
 
-3. In Holly's Outlook mailbox, her **Inbox** is displayed by default. Verify that Holly received a PIM generated email indicating that **Alex Wilber activated the Helpdesk Administrator role assignment**. 
+     ![](../Images/ms-102-95.png)
+
+3. In Holly's Outlook mailbox, her **Inbox** is displayed by default. Verify that Holly received a PIM generated email indicating that **Alex Wilber activated the Helpdesk Administrator role for the Adatum Corporation Directory**. 
+
+     ![](../Images/ms-102-96.png)
 
 4. Select the email to open it. Review the information in the email and then close it. 
 
 5. To review the audited list of activities related to Alex's self-approval of the Helpdesk Administrator role, select the **Microsoft Entra admin center** tab in your Edge browser. 
 
-6. In the **Microsoft Entra admin center**, the **Adatum Corporation - Settings** page should be displayed. This is where you left off in the prior task. In the middle pane, under the **Activity** section towards the bottom of the page, select **Resource audit**.
+6. In the **Microsoft Entra admin center**, the **Adatum Corporation | Settings** page should be displayed. This is where you left off in the prior task. In the middle pane, under the **Activity** section towards the bottom of the page, select **Resource audit**.
 
 7. In the **Adatum Corporation | Resource audit** page, review the list of PIM activities. Note the two most recent activities, which include Alex's request to be assigned to the Helpdesk Administrator role, and the completion of Alex's request. 
+
+     ![](../Images/ms-102-97.png)
 
 8. Leave your browser and all tabs open for the next task.
 
@@ -217,4 +226,4 @@ In this lab, you have:
 - Self-activated the Helpdesk Admin role.
 - Verified a PIM notification was issued.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
