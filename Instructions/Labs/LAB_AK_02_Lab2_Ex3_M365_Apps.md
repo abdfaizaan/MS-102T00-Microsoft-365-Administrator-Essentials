@@ -14,7 +14,6 @@ In the first two tasks in this exercise, you will verify the following condition
 
 In the final task in this exercise, you will install the Microsoft 365 Apps for enterprise suite for one of Adatum's users.
 
-
 ### Task 1 – Verify how licensing affects installing Microsoft 365 Apps for enterprise
 
 1. On LON-CL1, you should be logged into Microsoft 365 as Holly Dickson in your Edge browser. 
@@ -23,11 +22,12 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 
 1. You will begin by testing whether a user **without** an appropriate Microsoft 365 license can install Microsoft 365 Apps for enterprise. For this test, you will use **Laura Atkins**. Your lab hosting provider has already created an on-premises user account for Laura, but she does not have a Microsoft 365 user account. You will create a Microsoft 365 account for Laura, but you will NOT assign her a Microsoft 365 license.
 
-	At the top of the **Active users** window, select **Add a user (3)** on the menu bar. Doing so initiates the **Add a user** wizard.
+1. At the top of the **Active users** window, select **Add a user (3)** on the menu bar. Doing so initiates the **Add a user** wizard.
 
 	![](../Images/L2E3T1S3-2904.png)
 
 1. In the **Add a user** wizard, in the **Set up the basics** window, enter the following information:
+	
 	- First name: **Laura (1)**
 	
 	- Last name: **Atkins (2)** 
@@ -44,9 +44,9 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 	
 	- Select **Next (8)**.
 
-	![](../Images/L2E3T1S4-2904.png)
+		![](../Images/L2E3T1S4-2904.png)
 
-1. In the **Assign product licenses** window, select the **Create user without product license (not recommended)** option, and then select **Next**.
+1. In the **Assign product licenses** window, select the **Create user without product license (not recommended) (1)** option, and then select **Next (2)**.
 
 	![](../Images/L2E3T1S5-2904.png)
 

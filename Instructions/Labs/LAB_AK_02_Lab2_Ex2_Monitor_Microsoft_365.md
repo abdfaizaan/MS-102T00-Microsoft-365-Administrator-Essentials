@@ -135,7 +135,7 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 	![](../Images/L2E2T2S5-2904.png)
 
-1. On the **Usage** page, scroll down and locate the **Microsoft 365 apps** > **Active users** chart. 
+1. On the **Usage** page, scroll down and locate the **Microsoft 365 apps (1)** > **Active users (2)** chart. 
 
 	![](../Images/L2E2T2S6-2904.png)
 
@@ -175,29 +175,29 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 ### Task 3 – Submit a Help Request to Microsoft Support
 
-1. On LON-CL1, in the **Microsoft 365 admin center** tab of your Edge browser, select **Support** in the navigation pane, and then select **View service requests**. 
+1. On LON-CL1, in the **Microsoft 365 admin center** tab of your Edge browser, select **Support (1)** in the navigation pane, and then select **View service requests (2)**. 
 
 	>**Note:** If the left-hand navigation pane has been minimized and only displays icons without any text, select the Navigation menu icon (the three horizontal lines) at the top of the navigation pane to expand it and display the accompanying text. 
 
-2. The **Service request history** window displays any outstanding service request tickets. You should verify that no service request tickets appear on this page. 
-
 	![](../Images/servicerequest.png)
+
+1. The **Service request history** window displays any outstanding service request tickets. You should verify that no service request tickets appear on this page. 
 	
-2. In the navigation pane, under the **Support** group, select **Help & Support**.
+1. In the navigation pane, under the **Support** group, select **Help & Support**.
 
-3. In the **How can we help?** pane that appears, select the **Message** field (which currently displays **Example: Can't install Office**) and type the following message: **Can't install Office**. Then select the forward arrow that appears next to the field. This displays self-help solutions with insights and recommended articles to assist with your request. 
+1. In the **How can we help?** pane that appears, select the **Message** field (which currently displays **Example: Can't install Office**) and type the following message: **Can't install Office**. Then select the forward arrow that appears next to the field. This displays self-help solutions with insights and recommended articles to assist with your request. 
 
-4. Select one of the recommended articles. After reviewing the article. 
+1. Select one of the recommended articles. After reviewing the article. 
 
-5. If you need further assistance and would like to speak to a Microsoft support agent, select the **headset** icon (the middle icon) at the top of the **Support article** pane to get help from a Microsoft support agent. Select the **headset** icon now.
+1. If you need further assistance and would like to speak to a Microsoft support agent, select the **headset** icon (the middle icon) at the top of the **Support article** pane to get help from a Microsoft support agent. Select the **headset** icon now.
 
-6. In the **Contact support** pane that appears, do NOT enter any information; instead, just review the information that you would enter to complete this request in a real-world situation. You could also attach any necessary documents before selecting **Contact me** at the bottom of the page.   
+1. In the **Contact support** pane that appears, do NOT enter any information; instead, just review the information that you would enter to complete this request in a real-world situation. You could also attach any necessary documents before selecting **Contact me** at the bottom of the page.   
 
 	>**IMPORTANT: Do NOT complete this form in your lab environment.** If you enter this request with the **Phone** option selected, you will receive a call from a Microsoft 365 support representative. We do not want to bother Microsoft Support specialists with calls from students in a training class. 
 	
-7. Select the **X** in the upper right-hand corner of the page to close the **Contact support** window.
+1. Select the **X** in the upper right-hand corner of the page to close the **Contact support** window.
 	
-8. Leave LON-CL1 and your Edge browser open for the next lab exercise.  
+1. Leave LON-CL1 and your Edge browser open for the next lab exercise.  
 
 ## Review
 
