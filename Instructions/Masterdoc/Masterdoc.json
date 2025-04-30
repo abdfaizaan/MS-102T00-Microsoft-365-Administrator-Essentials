@@ -37,19 +37,19 @@
           "Order": 8
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_03_Lab3_Ex3_Manage_secure_user_access.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_04_Lab4_Ex1_Manage_secure_user_access.md",
           "Order": 9
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_04_Lab4_Ex1_PIM_Admin_Approval.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_04_Lab4_Ex2_PIM_Admin_Approval.md",
           "Order": 10
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_04_Lab4_Ex2_PIM_Self_Approval.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_04_Lab4_Ex3_PIM_Self_Approval.md",
           "Order": 11
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_04_Lab4_Ex3_PIM_Teammate_Approval.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_04_Lab4_Ex4_PIM_Teammate_Approval.md",
           "Order": 12
         },
         {
@@ -85,28 +85,24 @@
           "Order": 20
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_07_Lab7_Ex1_Compliance.md",
-          "Order": 21
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_06_Lab6_Ex7_Validate_Alerts_And_Attacks.md",
+            "Order": 21
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_07_Lab7_Ex2_Retention_Policies.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_07_Lab7_Ex1_Retention_Policies",
           "Order": 22
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_07_Lab7_Ex3_Message_Encryption.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_08_Lab8_Ex1_Manage_DLP_Policies.md",
           "Order": 23
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_08_Lab8_Ex1_Manage_DLP_Policies.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_08_Lab8_Ex2_Test_DLP_Policy.md",
           "Order": 24
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_08_Lab8_Ex2_Test_DLP_Policy.md",
-          "Order": 25
-        },
-        {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-new/Instructions/Labs/LAB_AK_09_Lab9_Ex1_Implement%20Sensitivity%20labels.md",
-          "Order": 26
+          "Order": 25
         }
       ]
     }
