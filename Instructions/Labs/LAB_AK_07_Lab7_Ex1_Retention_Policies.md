@@ -29,11 +29,15 @@ In this exercise, you will use the the Microsoft Exchange admin center to enable
 
 1. On LON-CL1, your Microsoft Edge browser should still have the **Microsoft 365 admin center** open. Select the tab for the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** section, select **Compliance**. Doing so will open the **Microsoft Purview** portal.
 
-1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions**, and then select **Data lifecycle management**.
+1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions (1)**, and then select **Data lifecycle management (2)**.
 
-1. In the **Data lifecycle management** window, in the list of tabs expand **Policies** and, select **Retention policies**.
+	![](../Images/L7E1T2S2-3004.png)
 
-1. On the **Retention policies** tab, select **+ New retention policy** on the menu bar. This initiates the **Create retention policy** wizard.
+1. In the **Data lifecycle management** window, in the list of tabs expand **Policies (1)** and, select **Retention policies (2)**.
+
+1. On the **Retention policies** tab, select **+ New retention policy (3)** on the menu bar. This initiates the **Create retention policy** wizard.
+
+	![](../Images/L7E1T2S4-3004.png)
 
 1. On the **Name your retention policy** page, enter **Test user email retention** in the **Name** field and then select **Next**.
 
