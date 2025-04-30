@@ -138,7 +138,9 @@ To use Microsoft's Attack simulation training to simulate phishing attacks, Holl
 
 3. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**.
 
-4. On the **multi-factor authentication** page that appears, the **users** tab at the top of the page is displayed by default. Note the MFA status for all existing user accounts is **Disabled**, except for Holly Dickson, whose status is **Enforced**.  <br/>
+4. On the Configure multi-factor authentication, click on the **Legacy per-user MFA** hyperlink (which will open in another tab).
+
+5. On the **multi-factor authentication** page that appears, the **users** tab at the top of the page is displayed by default. Note the MFA status for all existing user accounts is **Disabled**, except for Holly Dickson, whose status is **Enforced**.  <br/>
 
 	**Note:** When you enabled MFA for Holly back in Exercise 5, her status was changed from **Disabled** to **Enabled**. However, the first time you signed in as Holly after enabling MFA (right after enabling MFA in Exercise 5), the system automatically changed her MFA status from **Enabled** to **Enforced**.  <br/>
 
