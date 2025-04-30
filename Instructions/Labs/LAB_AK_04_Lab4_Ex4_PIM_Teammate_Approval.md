@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 4 - Exercise 3 - PIM Teammate Approval Request
+# Learning Path 4 - Lab 4 - Exercise 4 - PIM Teammate Approval Request
 
 ## Lab scenario
 
