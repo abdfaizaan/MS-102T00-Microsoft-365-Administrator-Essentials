@@ -174,6 +174,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 3. In **Server Manager**, select **Tools** at the top right side of the screen, and then in the drop-down menu select **Active Directory Users and Computers.**
 
+   ![](../Images/13.png)
+
 4. You will begin by adding members to one of the built-in, on-premises security groups. Maximize the **Active Directory Users and Computers** window. In the console tree in the left-hand pane, under **Adatum.com**, select the **Builtin** folder. This will display all the built-in security group folders that were automatically created at the time the **Adatum.com** domain was created.
 
 5. In the detail pane on the right, double-click the **Print Operators** security group.
@@ -196,17 +198,21 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 11. In the **New Object - Group** window, enter the following information:
 
-	- Group name: **Manufacturing**
+	- Group name: **Manufacturing (1)**
 
-	- Group scope: **Universal**
+	- Group scope: **Universal (2)**
 
-	- Group type: **Security**
+	- Group type: **Security (3)**
 
-12. Select **OK**.
+12. Select **OK (4)**.
+
+    ![](../Images/14.png)
 
 13. In the console tree under **Adatum.com**, select the **Research** folder, and then in the detail pane on the right, double-click on the **Manufacturing** security group.  
 
 14. In the **Manufacturing Properties** window, enter **manufacturing@adatum.com** in the **E-mail** field. 
+
+     ![](../Images/15.png)
 
 	>**Note:** There are two types of security groups in Microsoft 365: a security group and a mail-enabled security group. By entering a value in the **E-mail** field for this on-premises security group, the synchronization process will create a mail-enabled security group in Microsoft 365.   
 
@@ -219,7 +225,6 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 	- **Dawn Williamson**  
 
 16. Leave the **Active Directory Users and Computers** window open for the next task.
-
  
 ### Task 3 - Change Group Membership to Test Synchronization  
 
@@ -242,7 +247,6 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 5. Leave LON-DC1 open as you will continue using it in the next task. 
 
 	>**Important:** You should perform the next task immediately after completing this one so that Microsoft Entra ID Connect doesn’t automatically synchronize the changes that you just made to the identity objects in the previous tasks.
-
 
 ### Task 4 - Force a manual synchronization   
 
@@ -268,7 +272,6 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 5. Remain in LON-DC1 and proceed to the next task.
   
-
 ### Task 5 - Validate the Results of Directory Synchronization   
 
 >**IMPORTANT - PowerShell notice:** This task employs basic PowerShell queries for Groups and Users, which are supported in Microsoft Graph PowerShell. Since Microsoft Graph PowerShell is replacing the two older PowerShell modules, MSOnline and Azure Active Directory (Microsoft Entra ID) PowerShell, you will use Microsoft Graph PowerShell in this task.
@@ -277,11 +280,17 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 1. Now let’s examine the synchronization results for the groups that you updated in the previous tasks. In your **Edge** browser, if tabs are still open for the **Home | Microsoft 365** page and the **Active users - Microsoft 365 admin center**, then proceed to the next step. 
 
-1. Otherwise, enter **https://portal.office.com/** in the address bar to open the **Microsoft 365 Home** page, and then log in as **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. In the **Password** field, enter <inject key="AzureAdUserPassword"></inject>, and then on the **Microsoft 365 Home** page, navigate to the **Microsoft 365 admin center**. 
+1. Otherwise, enter **https://portal.office.com/** in the address bar to open the **Microsoft 365 Home** page, and then log in as **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. In the **Password** field, enter <inject key="AzureAdUserPassword"></inject>, and then on the **Microsoft 365 Home** page, 
+
+1. Navigate to the **Microsoft 365 admin center** by click on **Apps (1)** and then select **Admin (2)**. 
+
+   ![](../Images/16.png)
 
 	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. In the **Microsoft 365 admin center**, select **Teams & groups** in the navigation pane, and then select **Active teams & groups**. 
+
+   ![](../Images/17.png)
 
 1. In the **Active teams and groups** window, the **Teams & Microsoft 365 gropus** tab is displayed by default. Select the **Security groups** tab. Verify the **Print Operators** group does NOT appear in the list of security groups. As mentioned previously, built-in security groups such as the **Print Operators** group are not synced from the on-premises AD to Microsoft Entra ID, even when you add members to the group as you did in the earlier task.
 
@@ -347,12 +356,18 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 	Get-MgGroup | Format-List Id, DisplayName, Description, GroupTypes
 	```
 
-1. You now want to display the members of the **Research** group. In the list of groups, highlight the ID for the **Research** group and then press **Ctrl+C** to copy the ID to the clipboard. Then type the following command, paste in the Research group's ID (**Ctrl+V**) in the appropriate spot, and then press Enter:  
+1. You now want to display the members of the **Research** group. In the list of groups, highlight the ID for the **Research** group and then press **Ctrl+C** to copy the ID to the clipboard. 
+
+   ![](../Images/18.png)
+
+1. Type the following command, paste in the Research group's ID (**Ctrl+V**) in the appropriate spot, and then press Enter:  
 
 	```powershell
 	Get-MgGroupMember -GroupId 'paste in the group's object ID here'
 	```
 
+    ![](../Images/19.png)
+	
 1. In the list of group members that were displayed in the prior step, note how the results simply show the object ID of each member. Without displaying the user names, this command doesn't help you verify whether the group members were synchronized. To work around this issue, you're going to repeat the prior command, but this time you'll add an additional component that retrieves the User record for each member of the group and displays the User's attributes, which includes the user name. 
 
 	- At the command prompt hit the UP arrow on your keyboard. This will automatically type the prior command that was run (which includes the Research group's ID, so you don't have to re-paste it). Then following the ID, type the remaining portion of the command (starting with **-All**) and press Enter:
@@ -360,6 +375,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 		```powershell
 		Get-MgGroupMember -GroupId 'the ID of the Research group' -All | ForEach {Get-MgUser -UserId $_.Id}
 		```
+
+		![](../Images/20.png)
 
 1. In the list of members of the Research group, verify the following users are **NOT** included. Remember, in the prior task you removed these three users from the Research group in the on-premises Active Directory, prior to synchronizing the group to Microsoft 365:  
 
@@ -369,7 +386,11 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 	- Tai Zecirevic  
 
+	 ![](../Images/21.png)
+
 1. In the prior task, you added the **Manufacturing** group in the on-premises Active Directory, and you assigned three users to the group. You now want to verify the members of the **Manufacturing** group were synchronized when the group was added in Microsoft 365 during the synchronization process, to do so, you must first scroll back up to the list of groups, highlight the object ID for the **Manufacturing** group and then press **Ctrl+C** to copy the ID to the clipboard. 
+
+   ![](../Images/23.png)
 
 1. Then hit the UP arrow on your keyboard to automatically type the prior command, which contains the ID of the Research group that you pasted in during the prior step:  
 

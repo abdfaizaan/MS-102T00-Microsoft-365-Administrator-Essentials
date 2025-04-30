@@ -8,35 +8,63 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
 1.  You should still be logged into **LON-DC1** as the local **adatum\administrator** from the prior task.
 
-2. On LON-DC1, select the **Start** button on the taskbar, and then in the **Start** menu, select the **All Apps** icon to display the list of all installed applications. Select the **Azure AD Connect** program group and then select **Azure AD Connect**. This will initiate the **Welcome to Microsoft Entra Connect Sync** wizard.
+2. On LON-DC1, select the **Start (1)** button on the taskbar, and then in the **Start** menu, select the **All Apps (2)** icon to display the list of all installed applications. Select the **Azure AD Connect** program group and then select **Azure AD Connect (3)**.
+
+   ![](../Images/25.png)
+
+1. This will initiate the **Welcome to Microsoft Entra Connect Sync** wizard.
 
 3. In the **Welcome to Microsoft Entra Connect** window, you will receive a page indicating the synchronization service scheduler is suspended until this setup wizard is closed. This is because if you start the Microsoft Entra Connect installation wizard (which you did in an earlier task), then the scheduler is temporarily suspended. Select **Configure.**
 
+   ![](../Images/26.png)
+
 4. On the **Additional tasks** page, select the **Change user Sign-in** task and then select **Next**. 
+
+   ![](../Images/27.png)
 
 5. On the **Connect to Microsoft Entra** page, sign into Microsoft Entra ID. The **USERNAME** field is already filled with **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. In the **PASSWORD** field, enter the <inject key="AzureAdUserPassword"></inject>, and then select **Next**.
 
+    ![](../Images/28.png)
+
 	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-6. On the **User sign-in** page, under **Select the Sign On method**, select **Pass-through authentication** and then select **Next**. 
+6. On the **User sign-in** page, under **Select the Sign On method**, select **Pass-through authentication (1)** and then select **Next (2)**. 
 
-7. On the **Enable single sign-on** page, select **Enter credentials**. 
+   ![](../Images/29.png)
+
+7. On the **Enable single sign-on** page, select **Enter credentials**.
+
+   ![](../Images/30.png)
 
 8. In the **Forest Credentials** dialog box, enter **adatum\administrator** as the **User name** and **Pa55w.rd** as the **Password**, and then select **OK**. 
 
 9. When the credentials are verified, a check mark will appear to the right of the **Enter credentials** button. Select **Next**. 
 
+   ![](../Images/31.png)
+
 10. On the **Ready to configure** page, select **Configure**. It may take a minute or so for the configuration to complete.
+
+    ![](../Images/32.png)
 
 11. On the **Configuration complete** page, note the message indicating the current sign on method for Microsoft Entra is PTA. Select **Exit**. Pass-Through Authentication has now been enabled. 
 
+    ![](../Images/33.png)
+
 12. To verify that Pass-Through Authentication is successfully enabled, select a new tab in your Edge browser and enter the following URL in the address bar: **https://entra.microsoft.com**
 
-13. This opens the **Microsoft Entra admin center**. In the left-hand navigation pane, under **Identity**, click on **Show more** in order to select **Microsoft Entra Connect** under **Hybrid Management**. 
+13. This opens the **Microsoft Entra admin center**. In the left-hand navigation pane, under **Identity**, click on **Show more**.
+
+    ![](../Images/35.png)
+
+1. Select **Microsoft Entra Connect** under **Hybrid Management**. 
+
+    ![](../Images/34.png)
 
 17. On the **Microsoft Entra Connect | Get started** page, in the middle navigation pane, select **Connect Sync**.
 
 18. On the **Microsoft Entra Connect | Connect Sync** page, in the detail pane on the right, under the **USER SIGN IN** section, verify that the status of **Pass-through authentication** is **Enabled**, and then select **Pass-through authentication**. 
+
+    ![](../Images/12.png)
 
 19. On the **Passthrough Authentication** page, review the list of servers on which your pass-through authentication agents are installed. This should display **LON-DC1.Adatum.com**.
 
@@ -53,9 +81,13 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
 2. In **Server Manager**, select **Tools** in the upper-right menu bar, and in the drop-down menu, select **Group Policy Management.**
 
+   ![](../Images/11.png)
+
 3. Maximize the **Group Policy Management** window.
 
 4. You want to edit the group policy that includes your organization's account lockout policy. If necessary, in the root console tree in the left-hand pane, expand **Forest:Adatum.com**, then expand **Domains**, and then expand **Adatum.com**.  Under **Adatum.com**, right-click on **Default Domain Policy** and then select **Edit** in the menu.
+
+   ![](../Images/10.png)
 
 5. Maximize the **Group Policy Management Editor** window that appears.
 
@@ -63,27 +95,33 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
 7. In the **Account Policies** folder, select **Account Lockout Policy**.
 
+    ![](../Images/9.png)
+
 8. As you can see in the right-hand pane, none of the smart lockout parameters have been defined. You are going to use the **Microsoft Entra admin center** to assign corresponding values in the Entra ID context.  
 
 9. Select the Edge browser icon on the taskbar, which should be displaying the **Microsoft Entra admin center**. 
 
 9. In the **Microsoft Entra admin center**, in the left-hand navigation pane, select **Authentication methods** under the **Protection** submenu.
 
+   ![](../Images/8.png)
+
 12. In the **Authentication methods | Policies** page, in the middle pane under the **Manage** section, select **Password protection.**
+
+    ![](../Images/7.png)
 
 13. In the **Authentication methods | Password protection** window, in the detail pane on the right, enter the following information:
 
 	- In the **Custom smart lockout** section:
 
-		- **Lockout threshold:** this field indicates how many failed sign-ins are allowed on an account before its first lockout. The default is 10. For testing purposes, Adatum has requested that you set this to **3**.
+		- **Lockout threshold:** this field indicates how many failed sign-ins are allowed on an account before its first lockout. The default is 10. For testing purposes, Adatum has requested that you set this to **3 (1)s**.
 
-		- **Lockout duration in seconds:** This is the length in seconds of each lockout. The default is 60 seconds (one minute). Adatum has requested that you change this to **90** seconds.
+		- **Lockout duration in seconds:** This is the length in seconds of each lockout. The default is 60 seconds (one minute). Adatum has requested that you change this to **90 (2)** seconds.
 
 	- In the **Custom banned passwords** section:
 
-		- **Enforce custom list**: select **Yes**
+		- **Enforce custom list**: select **Yes (3)**
 
-		- **Custom banned password list:** Enter the following values (press Enter after entering each value so that each value is on a separate line):
+		- **Custom banned password list (4):** Enter the following values (press Enter after entering each value so that each value is on a separate line):
 
 			- **Password01**
 
@@ -93,13 +131,21 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
 			- **Never4get!!**
 
-	- In the **Mode** section, select **Enforced**
+	- In the **Mode** section, select **Enforced (5)**
 
-14. Select **Save** on the menu bar at the top of the page.
+14. Select **Save (6)** on the menu bar at the top of the page.
 
-15. You should now test the banned password functionality. Select Holly Dickson's user icon in the upper right corner of the screen, click on **View account**, select **Password** from the left-hand navigation pane.
+    ![](../Images/6.png)
 
-16. A new tab will open displaying the **Change your password** window. In the **Current password** field, enter Holly's existing password. Enter **Never4get!!** in the **New password** and **Confirm new password** fields, and then select **Submit**. Note the error message that you receive.
+15. You should now test the banned password functionality. Select Holly Dickson's user icon in the upper right corner of the screen, click on **View account**.
+
+    ![](../Images/5.png)
+
+1. Select **Password** from the left-hand navigation pane.
+
+    ![](../Images/4.png)
+
+16. A new tab will open displaying the **Change your password** window. Enter **Never4get!!** in the **New password** and **Confirm new password** fields, and then select **Submit**. Note the error message that you receive.
 
 	![](../Images/invalidpassword.png)
 
@@ -109,19 +155,24 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
 19. Once you are signed out as Holly, the **Pick an account** window will appear in the **Sign in to Microsoft Azure** tab. As a best practice when signing out from a Microsoft online service as one user and signing back in as another, close all your browser tabs except for the **Sign out** or **Sign in** tab. In this case, close the other tabs now and leave the **Sign in** tab open. In the **Pick an account** window, select **Use another account**. 
 
-20. In the **Sign in** window, enter **Laura@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** username, and then select **Next**. 
+    ![](../Images/3.png)
+
+20. In the **Sign in** window, enter **Laura@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) (1)** username, and then select **(2)**. 
 
 	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
+	![](../Images/2.png)
+
 21. On the **Enter password** window, enter any random mix of letters and then select **Sign in**. Note the invalid password error message that appears. Repeat this step 2 more times. Since you set the **Lockout threshold** to **3**, your account is temporarily locked to prevent unauthorized use. Try again later, and if you still have trouble, contact your admin.
+    
+    ![](../Images/1.png)
 
 	>**Note:** If you do not receive this lockout message after the third attempt, then the system has not yet finished propagating this lockout threshold change throughout the service. It may take several minutes for the change to take effect. Wait a few minutes and then sign-in again with a bogus password. Testing of this lab has seen varying results. The change sometimes propagates almost immediately so that you get locked out after the third sign-in attempt. Other times it has taken anywhere from 5 to 10 minutes before the lockout message is displayed. Continue this process until you receive the lockout message, at which point Laura's account will be temporarily locked to prevent unauthorized access.
 
 22. You will be prohibited from logging in again as Laura until after the **90 second lockout duration** that you set earlier. Once you've been locked out, wait 90 seconds and then sign back in as **Laura**'s account. Verify that you are able to successfully sign-in as Laura.
 
 23. Once your log-in is successful, you can close all open applications. This will be your last lab exercise using the LON-DC1 domain controller.
-
-
+   
 ## Review
 
 In this lab, you have:
