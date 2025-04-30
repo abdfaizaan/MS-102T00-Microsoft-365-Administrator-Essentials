@@ -17,7 +17,11 @@ Because we want you to gain experience creating and publishing a label and label
 
 1. In **Microsoft Edge**, open a new tab and enter (or copy and paste) the following URL in the address bar: **[Microsoft Purview Information Protection client](https://www.microsoft.com/en-us/download/details.aspx?id=53018&lc=1033&msockid=26b47a4f8b336e87014e6f028a7f6fa0)**.
 
-1. Select **Download**, under **Important! Selecting a language below will dynamically change the complete page content to that language.**, and select **PurviewInfoProtection.exe**. 
+1. Select **Download**, under **Important! Selecting a language below will dynamically change the complete page content to that language.**, select **PurviewInfoProtection.exe (1)** and **Download (2)**.
+
+	![](../Images/L9E1T1S3.1-3004.png)
+
+	![](../Images/L9E1T1S3.2-3004.png)
 
 1. In the Downloads window that appears at the top right of the page, you will see the **PurviewInfoProtection.exe** file being downloaded. Once the file has finished downloading, select the **Open file** link that appears below the file name.
 
@@ -68,9 +72,15 @@ You have successfully installed the AIP Unified Label client on the Client 1 VM.
 
 1. Select **Next**.
 
-1. On the **Scope** page, verify the **Items** check box is selected (select it now if necessary) and then select **Next**.
+1. On the **Define the scope for this label** page, verify the **Items** check box is selected, as well as the **Files**, **Emails**, and **Meetings** check boxes below it (select all four of these check boxes now, if necessary). These check boxes allow you to define where this sensitivity label will be used so that you can configure the applicable protection settings. Select **Next**.
 
-1. On the **Choose protection settings for labeled items** page, select both check boxes for **Control access** and **Apply content marking**, and then select **Next**.
+1. On the **Choose protection settings for the types of items you selected** page, you can begin the process of using encryption settings to restrict access to content that the label will be applied to. When a document, email, or meeting invitation is encrypted, access to content is restricted, so that it:  <br/>
+
+	- Can be decrypted only by users authorized by the label's encryption settings.
+	- Remains encrypted no matter where it resides (inside or outside your organization), even if the file is renamed.
+	- Is encrypted both at rest (for example, in a OneDrive account) and in transit (for example, email as it travels across the internet).
+
+   Holly wants to configure encryption settings, so on the **Choose protection settings for the types of items you selected** page, select the **Control access** check box. Also select the **Apply content marking** check box so that you can later configure header, footer, and watermark settings. Select **Next**.
 
 1. Because you selected the **Control access** option on the prior page, the **Access control** page now appears. This page enables you to configure how the label applies encryption. You can choose to either:
 
@@ -131,9 +141,9 @@ You have successfully installed the AIP Unified Label client on the Client 1 VM.
 
 1. On the **Review your settings and finish** page, review the information you entered. If any settings need to be corrected, select the corresponding **Edit** option and make any necessary changes. When all information appears correct, select **Create label**.
 
-1. An **Error** dialog box should appear that states the generated rule blob for the label you are attempting to create is too long. The maximum size of sensitive information type selections you can make at one time per rule is **49152**. By selecting all the sensitive information types like you did in the **Sensitive info types** window a few steps back, you have exceeded this limit. 
+1. A **Client Error** dialog box should appear that states the generated rule blob for the label you are attempting to create is too long. The maximum size of sensitive information type selections you can make at one time per rule is **49152**. By selecting all the sensitive information types like you did in the **Sensitive info types** window a few steps back, you have exceeded this limit. 
 
-	>**NOTE: We purposely had you select all the sensitive information types so that you would receive this error.** We wanted you to experience this error so that if it happens in your production environments, you will know why you received the error and how you can correct it.  
+	**NOTE: We purposely had you select all the sensitive information types so that you would receive this error.** We wanted you to experience this error so that if it happens in your production environments, you will know why you received the error and how you can correct it.  
 
 	- To correct this issue, select **OK** in the **Error** dialog box, and then on the **Review your settings and finish** page, scroll down to the **Auto-labeling for files and emails** section and select **Edit**.
 	
@@ -175,7 +185,7 @@ You have successfully installed the AIP Unified Label client on the Client 1 VM.
 
 41. On the **Apply a default label to meetings and calendar events** page, select **None** in the drop-down menu that appears, and then select **Next**.
 
-42. On the **Apply a default label to Power BI content** page, select **PII** in the drop-down menu that appears, and then select **Next**.
+42. On the **Apply a default label to Fabric and Power BI content** page, select **PII** in the drop-down menu that appears, and then select **Next**.
 
 43. On the **Name your policy** page, enter **PII Policy** in the **Name** field, and then enter (or copy and paste) the following description for this sensitivity label policy: **The purpose of this policy is to detect sensitive information such as ABA bank routing numbers and US social security numbers in emails and documents, and to encrypt this information when it's discovered. The user must provide an explanation for removing the classification label.** Select **Next**.
 
@@ -193,7 +203,7 @@ You have successfully installed the AIP Unified Label client on the Client 1 VM.
 
 	>**Note:** In the next task, you will return back to the **Microsoft Office Home** tab by selecting the **Back** arrow at the top of this **Word** tab.
 
-1. In the **Word** tab, under the **Create new** section at the top of the page, select **Blank document**.
+1. In the **Word** tab, select **Create a blank document**.
 
 	>**Note:** if you are not able to open the word document, then go back to the Microsoft 365 page, and select the **App launcher** from the left-hand navigation pane, select **One-Drive**, select **+ Add new**, and select **Word document**, it will navigate you to the next page.
 
