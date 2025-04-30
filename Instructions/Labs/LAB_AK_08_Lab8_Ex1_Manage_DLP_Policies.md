@@ -9,6 +9,8 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 1. In **Microsoft Edge**, the Microsoft Purview portal should still be open; if not, then open a new tab and navigate to **https://compliance.microsoft.com**.
+  
+    > **Note:** if prompted to switch to the new Compliance portal, click on switch to new portal. 
 
 1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions** then select **Data loss prevention**, and select **Policies**.
 
@@ -22,13 +24,13 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 1. In the **Name your DLP policy** page, enter the following information and then select **Next**:
 
-  - Name: Replace the default name with **IP Address DLP policy**
+    - Name: Replace the default name with **IP Address DLP policy**
 
-  - Description: Replace the default description with **This policy detects the presence of IP addresses in emails. End users are notified of the detection and admins receive a notification. Emails with 2 or more IP addresses are blocked from being sent.**
+    - Description: Replace the default description with **This policy detects the presence of IP addresses in emails. End users are notified of the detection and admins receive a notification. Emails with 2 or more IP addresses are blocked from being sent.**
 
 1. On the **Assign admin units** page, select **Next**. 
 
-1. On the **Choose locations to apply the policy** page, verify the **Status** toggle is set to **On** for the following locations (if any of these locations is not set to **On** by default, then set it to **On** now): 
+1. On the **Choose where to apply the policy** page, verify the **Status** toggle is set to **On** for the following locations (if any of these locations is not set to **On** by default, then set it to **On** now): 
 
     - **Exchange email**
     
@@ -39,6 +41,8 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
     - **Teams chats and channel messages**
     
     - Set all other locations to **Off**, and then select **Next**.
+
+    ![](../Images/L8E1T1S10-3004.png)
 
 1. On the **Define policy settings** page, the **Create or customize advanced DLP rules** option should be set by default (if it isn't already selected by default, then select it now) and then select **Next**. 
 
