@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 4 - Exercise 2 - PIM Self-Approval
+# Learning Path 4 - Lab 4 - Exercise 3 - PIM Self-Approval
 
 ## Lab scenario
 
