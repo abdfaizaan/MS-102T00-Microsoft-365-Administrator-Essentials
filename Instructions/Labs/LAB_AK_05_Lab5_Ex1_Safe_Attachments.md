@@ -28,19 +28,23 @@ In this task, you will turn on Microsoft Defender for Office 365, which provides
 
     - **Turn on Safe Documents for Office clients** - verify the toggle switch is set to **On** (set it to **On** if necessary)
 
-    >**Note:** If both toggle switches are already set to **On**, then the **Save** button at the bottom of the pane will remain disabled since no changes were made. In this case, select **Cancel**.
+        >**Note:** If both toggle switches are already set to **On**, then the **Save** button at the bottom of the pane will remain disabled since no changes were made. In this case, select **Cancel**.
 
-8. On the **Safe attachments** window, click on **+** on the menu bar to initiate the **Create Safe Attachments policy** wizard.
+8. On the **Safe attachments** window, click on **+ Create** on the menu bar to initiate the **Create Safe Attachments policy** wizard.
 
 9. On the **Name your policy** page, enter **AttachmentPolicy1** in the **Name** field and then select **Next**.
 
-10. On the **Users and domains** page, you can define specific users, groups, and domains to which the new policy will apply. Since **AttachmentPolicy1** will apply to all users and groups in Adatum's yourtenant.onmicrosoft.com domain, you're only going to enter that domain value. Enter **on** in the **Domains** field. In the menu that appears showing the suggested domains that include this value, select Adatum's **yourtenantonmicrosoft.com** domain (where yourtenant equals the tenant prefix provided in the lab environment). Adatum's domain will now appear below the **Domains** field. Select **Next**.
+10. On the **Users and domains** page, you can define specific users, groups, and domains to which the new policy will apply. Since **AttachmentPolicy1** will apply to all users and groups in Adatum's **otuwamocZZZZZZ.onmicrosoft.com** domain, you're only going to enter that domain value. Enter **on** in the **Domains** field. In the menu that appears showing the suggested domains that include this value, select Adatum's **otuwamocZZZZZZ.onmicrosoft.com** domain. Adatum's domain will now appear below the **Domains** field. Select **Next**.
+
+    >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 11. On the **Settings** page, select the **Dynamic Delivery (Preview messages)** option. This option will deliver all email messages; however, for an email with attachments, it will hold the files, test them, and then reattach the files to the messages once the files are scanned and marked acceptable. 
 
 12. Under the **Redirect messages with detected attachments** section, select the **Enable redirect** check box. 
 
-13. In the **Send messages that contain monitored attachments to the specified email address** field, enter **joni**'s username, and then select **Next**.
+13. In the **Send messages that contain monitored attachments to the specified email address** field, enter **joni.sherman@otuwamocZZZZZZ.onmicrosoft.com** as username, and then select **Next**.
+
+    >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 14. On the **Review** page, review the options that you configured. If any need to be corrected, select the appropriate **Edit** option and make the necessary corrections. Once all the settings are correct, select **Submit**.
 
@@ -58,5 +62,5 @@ In this lab, you have:
 
 - Created a Safe Attachment policy and turn on Microsoft Defender for Office 365.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 

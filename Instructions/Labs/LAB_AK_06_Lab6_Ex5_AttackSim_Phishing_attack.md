@@ -15,7 +15,7 @@ Holly Dickson is concerned that some users at Adatum may require education about
 
 1. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**. If this option does not appear on the menu bar, select the **ellipsis (More actions)** icon, and in the drop-down menu that appears, select  **Multi-factor authentication**.
 
-	![](../Images/mfa.png)
+	![](../Images/ms-102-103.png)
 
 1. A **Configure multifactor authentication (MFA)** window appears in a new Edge browser tab. Below the paragraph of text at the top of the page is an Information box that displays the message **Not what you're looking for? To configure MFA on an individual per-users level, select Legacy per-user MFA.** Select the **Legacy per-user MFA** link in this message. 
 
@@ -25,7 +25,7 @@ Holly Dickson is concerned that some users at Adatum may require education about
 
 	![](../Images/mfa2.png)
 
-1. Select the check box for **Holly Dickson**, and in Holly's properties pane that appears on the right, select **Enable MFA**.
+1. Select the check box for **Holly Dickson**, select **Enable MFA** from the top-menu bar.
 
 	>**Tip:** There are so many users, select the view dropdown, select **Global administrators**, now you can see **Holly Dickson** account.
 
@@ -39,7 +39,7 @@ Holly Dickson is concerned that some users at Adatum may require education about
 
 1. Select the **Edge** icon on your taskbar to open a new browser session. In your browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: **https://portal.office.com/** 
 
-1. In the **Pick an account** window, select **Holly**'s account and then select **Next**. In the **Enter password** window, enter password and select **Sign in**.
+1. In the **Pick an account** window, select **Holly**'s account and then select **Next**. In the **Enter password** window, enter **<inject key="AzureAdUserPassword"></inject>** and select **Sign in**.
 
 1. Because MFA is enabled for Holly, a **Action Required** window appears. Select **Next**.
 
@@ -94,7 +94,9 @@ In this lab exercise, you will use one of the existing payload templates. In the
 	
 1. On the **Overview** tab, scroll down to the **Recommendations** section. Under the **Launch a phishing simulation using other social engineering techniques** recommendation, select **Create another simulation with new technique**. This initiates the **Create Simulation** wizard.
 
-1. On the **Select Technique** page, review the specific information related to the **Credentials Harvest** attack type option. At the bottom of the **Credential Harvest** option, select the **View details of Credential harvest** link. This opens a **Credential Harvest** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close the **Credential Harvest** pane.
+	![](../Images/ms-102-104.png)
+
+1. On the **Select technique** page, review the specific information related to the **Credentials Harvest** attack type option. At the bottom of the **Credential Harvest** option, select the **View details of Credential harvest** link. This opens a **Credential Harvest** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close the **Credential Harvest** pane.
 
 1. On the **Select Technique** page, select the **Credentials Harvest** attack type if it's not already selected by default, and then select **Next**.
 
@@ -140,21 +142,17 @@ In this lab exercise, you will use one of the existing payload templates. In the
 
 1. Switch to **LON-CL2**, where you should be logged into the machine as the local **adatum\administrator** account.
 
-1. On LON-CL2, open your Edge browser and enter the following URL in the address bar: **https://outlook.office365.com**.
- 
-1. In the **Pick an account** window, select **Use another account**. 
-
-1. In the **Sign in** window, enter **lynne**'s account, and then in the **Enter password** window, enter the password and select **Sign in**. 
-
 1. In Lynne's Outlook Inbox, you should see the spear phishing email that was sent by the Attack Simulator. The subject of the message should be **Payment for Package**. Select the email to open it and review the details in the body of the message. 
 
      >**NOTE:** It can take up to 15 minutes for the email to arrive.  Wait for the email before proceeding. In the email, note the message that appears. Again, the message may vary depending on the payload you selected when setting up the spear phishing simulation. For example, it may say something like: **Our server has detected some errors delivering 2 new message to your Inbox due to the synchronization delay. Click on View Returned Messages below to retrieve these messages.** Regardless of the exact message, keep in mind that its purpose is to trick the user into thinking this is a legitimate email, when in fact, it's a spear phishing attack.
 
 1. Select the **Pay Now** button in the email. Even though you know this is a spear phishing attack, this will enable you to see the effect of doing so in the Attack Simulator report that tracks the results of the spear phishing campaign.
 
-1. In the **Sign in** dialog box that appears, enter **lynne**'s account, and then enter the password in the **Enter password** window. Select **Sign in**. 
+1. In the **Sign in** dialog box that appears, enter **lynne.robbins@otuwamoc101832.onmicrosoft.com**' as username, and then enter the password as **<inject key="AzureAdUserPassword"></inject>** in the **Enter password** window. Select **Sign in**. 
 
 1. This displays a web page that explains how you have been redirected to it as part of a Phishing awareness test being run by your organization. Read through the contents of this site, which uses the landing page template that you selected in the prior task when setting up the attack simulation.
+
+	![](../Images/ms-102-105.png)
 
 1. Leave the Outlook tab open for Lynne's mailbox in your Edge browser. Do **NOT** sign out or close it. You will access Lynne's mailbox on LON-CL2 in the next lab exercise. 
 
@@ -174,4 +172,4 @@ In this lab, you have:
 - Configured and launch a Spear Phishing attack.
 - Reviewed the attack simulation results.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.

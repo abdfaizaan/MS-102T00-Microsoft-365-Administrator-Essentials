@@ -72,13 +72,9 @@ In the prior task, you configured an alert designed to notify Lynne Robbins when
 
 1. In the **Site Collection Administrators** dialog box, the Global administrator account that was assigned by default to this role group is displayed in the data entry field. To the right of this account, enter **Alex**, select **Alex Wilber** from the list of users that appears, and then select **OK**. 
 
+1. Switch to **LON-CL2** and open **Outlook**, where you are logged in as **Lynne**.
+
 1. Once the email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal in a new tab.
-
-1. If you are unable to login to outlook, then we need to assign assign Microsoft 365 Business Premium license. To assign the license please follow the below steps.
-
-1. Go to **Microsoft 365 admin center** tab, from the left pane select **Users** then **Active users**. Select **Lynne Robbins** from the list.
- 
-1. Select **Licenses and apps**, then **Microsoft 365 Business Premium** and click on **Save changes**.
 
    >**Note:** It takes up to 24 hours after creating or updating an alert policy before alerts can be triggered by the policy. This is because the policy has to be synced to the alert detection engine.
 
@@ -99,4 +95,4 @@ In this lab, you have:
 - Created a SharePoint Permissions Alert.
 - Validated the  SharePoint Permissions Alert.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.

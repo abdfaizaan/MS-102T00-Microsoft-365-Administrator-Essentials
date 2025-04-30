@@ -60,9 +60,9 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 1. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Compliance**.
 
-1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **eDiscovery (1)** group, select **Content search (2)**.
+1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions (1)** select **eDiscovery (2)** group, and under the **Classic eDiscovery**, select **Content Search**.
 
-	![](../Images/ediscovery.png)
+	![](../Images/ms-102-102.png)
 
 	> **Note:** If you encounter an **permission error -** _You are not a member of the content search case_ please follow the below steps to add the eDiscovery manager role to Holly.
 	> - In the **Microsoft Purview** portal from the left pane click on **Settings (1)**, expand **Roles and scopes (2)** and select **Role groups (3)**.
@@ -73,13 +73,13 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
  
 	  ![](../Images/ediscovery2.png)
 
-	> - In the **eDiscovery Manager** page, click on **Choose users (1)** and search and select for **Holly Dickson (2)** and click on **Select (3)**. Now click on **Next, Next and Save**.
+	> - In the **eDiscovery Manager** page, click on **Choose users (1)** and search and select for **Holly Dickson (2)** and click on **Select (3)**. Now click on **Next** twice, select **Save** and **Done**.
 	
 	  ![](../Images/ediscovery3.png)
 
 1. The **Content search** window has two tabs - a **Search** tab and an **Export** tab. The **Search** tab is displayed by default. Select the **+ New search** option that appears on the menu bar. This initiates the **New search** wizard.
 
-1. In the **New search** wizard, on the **Name and description** page, enter **Confidential search** in the **Name** field and then select **Next**.
+1. In the **New search** wizard, on the **Name and description** page, enter **Confidential search** in the **Name** field and then select **Create**.
 
 1. In the **Locations** page, the **Specific locations** option is selected by default. There are three groups of locations under this option, each of which can be turned On or Off through its respective toggle switch. Turn the toggle switch **On** for **Exchange mailboxes**, but leave the toggle switches **Off** for the other two locations. 
 
@@ -103,13 +103,13 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 	
 1. The search that you created should only take a couple of minutes to complete. You can either proceed to the next step while the search is running, or if you wish, you can select the **Refresh** icon on the menu bar every minute or so until the **Status** changes to **Completed**.
 	
-1. To test this alert, select the **Outlook** tab in your Edge browser. This should still be displaying Holly's mailbox. If you previously closed Outlook, then in the **Home | Microsoft 365** tab, in the column of application icons, select **Outlook**.
+1. To test this alert, select the **Outlook** tab in your Edge browser. This should still be displaying Holly's mailbox. If you previously closed Outlook, then in the **Home | Microsoft 365 Copilot** tab, in the column of application icons, select **Outlook**.
 
 1. In Holly's Outlook mailbox, monitor her Inbox for an **Informational-severity alert: eDiscovery search started or exported** email that was automatically sent by the Alerts notification system. The purpose of this message is to inform Holly that an eDiscovery search was created or exported. If necessary, select the **Refresh** icon to the left of the URL address. Once the email is received, open it and review the contents, then close the message. 
 	
 	>**Note:** It may take up to 24 hours for the email to arrive in Holly's inbox. You can proceed with the lab, and after 24 hours, you can check on it.
 
-1. In your **Edge** browser, switch back to the **Microsoft Purview** portal (the **Content search - Microsoft Purview** tab) and under the **Solutions** group in the left-hand navigation pane, select **Audit**. 
+1. In your **Edge** browser, switch back to the **Microsoft Purview** portal (the **Content search - Microsoft Purview** tab) and under the **Related solutions** group in the left-hand navigation pane, select **Audit**. 
 
 1. Select the **Search** button to display all recent activity. This will display the activity that created this alert. If an **Add more filters to your search?** dialog box appears, select **Start search**. 
 	
@@ -129,4 +129,4 @@ In this lab, you have:
 - Reviewed the default eDiscovery Alert.
 - Validated the default eDiscovery Alert.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
