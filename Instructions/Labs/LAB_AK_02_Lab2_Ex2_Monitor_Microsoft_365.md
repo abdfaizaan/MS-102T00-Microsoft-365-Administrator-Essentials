@@ -80,13 +80,19 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 26. On the **Microsoft 365 admin center** page, in the navigation pane, select **Show all** (if necessary). 
 
-27. Scroll down through the navigation pane, and under **Admin centers,** select **Exchange**. This will open the Exchange admin center in a new tab. 
+27. Scroll down through the navigation pane, and under **Admin centers (1),** select **Exchange (2)**. This will open the Exchange admin center in a new tab. 
+
+	![](../Images/L2E2T1S25-2904.png)
 
 	>**Note:** If a **Toolbar** window appears, select the **Next** button twice and then the **Finish** button to navigate through the three windows. If a **Learn about the new menu** window appears, select the X to close it.
 
-28. In the **Exchange admin center**, in the left navigation pane, select **Mail flow**, and then select **Message trace**. 
+28. In the **Exchange admin center**, in the left navigation pane, select **Mail flow (1)**, and then select **Message trace (2)**. 
+
+	![](../Images/L2E2T1S26-2904.png)
 
 29. In the **Message trace** window, the **Default queries** tab is displayed by default. In this tab, select **+ Start a trace** on the menu bar. 
+
+	![](../Images/L2E2T1S27-2904.png)
 
 30. In the **New message trace** pane that appears, both the **Senders** and **Recipients** fields are set to **All** be default. Holly wants to configure the trace to just look for email messages that she sent. In the **Senders** field, enter **Holly**. This displays the list of active users whose name starts with Holly. In the list of users that appears, select **Holly Dickson**.
 
@@ -97,6 +103,8 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 32. The drop-down arrow to the right of **Detailed search options** should be selected by default. This displays options such as Delivery status, Message ID, Direction, and others. If this information isn't displayed under **Detailed search options**, then select the drop-down arrow to expand this section. Holly wants to customize the trace to look for failed messages. Select the **Delivery status** field, and in the drop-down menu that appears, select **Failed**.
 
 33. Note the **Report type** option is set to **Summary report**. This is the report type that you want to create, so leave this option selected. At the bottom of the page, select the **Search** button. 
+
+	![](../Images/L2E2T1S31-2904.png)
 
 34. In the **Message trace search results** page that appears, if no failed message deliveries appear in the list, you may need to wait several minutes before selecting the **Refresh** button that appears above the item list. You should see the two failed email messages that Holly sent from Outlook - one to **user@alt.none**, and another to **nnnnnnnnYourName@outlook.com**.
 
@@ -115,37 +123,46 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 1. On the LON-CL1 VM, go to the **Microsoft 365 admin center** tab within your Edge browser. 
 
-1. In the **Microsoft 365 admin center** navigation pane, select **Show all**,  select **Health** and then select **Service health**. 
+1. In the **Microsoft 365 admin center** navigation pane, select **Show all**,  select **Health (1)** and then select **Service health (2)**. 
+
+	![](../Images/L2E2T2S2-2904.png)
 
 1. On the **Service health** page, the **Overview** tab is displayed by default. Select the **Issue history** tab.  
 
 1. In the **Issue history** tab on the **Service health** window, the default option is to display a list of items from the past 7 days (this filter option appears to the right of the **Search** field). In the list of service health incidents, select the **Title** for any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it. 
 
-1. In the **Microsoft 365 admin center**, in the left navigation pane, select **Reports**, and then select **Usage**. 
+1. In the **Microsoft 365 admin center**, in the left navigation pane, select **Reports (1)**, and then select **Usage (2)**. 
+
+	![](../Images/L2E2T2S5-2904.png)
 
 1. On the **Usage** page, scroll down and locate the **Microsoft 365 apps** > **Active users** chart. 
 
+	![](../Images/L2E2T2S6-2904.png)
+
 	>**Note:** If you are not able to see any charts, so as you can see the message on the Overview page, which displays **Microsoft 365 usage reports show how people in your business are using Microsoft 365 services. Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours**. 
 
-	![](../Images/usageoverview.png)
+	> ![](../Images/usageoverview.png)
 
-<!-- 7. On the same row as this chart, view the **Email activity** chart.  
+	<!-- 7. On the same row as this chart, view the **Email activity** chart.  
 
 	**Note:** There may be little or no data shown due to the limited mailbox usage in the lab environment. 
 
-8. Under the **Email activity** chart, select the **View more** button. This displays the **Exchange** report dashboard. At the top of the dashboard, the **Email activity** tab is displayed by default. Select the **Mailbox usage** tab that appears to the right of it.
+	8. Under the **Email activity** chart, select the **View more** button. This displays the **Exchange** report dashboard. At the top of the dashboard, the **Email activity** tab is displayed by default. Select the **Mailbox usage** tab that appears to the right of it.
 
-9. The default mailbox usage that is initially displayed is **Past 30 days** (this usage factor appears on the far-right side of the row containing the **Mailbox usage** tab). Select the down-arrow that appears next to **Past 30 days** and select one of the other options that appear in the drop-down menu (**7 days**, **90 days**, and **180 days**) to see how the display changes. 
+	9. The default mailbox usage that is initially displayed is **Past 30 days** (this usage factor appears on the far-right side of the row containing the **Mailbox usage** tab). Select the down-arrow that appears next to **Past 30 days** and select one of the other options that appear in the drop-down menu (**7 days**, **90 days**, and **180 days**) to see how the display changes. 
 
-10. Scroll down below the charts to see mailbox details for each of the active users.
+	10. Scroll down below the charts to see mailbox details for each of the active users.
 
-11. Scroll back to the top of the page. On the navigation thread at the top of the page (**Home > Usage > Exchange**), select **Usage** to return to the Usage Overview page.  -->
+	11. Scroll back to the top of the page. On the navigation thread at the top of the page (**Home > Usage > Exchange**), select **Usage** to return to the Usage Overview page.  -->
 
-<!-- 12. Review the various reports on this page. While there may be limited or no data for each report, you can at least get a feel for the type of reporting that's available.  -->
+	<!-- 12. Review the various reports on this page. While there may be limited or no data for each report, you can at least get a feel for the type of reporting that's available.  -->
+
 
 1. You now want to review the reports that are available in the **Exchange admin center**. In your browser, you should have the **Message trace - Exchange admin center** tab open from the prior task; if so, select it now. However, if you previously closed this tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group in the navigation pane, select **Exchange**.
 
-1. In the **Exchange admin center**, select **Reports** in the navigation pane, and then select **Mail flow**. 
+1. In the **Exchange admin center**, select **Reports (1)** in the navigation pane, and then select **Mail flow (2)**. 
+
+	![](../Images/L2E2T2S8-2904.png)
 
 1. In the **Mail flow reports** window, select **Inbound messages report** (this report has data to view; none of the other reports have data). Review the information displayed for this report. 
 

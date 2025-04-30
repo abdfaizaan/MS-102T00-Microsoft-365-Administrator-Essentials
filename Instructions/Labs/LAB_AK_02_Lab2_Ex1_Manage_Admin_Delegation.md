@@ -224,11 +224,15 @@ In this task, you will begin by examining the administrative properties of two u
 
 	![](../Images/MS-102-image-11.png)
 
-22. In the **Microsoft 365 admin center**, select **Users** on the navigation pane and then select **Active users**. 
+22. In the **Microsoft 365 admin center**, select **Users (1)** on the navigation pane and then select **Active users (2)**. 
 
-23. As the **User Administrator**, Lynne has permission to change user passwords. Lynne was recently contacted by **Diego Siciliani** and **Pradeep Gupta**, who each reported that their passwords may have been compromised. Per Adatum's company policy, Lynne must reset their passwords to a temporary value, and then force them to reset their password at their next login.   
+	![](../Images/L2E1T3S21-2904.png)
+
+23. As the **User Administrator**, Lynne has permission to change user passwords. Lynne was recently contacted by **Diego Siciliani** and **Pradeep Gupta**, who each reported that their passwords may have been compromised. Per Adatum's company policy, Lynne must reset their passwords to a temporary value, and then force them to reset their password at their next login.  
 
 24. In the **Active users** list, as you move your mouse from one user account to another, notice the **key (Reset a password)** icon that appears to the right of each user's name. Select the key icon that appears to the right of **Diego Siciliani's** name.
+
+	![](../Images/L2E1T3S23-2904.png)
 
 24. In the **Reset password** window for Diego, if the **Automatically create a password** check box displays a check mark, then select this box to clear it. This will enable Lynne to manually assign Diego a temporary password.  
 
@@ -242,19 +246,21 @@ In this task, you will begin by examining the administrative properties of two u
 
 27. However, now select the **Require this user to change their password when they first sign in** checkbox to clear it. Note the error message that appears indicating the password (Pa55w.rd) contains a word, phrase, or series of numbers that makes it easily guessable. In this case, you entered a variation of the word **password**, which will trigger this error. The system allows you enter this password if you force the user to change it at their first sign-in. But if you don't force the user to enter a different password at their first sign-in, then this password isn't allowed.
 
-27. After these two failed password attempts, Lynne has decided to let Microsoft 365 automatically generate a password. Select the **Automatically create a password** check box so that it displays a check mark. 
+27. After these two failed password attempts, Lynne has decided to let Microsoft 365 automatically generate a password. Select the **Automatically create a password (1)** check box so that it displays a check mark. 
 	
-28. The password that's automatically generated will just be a temporary password because Lynne wants to force Diego to change it the next time he logs in. Therefore, verify the **Require this user to change their password when they first sign in** select it so that it displays a check mark.
+28. The password that's automatically generated will just be a temporary password because Lynne wants to force Diego to change it the next time he logs in. Therefore, verify the **Require this user to change their password when they first sign in (2)** select it so that it displays a check mark.
 
-29. Select **Reset password**.
+29. Select **Reset password (3)**.
 
 	>**Note:** If prompted to save the password, select **never** to close the window.
+
+	![](../Images/L2E1T3S30-2904.png)
 
 31. You should receive an error message. In Diego’s case, you assigned him the Billing Administrator role earlier in this lab exercise. Since only Global administrators can change another administrator's password, and because Lynne is not a Global administrator, she will have to ask Holly Dickson to make this change. Select **Close** in the **Reset password** pane. 
 
 	>**Note:** If a survey request window appears, select **Cancel**.
 
-	![](../Images/resetpassword.png)
+	![](../Images/L2E1T3S31-2904.png)
 
 33. In the **Active users** list, select the **key (Reset a password)** icon for **Pradeep Gupta**. 
 
